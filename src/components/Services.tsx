@@ -3,23 +3,45 @@ import { Monitor, Heart, Briefcase, Music, PartyPopper, Building2, Check } from 
 export default function Services() {
   const ledSizes = [
     {
-      size: '12ft x 8ft',
-      description: 'Perfect for small gatherings and intimate events',
+      // size: 'LED Screen on rent',
+      img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1776421303/Led_screen_on_rent.jpg_adu3dq.jpg',
+      description: 'LED Screen on rent',
       price: 'Book Now'
     },
     {
-      size: '16ft x 10ft',
-      description: 'Ideal for medium-sized events and parties',
+      // size: '16ft x 10ft',
+      img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1776421304/Sound_system_on_rent_zqtd1u.png',
+      description: 'Sound System on rent',
       price: 'Book Now'
     },
     {
-      size: '24ft x 12ft',
-      description: 'Great for weddings and corporate events',
+      // size: '24ft x 12ft',
+      img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1776421306/pa_system_on_rent_crlkuo.png',
+      description: 'PA System on rent',
       price: 'Book Now'
     },
     {
-      size: 'custom sizes',
-      description: 'Premium choice for large-scale productions',
+      // size: 'custom sizes',
+      img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1776421306/av_system_on_rent_m3zqd8.png',
+      description: 'AV System on rent',
+      price: 'Book Now'
+    },
+    {
+      // size: 'custom sizes',
+      img:'https://res.cloudinary.com/dcfouzaii/image/upload/v1776421303/projector_on_rent_f3w2tk.png',
+      description: 'Projector on rent',
+      price: 'Book Now'
+    },
+    {
+      // size: 'custom sizes',
+      img:'https://res.cloudinary.com/dcfouzaii/image/upload/v1776422241/PLASMA_TV_uregnc.jpg',
+      description: 'PLASMA TV on rent',
+      price: 'Book Now'
+    },
+    {
+      // size: 'custom sizes',
+      img:'https://res.cloudinary.com/dcfouzaii/image/upload/v1776422240/stage_on_rent_rl6yc0.jpg',
+      description: 'Stage on rent',
       price: 'Book Now'
     }
   ];
@@ -54,20 +76,23 @@ export default function Services() {
             <span className="text-yellow-400 text-sm font-semibold">Our Services</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Flexible LED Solutions for
+            Flexible Solutions for
             <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-transparent bg-clip-text"> Every Occasion</span>
           </h2>
         </div>
 
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-white text-center mb-12">Available LED Wall Sizes</h3>
+          {/* <h3 className="text-3xl font-bold text-white text-center mb-12">Available Services</h3> */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {ledSizes.map((item, index) => (
               <div
                 key={index}
                 className="p-6 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-yellow-500/20 rounded-2xl hover:border-yellow-500/50 transition-all duration-300 group hover:scale-105"
               >
-                <div className="text-3xl font-bold text-yellow-400 mb-3">{item.size}</div>
+                <div className="text-3xl font-bold text-yellow-400 mb-3">
+                  {/* set image height 250px and object-fit cover */}
+                  <img src={item.img} alt={item.description} style={{ height: '200px' }} className="w-full h-full object-cover" />
+                </div>
                 <p className="text-gray-300 mb-4">{item.description}</p>
                 <div className="pt-4 border-t border-gray-700">
                   {/* <p className="text-yellow-500 font-semibold">{item.price}</p> */}

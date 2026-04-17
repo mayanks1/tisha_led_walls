@@ -5,7 +5,7 @@ export default function About() {
     {
       icon: Award,
       title: 'Industry Leaders',
-      description: 'Years of expertise in LED wall technology and event solutions'
+      description: 'Years of expertise in LED screen technology and event solutions'
     },
     {
       icon: Users,
@@ -40,7 +40,7 @@ export default function About() {
             <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-transparent bg-clip-text"> Premium LED Technology</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Tisha LED Walls specializes in providing state-of-the-art LED wall rentals for all types of events.
+            Tisha LED Screens specializes in providing state-of-the-art LED screen rentals for all types of events.
             From intimate gatherings to grand celebrations, we transform spaces into immersive visual experiences.
           </p>
         </div>

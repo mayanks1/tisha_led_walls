@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Monitor, MessageCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,19 +38,20 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
+        <Link to="/" onClick={() => window.scrollTo(0, 0)}>
           <div className="flex items-center gap-3 group cursor-pointer">
             {/* <div className="p-2 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-lg group-hover:scale-110 transition-transform">
               <Monitor className="w-6 h-6 text-black" />
             </div> */}
             <div>
-              <img src="./assets/logo.png" alt="Tisha LED Walls" style={{height:"100px"}} />
+                <img src="https://res.cloudinary.com/dcfouzaii/image/upload/v1763444919/logo_a6xmsh.png" alt="Tisha LED Walls" style={{height:"100px"}} />
             </div>
             <div>
               <div className="text-xl font-bold text-white">Tisha LED Walls</div>
               <div className="text-xs text-yellow-400">Premium Displays</div>
             </div>
           </div>
-
+          </Link>
           <div className="hidden md:flex items-center gap-8">
             {menuItems.map((item) => (
               <a

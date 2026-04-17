@@ -71,7 +71,7 @@ export default function Contact() {
         justifyContent: "center",
         alignItems: "center"
       }}>
-          <div className="space-y-8" style={{ width: '80%' }}>
+          <div className="space-y-8 w-full lg:w-4/5 mx-auto">
             <div className="p-8 bg-gradient-to-br from-yellow-500/10 to-yellow-600/10 border border-yellow-500/30 rounded-2xl">
               <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
 
@@ -135,7 +135,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4" style={{ minWidth: '45%', marginTop: '40px' }}>
+                <div className="flex items-start gap-4" style={{ minWidth: '45%', marginTop: '30px' }}>
                   <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center flex-shrink-0">
                     <Clock className="w-6 h-6 text-black" />
                   </div>

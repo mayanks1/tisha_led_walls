@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
 
       <div className="absolute inset-0 " style={{
-        backgroundImage: 'url(./assets/1.jpg)'}}>
+        backgroundImage: 'url(https://res.cloudinary.com/dcfouzaii/image/upload/v1763445163/1_rydru9.jpg)', marginTop: '-120px'}}>
         <div className="absolute top-20 left-10 w-64 h-64 bg-yellow-500 rounded-full filter blur-[120px] animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-600 rounded-full filter blur-[150px] animate-pulse delay-1000"></div>
       </div>

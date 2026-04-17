@@ -48,7 +48,7 @@ export default function GoogleReviews() {
                   <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <p className="text-gray-300 text-sm">4.9 out of 5 stars from 500+ verified reviews</p>
+              <p className="text-gray-300 text-sm">4.9 out of 5 stars from verified reviews</p>
             </div>
 
             <p className="text-gray-200 mb-6 leading-relaxed">

@@ -13,65 +13,65 @@ const galleryItems: GalleryItem[] = [
   {
     id: '1',
     title: 'Wedding LED Display Setup',
-    image_url: 'https://images.pexels.com/photos/1763067/pexels-photo-1763067.jpeg?auto=compress&cs=tinysrgb&w=800',
-    video_url: 'https://videos.pexels.com/video-files/3035723/3035723-sd_640_360_30fps.mp4',
+    image_url: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763360996/IMG_4793_gxxuqc.jpg',
+    video_url: 'https://res.cloudinary.com/dcfouzaii/video/upload/v1763361191/IMG_4743_jvqzkb.mov?auto=compress',
     event_type: 'wedding'
   },
   {
     id: '2',
     title: 'Corporate Event Backdrop',
-    image_url: 'https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=800',
-    video_url: 'https://videos.pexels.com/video-files/3045163/3045163-sd_640_360_25fps.mp4',
+    image_url: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763361199/IMG_4794_ipv4ds.jpg',
+    video_url: 'https://res.cloudinary.com/dcfouzaii/video/upload/v1763361392/IMG_4723_mxhdkk.mov?auto=compress',
     event_type: 'corporate'
   },
   {
     id: '3',
-    title: 'Concert Stage LED Wall',
-    image_url: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800',
-    video_url: 'https://videos.pexels.com/video-files/5591663/5591663-sd_640_360_24fps.mp4',
-    event_type: 'concert'
+    title: 'Live Sports Broadcast on LED Screen',
+    image_url: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763362093/IMG_4797_mplnfh.jpg',
+    video_url: 'https://res.cloudinary.com/dcfouzaii/video/upload/v1763362272/IMG_2539_eoabed.mov?auto=compress',
+    event_type: 'Live Event'
   },
   {
     id: '4',
-    title: 'Party Venue Decoration',
-    image_url: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=800',
-    video_url: 'https://videos.pexels.com/video-files/3657387/3657387-sd_640_360_30fps.mp4',
-    event_type: 'party'
+    title: 'Corporate Event LED Wall',
+    image_url: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763474549/IMG_4815_ypgfxe.jpg',
+    video_url: null,
+    event_type: 'corporate'
   },
   {
     id: '5',
-    title: 'Conference Display System',
-    image_url: 'https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'School Event Setup',
+    image_url: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763474551/IMG_4813_gcbsmm.png',
     video_url: null,
     event_type: 'conference'
   },
   {
     id: '6',
-    title: 'Event Backdrop Installation',
-    image_url: 'https://images.pexels.com/photos/2747446/pexels-photo-2747446.jpeg?auto=compress&cs=tinysrgb&w=800',
-    video_url: null,
+    title: 'Live Concert Setup',
+    image_url: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763472679/IMG_4812_umt7jh.jpg',
+    video_url: 'https://res.cloudinary.com/dcfouzaii/video/upload/v1763472685/IMG_9809_a43tgs.mov?auto=compress',
     event_type: 'event'
   },
   {
     id: '7',
-    title: 'Stage Production Setup',
-    image_url: 'https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&w=800',
-    video_url: null,
-    event_type: 'concert'
+    title: 'Engagement Setup',
+    image_url: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763472330/IMG_4809_rc8kcm.jpg',
+    video_url: 'https://res.cloudinary.com/dcfouzaii/video/upload/v1763472344/IMG_9698_pzikhy.mov?auto=compress',
+    event_type: 'event'
   },
   {
     id: '8',
-    title: 'Wedding Ceremony Display',
-    image_url: 'https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Corporate Event Display',
+    image_url: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763473380/IMG_5370_eyb8qp.jpg',
     video_url: null,
-    event_type: 'wedding'
+    event_type: 'corporate'
   },
   {
     id: '9',
-    title: 'Product Launch LED Display',
-    image_url: 'https://images.pexels.com/photos/2747447/pexels-photo-2747447.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Corporate Meeting LED Display',
+    image_url: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763473380/IMG_4648_ic3pjf.jpg',
     video_url: null,
-    event_type: 'product'
+    event_type: 'corporate'
   }
 ];
 
@@ -193,6 +193,7 @@ export default function Gallery() {
                   controls
                   autoPlay
                   className="w-full h-auto"
+                  controlsList="nodownload"
                   poster={selectedMedia.photoUrl}
                 />
               </div>
