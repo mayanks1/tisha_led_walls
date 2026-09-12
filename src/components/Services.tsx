@@ -45,7 +45,7 @@ export default function Services() {
     {
       // size: 'custom sizes',
       img:'https://res.cloudinary.com/dcfouzaii/image/upload/v1776422241/PLASMA_TV_uregnc.jpg',
-      description: 'PLASMA TV on rent',
+      description: 'LED TV on rent',
       price: 'Book Now'
     },
     {

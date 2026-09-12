@@ -8,7 +8,7 @@ export default function Footer() {
     { name: 'PA System on Rent', id: 'service-pa-system-on-rent' },
     { name: 'AV System on Rent', id: 'service-av-system-on-rent' },
     { name: 'Projector on Rent', id: 'service-projector-on-rent' },
-    { name: 'PLASMA TV on Rent', id: 'service-plasma-tv-on-rent' },
+    { name: 'LED TV on Rent', id: 'service-led-tv-on-rent' },
     { name: 'Stage on Rent', id: 'service-stage-on-rent' }
   ];
 
@@ -30,7 +30,7 @@ export default function Footer() {
               </div>
               <div>
                 <div className="text-xl font-bold text-white">Tisha LED Walls</div>
-                <div className="text-xs text-yellow-400">Bigger Screens, Brighter Movements.</div>
+                <div className="text-xs text-yellow-400">Bigger Screens, Brighter Moments.</div>
               </div>
             </div>
             <p className="text-gray-400 mb-6">
