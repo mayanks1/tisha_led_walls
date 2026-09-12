@@ -21,11 +21,11 @@ export default function Footer() {
               </div>
               <div>
                 <div className="text-xl font-bold text-white">Tisha LED Walls</div>
-                <div className="text-xs text-yellow-400">Premium Displays</div>
+                <div className="text-xs text-yellow-400">Bigger Screens, Brighter Movements.</div>
               </div>
             </div>
             <p className="text-gray-400 mb-6">
-              Transform your events with state-of-the-art LED scree rentals. Creating unforgettable visual experiences across Gurgaon & Delhi NCR.
+              Transform your events with state-of-the-art LED screen rentals. Creating unforgettable visual experiences across Gurgaon & Delhi NCR.
             </p>
             <div className="flex gap-4">
               <a

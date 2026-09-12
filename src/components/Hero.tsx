@@ -25,7 +25,7 @@ export default function Hero() {
           <span className="text-white">Transform Your</span>
           <br />
           <span className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-transparent bg-clip-text animate-shimmer">
-            Events with LED Walls
+            Events with LED Screen
           </span>
         </h1>
 

@@ -48,7 +48,7 @@ export default function Navbar() {
             </div>
             <div>
               <div className="text-xl font-bold text-white">Tisha LED Walls</div>
-              <div className="text-xs text-yellow-400">Premium Displays</div>
+              <div className="text-xs text-yellow-400">Bigger Screens, Brighter Movements.</div>
             </div>
           </div>
           </Link>
