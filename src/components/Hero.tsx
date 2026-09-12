@@ -52,18 +52,18 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="p-6 bg-white/5 backdrop-blur-sm border border-yellow-500/20 rounded-2xl hover:border-yellow-500/50 transition-all duration-300">
-            <div className="text-4xl font-bold text-yellow-400 mb-2">500+</div>
-            <div className="text-gray-300">Events Completed</div>
+        <div className="mt-12 md:mt-20 grid grid-cols-3 gap-2 md:gap-8 max-w-4xl mx-auto">
+          <div className="min-w-0 p-2 md:p-6 bg-white/5 backdrop-blur-sm border border-yellow-500/20 rounded-lg md:rounded-2xl hover:border-yellow-500/50 transition-all duration-300">
+            <div className="text-xl md:text-4xl font-bold text-yellow-400 mb-1 md:mb-2">500+</div>
+            <div className="text-[10px] leading-tight md:text-base text-gray-300">Events Completed</div>
           </div>
-          <div className="p-6 bg-white/5 backdrop-blur-sm border border-yellow-500/20 rounded-2xl hover:border-yellow-500/50 transition-all duration-300">
-            <div className="text-4xl font-bold text-yellow-400 mb-2">24/7</div>
-            <div className="text-gray-300">Support Available</div>
+          <div className="min-w-0 p-2 md:p-6 bg-white/5 backdrop-blur-sm border border-yellow-500/20 rounded-lg md:rounded-2xl hover:border-yellow-500/50 transition-all duration-300">
+            <div className="text-xl md:text-4xl font-bold text-yellow-400 mb-1 md:mb-2">24/7</div>
+            <div className="text-[10px] leading-tight md:text-base text-gray-300">Support Available</div>
           </div>
-          <div className="p-6 bg-white/5 backdrop-blur-sm border border-yellow-500/20 rounded-2xl hover:border-yellow-500/50 transition-all duration-300">
-            <div className="text-4xl font-bold text-yellow-400 mb-2">4K</div>
-            <div className="text-gray-300">Ultra HD Quality</div>
+          <div className="min-w-0 p-2 md:p-6 bg-white/5 backdrop-blur-sm border border-yellow-500/20 rounded-lg md:rounded-2xl hover:border-yellow-500/50 transition-all duration-300">
+            <div className="text-xl md:text-4xl font-bold text-yellow-400 mb-1 md:mb-2">4K</div>
+            <div className="text-[10px] leading-tight md:text-base text-gray-300">Ultra HD Quality</div>
           </div>
         </div>
       </div>

@@ -1,4 +1,7 @@
-import { Star, Quote } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react';
+
+const testimonialCount = 6;
 
 export default function Testimonials() {
   const testimonials = [
@@ -46,73 +49,124 @@ export default function Testimonials() {
     }
   ];
 
+  const [activeIndex, setActiveIndex] = useState(0);
+  const activeTestimonial = testimonials[activeIndex];
+
+  const showPrevious = () => {
+    setActiveIndex((currentIndex) =>
+      currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1
+    );
+  };
+
+  const showNext = () => {
+    setActiveIndex((currentIndex) => (currentIndex + 1) % testimonials.length);
+  };
+
+  useEffect(() => {
+    const rotation = window.setInterval(() => {
+      setActiveIndex((currentIndex) => (currentIndex + 1) % testimonialCount);
+    }, 6000);
+    return () => window.clearInterval(rotation);
+  }, []);
+
   return (
-    <section id="testimonials" className="py-24 bg-black relative overflow-hidden">
+    <section id="testimonials" className="py-16 md:py-24 bg-black relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/2 right-1/3 w-96 h-96 bg-yellow-500 rounded-full filter blur-[150px] animate-pulse"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <div className="inline-block px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full mb-4">
             <span className="text-yellow-400 text-sm font-semibold">Testimonials</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">
             What Our
             <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-transparent bg-clip-text"> Clients Say</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto">
             Don't just take our word for it - hear from our satisfied clients
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="p-8 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-yellow-500/20 rounded-2xl hover:border-yellow-500/50 transition-all duration-300 group hover:scale-105"
-            >
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center text-2xl">
-                    {testimonial.image}
-                  </div>
-                  <div>
-                    <h4 className="text-white font-bold text-lg">{testimonial.name}</h4>
-                    <p className="text-gray-400 text-sm">{testimonial.role}</p>
-                  </div>
+        <div
+          className="relative max-w-4xl mx-auto"
+          aria-live="polite"
+        >
+          <div className="p-6 md:p-10 bg-gradient-to-br from-white/5 via-white/10 to-yellow-500/5 backdrop-blur-sm border border-yellow-500/30 rounded-3xl shadow-[0_0_45px_rgba(234,179,8,0.08)]">
+            <div className="flex items-start justify-between gap-4 mb-6">
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center text-2xl md:text-3xl">
+                  {activeTestimonial.image}
                 </div>
-                <Quote className="w-8 h-8 text-yellow-500/30" />
+                <div>
+                  <h4 className="text-white font-bold text-lg md:text-xl">{activeTestimonial.name}</h4>
+                  <p className="text-gray-400 text-sm md:text-base">{activeTestimonial.role}</p>
+                </div>
               </div>
+              <Quote className="w-9 h-9 md:w-12 md:h-12 text-yellow-500/30 flex-shrink-0" />
+            </div>
 
-              <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-500 text-yellow-500" />
+            <div className="flex gap-1 mb-5">
+              {[...Array(activeTestimonial.rating)].map((_, index) => (
+                <Star key={index} className="w-5 h-5 fill-yellow-500 text-yellow-500" />
+              ))}
+            </div>
+
+            <p className="text-gray-200 text-lg md:text-2xl leading-relaxed min-h-28 md:min-h-32">
+              &quot;{activeTestimonial.text}&quot;
+            </p>
+
+            <div className="flex items-center justify-between mt-8">
+              <button
+                type="button"
+                onClick={showPrevious}
+                aria-label="Show previous testimonial"
+                className="w-11 h-11 rounded-full border border-yellow-500/40 text-yellow-400 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition-colors"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+
+              <div className="flex items-center gap-2" aria-label="Testimonial slides">
+                {testimonials.map((testimonial, index) => (
+                  <button
+                    key={testimonial.name}
+                    type="button"
+                    onClick={() => setActiveIndex(index)}
+                    aria-label={`Show testimonial ${index + 1}`}
+                    aria-current={index === activeIndex ? 'true' : undefined}
+                    className={`h-2 rounded-full transition-all ${index === activeIndex ? 'w-8 bg-yellow-400' : 'w-2 bg-yellow-500/30 hover:bg-yellow-500/60'}`}
+                  />
                 ))}
               </div>
 
-              <p className="text-gray-300 leading-relaxed">
-                "{testimonial.text}"
-              </p>
+              <button
+                type="button"
+                onClick={showNext}
+                aria-label="Show next testimonial"
+                className="w-11 h-11 rounded-full border border-yellow-500/40 text-yellow-400 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition-colors"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
             </div>
-          ))}
+          </div>
         </div>
 
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-8 p-8 bg-gradient-to-r from-yellow-500/10 to-yellow-600/10 border border-yellow-500/30 rounded-2xl">
+        <div className="mt-10 md:mt-16 text-center">
+          <div className="inline-flex max-w-full items-center gap-3 md:gap-6 p-4 md:p-6 bg-gradient-to-r from-yellow-500/10 to-yellow-600/10 border border-yellow-500/30 rounded-2xl">
             <div className="text-center">
-              <div className="text-4xl font-bold text-yellow-400 mb-2">500+</div>
-              <div className="text-gray-300">Happy Clients</div>
+              <div className="text-2xl md:text-4xl font-bold text-yellow-400 mb-1 md:mb-2">500+</div>
+              <div className="text-xs md:text-base text-gray-300">Happy Clients</div>
             </div>
-            <div className="w-px h-16 bg-yellow-500/30"></div>
+            <div className="w-px h-12 md:h-16 bg-yellow-500/30"></div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-yellow-400 mb-2">4.9/5</div>
-              <div className="text-gray-300">Average Rating</div>
+              <div className="text-2xl md:text-4xl font-bold text-yellow-400 mb-1 md:mb-2">4.9/5</div>
+              <div className="text-xs md:text-base text-gray-300">Average Rating</div>
             </div>
-            <div className="w-px h-16 bg-yellow-500/30"></div>
+            <div className="w-px h-12 md:h-16 bg-yellow-500/30"></div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-yellow-400 mb-2">98%</div>
-              <div className="text-gray-300">Repeat Customers</div>
+              <div className="text-2xl md:text-4xl font-bold text-yellow-400 mb-1 md:mb-2">98%</div>
+              <div className="text-xs md:text-base text-gray-300">Repeat Customers</div>
             </div>
           </div>
         </div>

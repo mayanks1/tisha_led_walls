@@ -93,7 +93,7 @@ export default function Services() {
 
         <div className="mb-20">
           {/* <h3 className="text-3xl font-bold text-white text-center mb-12">Available Services</h3> */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 gap-3 md:gap-6 lg:grid-cols-4">
             {ledSizes.map((item, index) => (
               <button
                 key={index}
@@ -101,13 +101,12 @@ export default function Services() {
                 type="button"
                 onClick={() => handleServiceClick(item.description)}
                 aria-label={`Book ${item.description}`}
-                className="w-full scroll-mt-24 p-6 text-left bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-yellow-500/20 rounded-2xl hover:border-yellow-500/50 transition-all duration-300 group hover:scale-105 cursor-pointer"
+                className="w-full min-w-0 scroll-mt-24 p-3 md:p-6 text-left bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-yellow-500/20 rounded-xl md:rounded-2xl hover:border-yellow-500/50 transition-all duration-300 group hover:scale-105 cursor-pointer"
               >
                 <div className="text-3xl font-bold text-yellow-400 mb-3">
-                  {/* set image height 250px and object-fit cover */}
-                  <img src={item.img} alt={item.description} style={{ height: '200px' }} className="w-full h-full object-cover" />
+                  <img src={item.img} alt={item.description} className="w-full h-28 sm:h-36 md:h-48 object-cover" />
                 </div>
-                <p className="text-gray-300 mb-4">{item.description}</p>
+                <p className="text-sm md:text-base text-gray-300 mb-4">{item.description}</p>
                 <div className="pt-4 border-t border-gray-700">
                   <span className="text-yellow-500 font-semibold transition-all duration-200 group-hover:text-yellow-400">
                     {item.price}
@@ -123,7 +122,7 @@ export default function Services() {
 
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-white text-center mb-12">Events We Serve</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {eventTypes.map((event, index) => {
               const Icon = event.icon;
               return (
