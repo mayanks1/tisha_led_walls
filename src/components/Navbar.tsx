@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Monitor, MessageCircle } from 'lucide-react';
+import { Menu, X, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
@@ -15,7 +15,7 @@ export default function Navbar() {
   }, []);
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/7703948857?text=Hi%20Tisha%20LED%20Walls%2C%20I%20want%20to%20book%20an%20LED%20wall.', '_blank');
+    window.open('https://wa.me/917703948857?text=Hi%20Tisha%20LED%20Walls%2C%20I%20want%20to%20book%20an%20LED%20wall.', '_blank');
   };
 
   const menuItems = [
@@ -44,7 +44,7 @@ export default function Navbar() {
               <Monitor className="w-6 h-6 text-black" />
             </div> */}
             <div>
-                <img src="https://res.cloudinary.com/dcfouzaii/image/upload/v1763444919/logo_a6xmsh.png" alt="Tisha LED Walls" style={{height:"100px"}} />
+                <img src="https://res.cloudinary.com/dcfouzaii/image/upload/v1763444919/logo_a6xmsh.png" alt="Tisha LED Walls" className="h-16 w-auto" />
             </div>
             <div>
               <div className="text-xl font-bold text-white">Tisha LED Walls</div>

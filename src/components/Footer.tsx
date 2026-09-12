@@ -1,7 +1,16 @@
-import { Monitor, Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const services = [
+    { name: 'LED Screen on Rent', id: 'service-led-screen-on-rent' },
+    { name: 'Sound System on Rent', id: 'service-sound-system-on-rent' },
+    { name: 'PA System on Rent', id: 'service-pa-system-on-rent' },
+    { name: 'AV System on Rent', id: 'service-av-system-on-rent' },
+    { name: 'Projector on Rent', id: 'service-projector-on-rent' },
+    { name: 'PLASMA TV on Rent', id: 'service-plasma-tv-on-rent' },
+    { name: 'Stage on Rent', id: 'service-stage-on-rent' }
+  ];
 
   return (
     <footer className="bg-black border-t border-yellow-500/20 relative overflow-hidden">
@@ -17,7 +26,7 @@ export default function Footer() {
                 <Monitor className="w-6 h-6 text-black" />
               </div> */}
               <div>
-                <img src="https://res.cloudinary.com/dcfouzaii/image/upload/v1763444919/logo_a6xmsh.png" alt="Tisha LED Walls" style={{height:"100px"}} />
+                  <img src="https://res.cloudinary.com/dcfouzaii/image/upload/v1763444919/logo_a6xmsh.png" alt="Tisha LED Walls" className="h-16 w-auto" />
               </div>
               <div>
                 <div className="text-xl font-bold text-white">Tisha LED Walls</div>
@@ -71,12 +80,16 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold text-lg mb-6">Our Services</h3>
             <ul className="space-y-3">
-              <li className="text-gray-400">LED Screen on Rent</li>
-              <li className="text-gray-400">Sound System on Rent</li>
-              <li className="text-gray-400">Audio Visual System on Rent</li>
-              <li className="text-gray-400">PA System on LED</li>
-              <li className="text-gray-400">LED TV on Rent</li>
-              <li className="text-gray-400">Projector on Rent</li>
+              {services.map((service) => (
+                <li key={service.id}>
+                  <a
+                    href={`#${service.id}`}
+                    className="text-gray-400 hover:text-yellow-400 transition-colors"
+                  >
+                    {service.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -103,8 +116,7 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-gray-400">
-                     Opp. Plot No 183, near Parshuram Bhavan,
-                    Jharsa, Sector 39, Gurugram, Haryana 122003
+                     928, Jharsa Village, Sector 39, Gurugram, Haryana (122003)
                   </p>
                 </div>
               </li>

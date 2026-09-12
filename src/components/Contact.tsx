@@ -1,48 +1,8 @@
-import { useState } from 'react';
-import { MessageCircle, Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { MessageCircle, Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    eventType: '',
-    eventDate: '',
-    message: ''
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/7703948857?text=Hi%20Tisha%20LED%20Walls%2C%20I%20want%20to%20book%20an%20LED%20wall.', '_blank');
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    const whatsappMessage = `New Enquiry from Website:%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0AEvent Type: ${formData.eventType}%0AEvent Date: ${formData.eventDate}%0AMessage: ${formData.message}`;
-
-    window.open(`https://wa.me/7703948857?text=${whatsappMessage}`, '_blank');
-
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        eventType: '',
-        eventDate: '',
-        message: ''
-      });
-    }, 1000);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+      window.open('https://wa.me/917703948857?text=Hi%20Tisha%20LED%20Walls%2C%20I%20want%20to%20book%20an%20LED%20wall.', '_blank');
   };
 
   return (

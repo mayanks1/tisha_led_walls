@@ -1,6 +1,16 @@
 import { Monitor, Heart, Briefcase, Music, PartyPopper, Building2, Check } from 'lucide-react';
 
 export default function Services() {
+  const handleServiceClick = (serviceName: string) => {
+    const message = encodeURIComponent(
+      `Hi Tisha LED Walls, I want to book ${serviceName.replace(/\s+on\s+rent/i, '')}.`
+    );
+    window.open(`https://wa.me/917703948857?text=${message}`, '_blank');
+  };
+
+  const getServiceId = (serviceName: string) =>
+    `service-${serviceName.toLowerCase().replace(/\s+/g, '-')}`;
+
   const ledSizes = [
     {
       // size: 'LED Screen on rent',
@@ -85,9 +95,13 @@ export default function Services() {
           {/* <h3 className="text-3xl font-bold text-white text-center mb-12">Available Services</h3> */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {ledSizes.map((item, index) => (
-              <div
+              <button
                 key={index}
-                className="p-6 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-yellow-500/20 rounded-2xl hover:border-yellow-500/50 transition-all duration-300 group hover:scale-105"
+                id={getServiceId(item.description)}
+                type="button"
+                onClick={() => handleServiceClick(item.description)}
+                aria-label={`Book ${item.description}`}
+                className="w-full scroll-mt-24 p-6 text-left bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-yellow-500/20 rounded-2xl hover:border-yellow-500/50 transition-all duration-300 group hover:scale-105 cursor-pointer"
               >
                 <div className="text-3xl font-bold text-yellow-400 mb-3">
                   {/* set image height 250px and object-fit cover */}
@@ -95,16 +109,11 @@ export default function Services() {
                 </div>
                 <p className="text-gray-300 mb-4">{item.description}</p>
                 <div className="pt-4 border-t border-gray-700">
-                  {/* <p className="text-yellow-500 font-semibold">{item.price}</p> */}
-                  <a href="tel:+917703948857">
-                    <p className="text-yellow-500 font-semibold cursor-pointer transition-all duration-200 hover:text-yellow-400 hover:scale-105">
-                      {item.price}
-                    </p>
-                  </a>
-                  
-
+                  <span className="text-yellow-500 font-semibold transition-all duration-200 group-hover:text-yellow-400">
+                    {item.price}
+                  </span>
                 </div>
-              </div>
+              </button>
             ))}
           </div>
           <p className="text-center text-gray-400 mt-6 text-sm">
