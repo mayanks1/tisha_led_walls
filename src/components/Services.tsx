@@ -104,7 +104,13 @@ export default function Services() {
                 className="w-full min-w-0 scroll-mt-24 p-3 md:p-6 text-left bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-yellow-500/20 rounded-xl md:rounded-2xl hover:border-yellow-500/50 transition-all duration-300 group hover:scale-105 cursor-pointer"
               >
                 <div className="text-3xl font-bold text-yellow-400 mb-3">
-                  <img src={item.img} alt={item.description} className="w-full h-28 sm:h-36 md:h-48 object-cover" />
+                  <img
+                    src={item.img.replace('/upload/', '/upload/f_auto,q_auto,w_800/')}
+                    alt={item.description}
+                    className="w-full h-28 sm:h-36 md:h-48 object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
                 <p className="text-sm md:text-base text-gray-300 mb-4">{item.description}</p>
                 <div className="pt-4 border-t border-gray-700">

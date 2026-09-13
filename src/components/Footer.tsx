@@ -48,7 +48,7 @@ export default function Footer() {
                 <Monitor className="w-6 h-6 text-black" />
               </div> */}
               <div>
-                  <img src="https://res.cloudinary.com/dcfouzaii/image/upload/v1763444919/logo_a6xmsh.png" alt="Tisha LED Walls" className="h-16 w-auto" />
+                  <img src="https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_160/v1763444919/logo_a6xmsh.png" alt="Tisha LED Walls" className="h-16 w-auto" />
               </div>
               <div>
                 <div className="text-xl font-bold text-white">Tisha LED Walls</div>
