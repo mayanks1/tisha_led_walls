@@ -1,129 +1,218 @@
-import { MessageCircle, Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { MessageCircle, Phone, Mail, MapPin, Clock, ArrowRight } from 'lucide-react';
+
+function useInView(threshold = 0.1) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) { setInView(true); observer.disconnect(); }
+    }, { threshold });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [threshold]);
+  return { ref, inView };
+}
 
 export default function Contact() {
+  const { ref, inView } = useInView();
+
   const handleWhatsAppClick = () => {
-      window.open('https://wa.me/917703948857?text=Hi%20Tisha%20LED%20Walls%2C%20I%20want%20to%20book%20an%20LED%20wall.', '_blank');
+    window.open('https://wa.me/917703948857?text=Hi%20Tisha%20LED%20Walls%2C%20I%20want%20to%20book%20an%20LED%20wall.', '_blank');
   };
 
-  return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 left-1/2 w-96 h-96 bg-yellow-500 rounded-full filter blur-[150px]"></div>
-      </div>
+  const contactItems = [
+    {
+      icon: Phone,
+      label: 'Phone',
+      value: '+91 77039 48857',
+      href: 'tel:+917703948857',
+      gradient: 'linear-gradient(135deg, #10B981, #06B6D4)',
+    },
+    {
+      icon: MessageCircle,
+      label: 'WhatsApp',
+      value: 'Click to chat with us',
+      href: 'https://wa.me/917703948857?text=Hi%20Tisha%20LED%20Walls%2C%20I%20want%20to%20book%20an%20LED%20wall.',
+      gradient: 'linear-gradient(135deg, #25D366, #128C7E)',
+      isButton: true,
+    },
+    {
+      icon: Mail,
+      label: 'Email',
+      value: 'tishaledwalls@gmail.com',
+      href: 'mailto:tishaledwalls@gmail.com',
+      gradient: 'linear-gradient(135deg, #F59E0B, #EF4444)',
+    },
+    {
+      icon: MapPin,
+      label: 'Service Areas',
+      value: 'Gurgaon · Delhi · Noida · Delhi NCR',
+      href: null,
+      gradient: 'linear-gradient(135deg, #8B5CF6, #6366F1)',
+    },
+    {
+      icon: Clock,
+      label: 'Working Hours',
+      value: '24/7 Support · Response within 2 hours',
+      href: null,
+      gradient: 'linear-gradient(135deg, #3B82F6, #06B6D4)',
+    },
+  ];
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full mb-4">
-            <span className="text-yellow-400 text-sm font-semibold">Get In Touch</span>
+  return (
+    <section
+      id="contact"
+      className="relative py-20 overflow-hidden"
+      style={{ background: '#050508' }}
+    >
+      {/* Ambient orbs */}
+      <div
+        className="absolute top-1/4 left-1/2 w-[600px] h-[600px] rounded-full pointer-events-none -translate-x-1/2"
+        style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.06) 0%, transparent 70%)', filter: 'blur(100px)' }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(6,182,212,0.05) 0%, transparent 70%)', filter: 'blur(100px)' }}
+      />
+
+      <div ref={ref} className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+        {/* Header */}
+        <div
+          className="text-center mb-14"
+          style={{ opacity: inView ? 1 : 0, transform: inView ? 'translateY(0)' : 'translateY(30px)', transition: 'all 0.7s ease-out' }}
+        >
+          <div
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-5 text-xs font-semibold uppercase tracking-widest text-amber-400"
+            style={{ background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.25)' }}
+          >
+            Get In Touch
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Let's Make Your Event
-            <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-transparent bg-clip-text"> Extraordinary</span>
+          <h2
+            className="font-bold text-white mb-4"
+            style={{ fontFamily: 'Outfit, sans-serif', fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}
+          >
+            Let's Make Your Event{' '}
+            <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #F59E0B, #FCD34D)' }}>
+              Extraordinary
+            </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to elevate your event? Get in touch with us today for a personalized quote
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            Ready to elevate your event? Get in touch with us for a personalized quote.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-1 gap-12" style={{ 
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center"
-      }}>
-          <div className="space-y-8 w-full lg:w-4/5 mx-auto">
-            <div className="p-8 bg-gradient-to-br from-yellow-500/10 to-yellow-600/10 border border-yellow-500/30 rounded-2xl">
-              <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
-
-              <div className="space-y-6" style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: "10%",
-                alignItems: "self-start",
-                justifyContent: "space-between"
-              }}>
-                <div className="flex items-start gap-4" style={{ marginTop: '40px', minWidth: '45%' }}>
-                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-black" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">Phone</h4>
-                    <a href="tel:+917703948857" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                      +91 77039 48857
-                    </a>
+        {/* Contact cards grid */}
+        <div
+          className="grid sm:grid-cols-2 gap-4 mb-8"
+          style={{ opacity: inView ? 1 : 0, transition: 'all 0.7s ease-out 0.2s' }}
+        >
+          {contactItems.map((item, index) => {
+            const Icon = item.icon;
+            const isButton = item.isButton;
+            const content = (
+              <>
+                <div
+                  className="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110"
+                  style={{ background: item.gradient }}
+                >
+                  <Icon className="w-5 h-5 text-white" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-0.5">{item.label}</div>
+                  <div className="text-white font-medium text-sm md:text-base truncate group-hover:text-amber-300 transition-colors">
+                    {item.value}
                   </div>
                 </div>
+                {(item.href || isButton) && (
+                  <ArrowRight className="w-4 h-4 text-gray-600 group-hover:text-amber-400 transition-all duration-300 group-hover:translate-x-1 flex-shrink-0" />
+                )}
+              </>
+            );
 
-                <div className="flex items-start gap-4" style={{ marginTop: '40px', minWidth: '45%' }}>
-                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MessageCircle className="w-6 h-6 text-black" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">WhatsApp</h4>
-                    <button
-                      onClick={handleWhatsAppClick}
-                      className="text-gray-300 hover:text-yellow-400 transition-colors text-left"
-                      style={{ color: "#ca8a04" }}
-                    >
-                      Click to chat with us
-                    </button>
-                  </div>
-                </div>
+            const sharedStyle = {
+              background: 'rgba(255,255,255,0.025)',
+              border: '1px solid rgba(255,255,255,0.07)',
+              backdropFilter: 'blur(16px)',
+              boxShadow: '0 4px 24px rgba(0,0,0,0.3)',
+              opacity: inView ? 1 : 0,
+              transform: inView ? 'translateY(0)' : 'translateY(20px)',
+              transition: `all 0.5s ease-out ${index * 0.07}s`,
+            };
 
-                <div className="flex items-start gap-4" style={{ minWidth: '45%', marginTop: "40px" }}>
-                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-black" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">Email</h4>
-                    <a href="mailto:tishaledwalls@gmail.com" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                      tishaledwalls@gmail.com
-                    </a>
-                  </div>
-                </div>
+            const sharedClass = 'group flex items-center gap-4 p-5 rounded-2xl transition-all duration-300 text-left w-full';
 
-                <div className="flex items-start gap-4" style={{ minWidth: '45%', marginTop: "40px" }}>
-                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-black" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">Service Areas</h4>
-                    <p className="text-gray-300">
-                      Gurgaon, Delhi, Noida<br />
-                      & across Delhi NCR.
-                    </p>
-                  </div>
-                </div>
+            if (isButton || item.href) {
+              return (
+                <a
+                  key={index}
+                  href={item.href || '#'}
+                  target={item.href?.startsWith('http') ? '_blank' : undefined}
+                  rel={item.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className={sharedClass}
+                  style={sharedStyle}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLElement).style.border = '1px solid rgba(245,158,11,0.3)';
+                    (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)';
+                    (e.currentTarget as HTMLElement).style.background = 'rgba(245,158,11,0.04)';
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLElement).style.border = '1px solid rgba(255,255,255,0.07)';
+                    (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
+                    (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.025)';
+                  }}
+                >
+                  {content}
+                </a>
+              );
+            }
 
-                <div className="flex items-start gap-4" style={{ minWidth: '45%', marginTop: '30px' }}>
-                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-black" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">Working Hours</h4>
-                    <p className="text-gray-300">
-                      24/7 Support Available<br />
-                      Response within 2 hours
-                    </p>
-                  </div>
-                </div>
+            return (
+              <div
+                key={index}
+                className={sharedClass}
+                style={sharedStyle}
+              >
+                {content}
               </div>
-            </div>
-            
-            <div>
-              <button
-              onClick={handleWhatsAppClick}
-              className="w-full flex items-center justify-center gap-3 px-8 py-6 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-xl rounded-2xl hover:shadow-[0_0_40px_rgba(34,197,94,0.5)] transition-all duration-300 hover:scale-105"
-            >
-              <MessageCircle className="w-7 h-7" />
-              Quick Chat on WhatsApp
-            </button>
-            </div>
-          </div>
+            );
+          })}
+        </div>
 
-          {/* <div className="p-8 bg-white/5 backdrop-blur-sm border border-yellow-500/20 rounded-2xl">
-            <h3 className="text-2xl font-bold text-white mb-6">Send Us an Enquiry</h3>
-          </div> */}
+        {/* Main WhatsApp CTA */}
+        <div
+          style={{ opacity: inView ? 1 : 0, transition: 'all 0.7s ease-out 0.4s' }}
+        >
+          <button
+            onClick={handleWhatsAppClick}
+            id="contact-whatsapp-cta"
+            className="group relative w-full flex items-center justify-center gap-4 px-8 py-6 font-bold text-black text-xl rounded-3xl overflow-hidden transition-all duration-300 hover:scale-[1.01]"
+            style={{
+              background: 'linear-gradient(135deg, #25D366, #128C7E)',
+              boxShadow: '0 0 0 rgba(37,211,102,0)',
+            }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 60px rgba(37,211,102,0.5), 0 0 120px rgba(37,211,102,0.2)';
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 0 rgba(37,211,102,0)';
+            }}
+          >
+            {/* Shimmer */}
+            <span className="absolute inset-0 bg-white/20 -translate-x-full skew-x-[-15deg] group-hover:translate-x-[300%] transition-transform duration-700" />
+
+            {/* Ping rings */}
+            <div className="relative flex-shrink-0">
+              <MessageCircle className="w-7 h-7 relative z-10" />
+              <span className="absolute inset-0 rounded-full bg-white/30 animate-ping" style={{ animationDuration: '1.5s' }} />
+            </div>
+
+            <span className="relative z-10">Quick Chat on WhatsApp</span>
+            <ArrowRight className="w-5 h-5 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
+          </button>
         </div>
       </div>
     </section>
