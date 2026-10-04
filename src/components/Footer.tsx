@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Mail, Phone, MapPin, MessageCircle, ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -88,12 +89,12 @@ export default function Footer() {
             <ul className="space-y-2 md:space-y-3">
               {['Home', 'About', 'Services', 'Gallery', 'Testimonials', 'Contact'].map((item) => (
                 <li key={item}>
-                  <a
-                    href={`#${item.toLowerCase()}`}
+                  <Link
+                    to={item === 'Contact' ? '/contact' : `/#${item.toLowerCase()}`}
                     className="text-sm md:text-base text-gray-400 hover:text-yellow-400 transition-colors"
                   >
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -104,12 +105,12 @@ export default function Footer() {
             <ul className="space-y-2 md:space-y-3">
               {services.map((service) => (
                 <li key={service.id}>
-                  <a
-                    href={`#${service.id}`}
+                  <Link
+                    to={`/#${service.id}`}
                     className="text-sm md:text-base text-gray-400 hover:text-yellow-400 transition-colors"
                   >
                     {service.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
