@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-600 rounded-full filter blur-[150px] animate-pulse delay-1000"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full mb-8 backdrop-blur-sm">
           <Sparkles className="w-4 h-4 text-yellow-400" />
           <span className="text-yellow-400 text-sm font-medium">Premium LED Solutions</span>

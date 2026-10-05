@@ -20,8 +20,8 @@ function App() {
       ? 'Contact Tisha LED Walls in Gurugram | LED Rentals'
       : 'LED Screen Rental in Gurugram | Tisha LED Walls';
     const description = isContactPage
-      ? 'Contact Tisha LED Walls for LED screen and event equipment rentals in Gurugram, Gurgaon, Delhi and Noida. Call, email or WhatsApp for a quote.'
-      : 'Rent LED screens and event AV in Gurugram. Tisha LED Walls provides professional setup for weddings, parties, corporate events and live shows.';
+      ? 'Contact Tisha LED Walls for LED screens & AV rentals in Gurugram. Call or WhatsApp for a quote.'
+      : 'Premium LED screen rental & AV setup in Gurugram. Professional event displays for corporate events, weddings, rallies, and live shows.';
 
     document.title = title;
     document.querySelector('meta[name="description"]')?.setAttribute('content', description);
