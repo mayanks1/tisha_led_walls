@@ -27,17 +27,18 @@ export default function Hero() {
           <span className="text-yellow-400 text-sm font-medium">Premium LED Solutions</span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-          <span className="text-white">Transform Your</span>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          <span className="text-white">Premium LED Wall &</span>
           <br />
           <span className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-transparent bg-clip-text animate-shimmer">
-            Events with LED Screen
+            Event Display Rental Services
           </span>
+          <br />
+          <span className="text-white">in Gurugram</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Create unforgettable experiences with our state-of-the-art LED wall rentals.
-          Perfect for weddings, corporate events, concerts, and celebrations.
+          Create unforgettable experiences with our state-of-the-art LED wall rentals. Perfect for weddings, corporate events, concerts, and celebrations.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

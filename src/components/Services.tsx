@@ -86,8 +86,8 @@ export default function Services() {
             <span className="text-yellow-400 text-sm font-semibold">Our Services</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Event Rentals in Gurugram
-            <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-transparent bg-clip-text"> for Every Occasion</span>
+            LED Wall on Rent in Gurgaon
+            <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-transparent bg-clip-text"> & Event Rentals</span>
           </h2>
         </div>
 

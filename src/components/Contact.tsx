@@ -26,7 +26,7 @@ export default function Contact({ showHeading = true }: ContactProps) {
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleWhatsAppClick = () => {
-      window.open('https://wa.me/917703948857?text=Hi%20Tisha%20LED%20Walls%2C%20I%20want%20to%20book%20an%20LED%20wall.', '_blank');
+    window.open('https://wa.me/917703948857?text=Hi%20Tisha%20LED%20Walls%2C%20I%20want%20to%20book%20an%20LED%20wall.', '_blank');
   };
 
   const handleInquirySubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -93,7 +93,7 @@ export default function Contact({ showHeading = true }: ContactProps) {
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="block text-xs font-medium text-gray-500">Call us directly</span>
-                    <span className="mt-1 block font-semibold text-gray-100">+91 77039 48857</span>
+                    <span className="mt-1 block font-semibold text-gray-100">+91 7703948857</span>
                   </span>
                   <ArrowUpRight className="h-4 w-4 text-gray-500 transition group-hover:text-yellow-300" />
                 </a>
@@ -117,8 +117,10 @@ export default function Contact({ showHeading = true }: ContactProps) {
                     <MapPin className="h-5 w-5" />
                   </span>
                   <span>
-                    <span className="block text-xs font-medium text-gray-500">Based in Gurugram</span>
-                    <span className="mt-1 block font-semibold text-gray-100">Serving Delhi NCR</span>
+                    <a href="https://maps.google.com/?q=28.4595,77.0266" target="_blank" rel="noreferrer" className="hover:text-yellow-400 transition-colors">
+                      <span className="block text-xs font-medium text-gray-500">928, Jharsa Village, Sector 39</span>
+                      <span className="mt-1 block font-semibold text-gray-100">Gurugram, Haryana 122003</span>
+                    </a>
                   </span>
                 </div>
               </div>
@@ -171,9 +173,8 @@ export default function Contact({ showHeading = true }: ContactProps) {
               <div className="mt-6 flex items-center gap-3" aria-label={`Step ${formStep} of 2`}>
                 <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-white/10">
                   <div
-                    className={`h-full rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 transition-all duration-500 ${
-                      formStep === 1 ? 'w-1/2' : 'w-full'
-                    }`}
+                    className={`h-full rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 transition-all duration-500 ${formStep === 1 ? 'w-1/2' : 'w-full'
+                      }`}
                   />
                 </div>
                 <span className="text-xs font-semibold text-gray-400">
@@ -187,84 +188,84 @@ export default function Contact({ showHeading = true }: ContactProps) {
                 className="grid gap-5 sm:grid-cols-2"
                 style={{ display: formStep === 1 ? 'grid' : 'none' }}
               >
-                  <label className="space-y-2 text-sm font-semibold text-gray-300">
-                    Your name <span className="text-yellow-400">*</span>
-                    <input
-                      name="name"
-                      type="text"
-                      autoComplete="name"
-                      placeholder="e.g. Aditi Sharma"
-                      required={formStep === 1}
-                      className="w-full rounded-xl border border-white/15 bg-[#0d100f] px-4 py-3.5 text-white shadow-sm outline-none transition placeholder:text-gray-600 hover:border-white/25 focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10"
-                    />
-                  </label>
-                  <label className="space-y-2 text-sm font-semibold text-gray-300">
-                    Event date
-                    <input
-                      name="eventDate"
-                      type="date"
-                      className="w-full rounded-xl border border-white/15 bg-[#0d100f] px-4 py-3.5 text-white shadow-sm outline-none transition [color-scheme:dark] hover:border-white/25 focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10"
-                    />
-                    <span className="block text-xs font-normal text-gray-500">Optional if not confirmed yet.</span>
-                  </label>
-                  <label className="space-y-2 text-sm font-semibold text-gray-300 sm:col-span-2">
-                    Event location <span className="text-yellow-400">*</span>
-                    <input
-                      name="location"
-                      type="text"
-                      autoComplete="address-level2"
-                      placeholder="City, venue or area"
-                      required={formStep === 1}
-                      className="w-full rounded-xl border border-white/15 bg-[#0d100f] px-4 py-3.5 text-white shadow-sm outline-none transition placeholder:text-gray-600 hover:border-white/25 focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10"
-                    />
-                  </label>
-                  <div className="rounded-xl border border-yellow-400/15 bg-yellow-400/[0.06] px-4 py-3 text-sm leading-6 text-yellow-100 sm:col-span-2">
-                    <MapPin className="mr-2 inline h-4 w-4 text-yellow-300" />
-                    Serving Gurgaon, Delhi, Noida and across Delhi NCR.
-                  </div>
+                <label className="space-y-2 text-sm font-semibold text-gray-300">
+                  Your name <span className="text-yellow-400">*</span>
+                  <input
+                    name="name"
+                    type="text"
+                    autoComplete="name"
+                    placeholder="e.g. Aditi Sharma"
+                    required={formStep === 1}
+                    className="w-full rounded-xl border border-white/15 bg-[#0d100f] px-4 py-3.5 text-white shadow-sm outline-none transition placeholder:text-gray-600 hover:border-white/25 focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10"
+                  />
+                </label>
+                <label className="space-y-2 text-sm font-semibold text-gray-300">
+                  Event date
+                  <input
+                    name="eventDate"
+                    type="date"
+                    className="w-full rounded-xl border border-white/15 bg-[#0d100f] px-4 py-3.5 text-white shadow-sm outline-none transition [color-scheme:dark] hover:border-white/25 focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10"
+                  />
+                  <span className="block text-xs font-normal text-gray-500">Optional if not confirmed yet.</span>
+                </label>
+                <label className="space-y-2 text-sm font-semibold text-gray-300 sm:col-span-2">
+                  Event location <span className="text-yellow-400">*</span>
+                  <input
+                    name="location"
+                    type="text"
+                    autoComplete="address-level2"
+                    placeholder="City, venue or area"
+                    required={formStep === 1}
+                    className="w-full rounded-xl border border-white/15 bg-[#0d100f] px-4 py-3.5 text-white shadow-sm outline-none transition placeholder:text-gray-600 hover:border-white/25 focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10"
+                  />
+                </label>
+                <div className="rounded-xl border border-yellow-400/15 bg-yellow-400/[0.06] px-4 py-3 text-sm leading-6 text-yellow-100 sm:col-span-2">
+                  <MapPin className="mr-2 inline h-4 w-4 text-yellow-300" />
+                  Serving Gurugram, Delhi, Noida and across Delhi NCR.
+                </div>
               </div>
 
               <div style={{ display: formStep === 2 ? 'block' : 'none' }}>
-                  <fieldset>
-                    <legend className="text-sm font-semibold text-gray-300">
-                      What do you need for your event? <span className="text-yellow-400">*</span>
-                    </legend>
-                    <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
-                      {[
-                        { label: 'LED screen / wall', icon: Monitor },
-                        { label: 'Sound / PA', icon: Music2 },
-                        { label: 'AV / projector', icon: Presentation },
-                        { label: 'LED TV', icon: Tv },
-                        { label: 'Stage setup', icon: Sparkles },
-                        { label: 'Multiple services', icon: Check },
-                      ].map(({ label, icon: Icon }, index) => (
-                        <label key={label} className="group relative cursor-pointer">
-                          <input
-                            className="peer absolute inset-0 z-10 h-full w-full cursor-pointer opacity-0"
-                            type="radio"
-                            name="equipment"
-                            value={label}
-                            defaultChecked={index === 0}
-                            required={formStep === 2}
-                          />
-                          <span className="flex min-h-24 flex-col items-start justify-between rounded-2xl border border-white/10 bg-[#0d100f] p-4 text-gray-300 shadow-sm transition group-hover:border-white/25 peer-checked:border-yellow-400/70 peer-checked:bg-yellow-400/[0.08] peer-checked:text-white peer-checked:ring-2 peer-checked:ring-yellow-400/15 peer-focus-visible:ring-2 peer-focus-visible:ring-yellow-400">
-                            <Icon className="h-5 w-5 text-yellow-400" />
-                            <span className="mt-3 text-sm font-semibold">{label}</span>
-                          </span>
-                        </label>
-                      ))}
-                    </div>
-                  </fieldset>
+                <fieldset>
+                  <legend className="text-sm font-semibold text-gray-300">
+                    What do you need for your event? <span className="text-yellow-400">*</span>
+                  </legend>
+                  <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                    {[
+                      { label: 'LED screen / wall', icon: Monitor },
+                      { label: 'Sound / PA', icon: Music2 },
+                      { label: 'AV / projector', icon: Presentation },
+                      { label: 'LED TV', icon: Tv },
+                      { label: 'Stage setup', icon: Sparkles },
+                      { label: 'Multiple services', icon: Check },
+                    ].map(({ label, icon: Icon }, index) => (
+                      <label key={label} className="group relative cursor-pointer">
+                        <input
+                          className="peer absolute inset-0 z-10 h-full w-full cursor-pointer opacity-0"
+                          type="radio"
+                          name="equipment"
+                          value={label}
+                          defaultChecked={index === 0}
+                          required={formStep === 2}
+                        />
+                        <span className="flex min-h-24 flex-col items-start justify-between rounded-2xl border border-white/10 bg-[#0d100f] p-4 text-gray-300 shadow-sm transition group-hover:border-white/25 peer-checked:border-yellow-400/70 peer-checked:bg-yellow-400/[0.08] peer-checked:text-white peer-checked:ring-2 peer-checked:ring-yellow-400/15 peer-focus-visible:ring-2 peer-focus-visible:ring-yellow-400">
+                          <Icon className="h-5 w-5 text-yellow-400" />
+                          <span className="mt-3 text-sm font-semibold">{label}</span>
+                        </span>
+                      </label>
+                    ))}
+                  </div>
+                </fieldset>
 
-                  <label className="mt-6 block space-y-2 text-sm font-semibold text-gray-300">
-                    Anything else we should know? <span className="font-normal text-gray-500">(optional)</span>
-                    <textarea
-                      name="requirements"
-                      rows={4}
-                      placeholder="Event type, audience size, screen dimensions or other requirements..."
-                      className="w-full resize-y rounded-xl border border-white/15 bg-[#0d100f] px-4 py-3.5 text-white shadow-sm outline-none transition placeholder:text-gray-600 hover:border-white/25 focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10"
-                    />
-                  </label>
+                <label className="mt-6 block space-y-2 text-sm font-semibold text-gray-300">
+                  Anything else we should know? <span className="font-normal text-gray-500">(optional)</span>
+                  <textarea
+                    name="requirements"
+                    rows={4}
+                    placeholder="Event type, audience size, screen dimensions or other requirements..."
+                    className="w-full resize-y rounded-xl border border-white/15 bg-[#0d100f] px-4 py-3.5 text-white shadow-sm outline-none transition placeholder:text-gray-600 hover:border-white/25 focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10"
+                  />
+                </label>
               </div>
 
               <div className="mt-7 flex flex-col-reverse gap-3 border-t border-white/[0.08] pt-5 sm:flex-row sm:items-center sm:justify-between">

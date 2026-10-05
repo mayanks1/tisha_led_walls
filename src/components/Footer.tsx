@@ -49,7 +49,7 @@ export default function Footer() {
                 <Monitor className="w-6 h-6 text-black" />
               </div> */}
               <div>
-                  <img src="https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_160/v1763444919/logo_a6xmsh.png" alt="Tisha LED Walls" className="h-16 w-auto" />
+                <img src="https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_160/v1763444919/logo_a6xmsh.png" alt="Tisha LED Walls" className="h-16 w-auto" />
               </div>
               <div>
                 <div className="text-xl font-bold text-white">Tisha LED Walls</div>
@@ -57,7 +57,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm md:text-base text-gray-400 mb-5 md:mb-6 leading-relaxed">
-              Transform your events with state-of-the-art LED screen rentals. Creating unforgettable visual experiences across Gurgaon & Delhi NCR.
+              Transform your events with state-of-the-art LED screen rentals. Serving Gurugram, Delhi, Noida, and across Delhi NCR.
             </p>
             <div className="flex gap-4">
               <a
@@ -123,7 +123,7 @@ export default function Footer() {
                 <Phone className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-1" />
                 <div className="min-w-0">
                   <a href="tel:+917703948857" className="text-sm md:text-base text-gray-400 hover:text-yellow-400 transition-colors">
-                    +91 77039 48857
+                    +91 7703948857
                   </a>
                 </div>
               </li>
@@ -138,9 +138,9 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-1" />
                 <div className="min-w-0">
-                  <p className="text-sm md:text-base text-gray-400 break-words">
-                     928, Jharsa Village, Sector 39, Gurugram, Haryana (122003)
-                  </p>
+                  <a href="https://maps.google.com/?q=28.4595,77.0266" target="_blank" rel="noreferrer" className="text-sm md:text-base text-gray-400 break-words hover:text-yellow-400 transition-colors">
+                    928, Jharsa Village, Sector 39, Gurugram, Haryana 122003
+                  </a>
                 </div>
               </li>
             </ul>

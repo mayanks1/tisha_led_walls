@@ -41,7 +41,7 @@ export default function About() {
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Tisha LED Walls specializes in providing state-of-the-art LED screen rentals for all types of events.
-            From intimate gatherings to grand celebrations, we transform spaces into immersive visual experiences.
+            Whether you need a massive outdoor display or a high-resolution indoor LED wall on rent in Gurgaon, we transform spaces into immersive visual experiences.
           </p>
         </div>
 
