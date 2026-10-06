@@ -8,13 +8,20 @@ export default function Footer() {
     window.open(`https://wa.me/917703948857?text=${message}`, '_blank');
   };
   const services = [
-    { name: 'LED Screen on Rent', id: 'service-led-screen-on-rent' },
-    { name: 'Sound System on Rent', id: 'service-sound-system-on-rent' },
-    { name: 'PA System on Rent', id: 'service-pa-system-on-rent' },
-    { name: 'AV System on Rent', id: 'service-av-system-on-rent' },
-    { name: 'Projector on Rent', id: 'service-projector-on-rent' },
-    { name: 'LED TV on Rent', id: 'service-led-tv-on-rent' },
-    { name: 'Stage on Rent', id: 'service-stage-on-rent' }
+    { name: 'LED Wall Rental in Gurgaon', href: '/led-wall-rental-gurgaon' },
+    { name: 'LED Screen on Rent', href: '/led-screen-rental-gurgaon' },
+    { name: 'LED TV & Standee on Rent', href: '/led-tv-standee-rental-gurgaon' },
+    { name: 'Stage Setup in Gurgaon', href: '/stage-setup-gurgaon' },
+    { name: 'DJ Services in Gurgaon', href: '/dj-services-gurgaon' },
+    { name: 'Live Band for Events', href: '/live-band-gurgaon' },
+    { name: 'Event Decoration', href: '/event-decoration-gurgaon' },
+    { name: 'Event Services', href: '/event-services-gurgaon' },
+    { name: 'Sound System on Rent', href: '/#service-sound-system-on-rent' },
+    { name: 'PA System on Rent', href: '/#service-pa-system-on-rent' },
+    { name: 'AV System on Rent', href: '/#service-av-system-on-rent' },
+    { name: 'Projector on Rent', href: '/#service-projector-on-rent' },
+    { name: 'LED TV on Rent', href: '/#service-led-tv-on-rent' },
+    { name: 'Stage on Rent', href: '/#service-stage-on-rent' }
   ];
 
   return (
@@ -104,9 +111,9 @@ export default function Footer() {
             <h3 className="text-white font-bold text-base md:text-lg mb-4 md:mb-6">Our Services</h3>
             <ul className="space-y-2 md:space-y-3">
               {services.map((service) => (
-                <li key={service.id}>
+                <li key={service.href}>
                   <Link
-                    to={`/#${service.id}`}
+                    to={service.href}
                     className="text-sm md:text-base text-gray-400 hover:text-yellow-400 transition-colors"
                   >
                     {service.name}

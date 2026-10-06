@@ -1,4 +1,5 @@
 import { MessageCircle, Sparkles } from 'lucide-react';
+import { getHighQualityImageUrl } from '../data/seoPages';
 
 export default function Hero() {
   const handleWhatsAppClick = () => {
@@ -11,7 +12,10 @@ export default function Hero() {
 
       <div className="absolute inset-0 mt-[-120px]">
         <img
-          src="https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_1600/v1763445163/1_rydru9.jpg"
+          src={getHighQualityImageUrl(
+            'https://res.cloudinary.com/dcfouzaii/image/upload/v1763445163/1_rydru9.jpg',
+            1800
+          )}
           alt="LED wall lighting up a live event stage"
           className="h-full w-full object-cover"
           fetchPriority="high"
@@ -28,17 +32,15 @@ export default function Hero() {
         </div>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-white">LED Screen Rental</span>
-          <br />
+          <span className="text-white">LED Wall &amp; LED Screen Rental</span>
+          {' '}
           <span className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-transparent bg-clip-text animate-shimmer">
-            in Gurugram And Across Delhi NCR.
+            in Gurgaon
           </span>
-          <br />
-          {/* <span className="text-white">in Gurugram</span> */}
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Create unforgettable experiences with our state-of-the-art LED wall rentals. Perfect for weddings, corporate events, concerts, and celebrations.
+          LED wall and screen rentals for weddings, corporate events, concerts and celebrations, with professional installation and on-site technical support.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

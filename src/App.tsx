@@ -8,34 +8,111 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import SeoLandingPage from './components/SeoLandingPage';
 import { useEffect } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Link, Route, Routes, useLocation } from 'react-router-dom';
+import { getHighQualityImageUrl, homeSeo, seoPages } from './data/seoPages';
+
+const contactSeo = {
+  title: 'Contact Tisha LED Walls in Gurugram | Enquire Today',
+  description:
+    'Contact Tisha LED Walls to enquire about LED wall, screen and event equipment rentals in Gurugram. Call, email or send an event enquiry on WhatsApp.',
+  h1: 'Contact Tisha LED Walls in Gurugram',
+};
+
+const notFoundSeo = {
+  title: 'Page Not Found | Tisha LED Walls',
+  description: 'The page you requested could not be found.',
+};
 
 function App() {
   const { pathname, hash, key } = useLocation();
-  const isContactPage = pathname === '/contact';
+  const normalizedPath = pathname.replace(/\/+$/, '') || '/';
+  const isContactPage = normalizedPath === '/contact';
+  const isHomePage = normalizedPath === '/';
+  const currentSeoPage = seoPages.find((page) => normalizedPath === `/${page.slug}`);
 
   useEffect(() => {
-    const title = isContactPage
-      ? 'Contact Tisha LED Walls in Gurugram | LED Rentals'
-      : 'LED Screen Rental in Gurugram | Tisha LED Walls';
-    const description = isContactPage
-      ? 'Contact Tisha LED Walls for LED screens & AV rentals in Gurugram. Call or WhatsApp for a quote.'
-      : 'Premium LED screen rental & AV setup in Gurugram. Professional event displays for corporate events, weddings, rallies, and live shows.';
-
-    document.title = title;
-    document.querySelector('meta[name="description"]')?.setAttribute('content', description);
-    document.querySelector('link[rel="canonical"]')?.setAttribute(
-      'href',
-      `https://tishaledwalls.pages.dev${isContactPage ? '/contact' : '/'}`
-    );
-    document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
-    document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
-    document.querySelector('meta[property="og:url"]')?.setAttribute(
+    const page = isHomePage ? homeSeo : isContactPage ? contactSeo : currentSeoPage ?? notFoundSeo;
+    const pageUrl = `https://tishaledwalls.pages.dev${normalizedPath === '/' ? '/' : normalizedPath}`;
+    const imageUrl =
+      getHighQualityImageUrl(
+        currentSeoPage?.imageUrl ??
+          'https://res.cloudinary.com/dcfouzaii/image/upload/v1763445163/1_rydru9.jpg',
+        1200
+      );
+    const imageAlt = currentSeoPage?.imageAlt ?? 'LED wall lighting up an event stage';
+    document.title = page.title;
+    document.querySelector('meta[name="description"]')?.setAttribute('content', page.description);
+    document.querySelector('link[rel="canonical"]')?.setAttribute('href', pageUrl);
+    document.querySelector('meta[name="robots"]')?.setAttribute(
       'content',
-      `https://tishaledwalls.pages.dev${isContactPage ? '/contact' : '/'}`
+      currentSeoPage || isHomePage || isContactPage ? 'index, follow' : 'noindex, follow'
     );
-  }, [isContactPage]);
+    document.querySelector('meta[property="og:title"]')?.setAttribute('content', page.title);
+    document.querySelector('meta[property="og:description"]')?.setAttribute('content', page.description);
+    document.querySelector('meta[property="og:url"]')?.setAttribute('content', pageUrl);
+    document.querySelector('meta[name="twitter:title"]')?.setAttribute('content', page.title);
+    document.querySelector('meta[name="twitter:description"]')?.setAttribute('content', page.description);
+    document.querySelector('meta[name="twitter:url"]')?.setAttribute('content', pageUrl);
+    document.querySelector('meta[property="og:image"]')?.setAttribute('content', imageUrl);
+    document.querySelector('meta[property="og:image:alt"]')?.setAttribute('content', imageAlt);
+    document.querySelector('meta[name="twitter:image"]')?.setAttribute('content', imageUrl);
+    document.querySelector('meta[name="twitter:image:alt"]')?.setAttribute('content', imageAlt);
+
+    const structuredData = currentSeoPage
+      ? [
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: currentSeoPage.serviceType,
+            description: currentSeoPage.description,
+            image: getHighQualityImageUrl(currentSeoPage.imageUrl, 1200),
+            url: pageUrl,
+            provider: { '@id': 'https://tishaledwalls.pages.dev/#business' },
+            areaServed: ['Gurugram', 'Delhi', 'Noida', 'Delhi NCR'],
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://tishaledwalls.pages.dev/' },
+              { '@type': 'ListItem', position: 2, name: currentSeoPage.h1, item: pageUrl },
+            ],
+          },
+        ]
+      : isHomePage || isContactPage
+        ? [
+            {
+              '@context': 'https://schema.org',
+              '@type': isContactPage ? 'ContactPage' : 'WebPage',
+              name: page.title,
+              description: page.description,
+              url: pageUrl,
+              isPartOf: { '@id': 'https://tishaledwalls.pages.dev/#website' },
+            },
+            ...(isContactPage
+              ? [{
+                  '@context': 'https://schema.org',
+                  '@type': 'BreadcrumbList',
+                  itemListElement: [
+                    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://tishaledwalls.pages.dev/' },
+                    { '@type': 'ListItem', position: 2, name: 'Contact', item: pageUrl },
+                  ],
+                }]
+              : []),
+          ]
+        : [];
+
+    let schemaScript = document.querySelector<HTMLScriptElement>('#page-structured-data');
+    if (!schemaScript) {
+      schemaScript = document.createElement('script');
+      schemaScript.id = 'page-structured-data';
+      schemaScript.type = 'application/ld+json';
+      document.head.append(schemaScript);
+    }
+    schemaScript.textContent = JSON.stringify(structuredData);
+  }, [currentSeoPage, isContactPage, isHomePage, normalizedPath]);
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => {
@@ -81,10 +158,7 @@ function App() {
                     Gurugram · Delhi NCR
                   </span>
                   <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-                    Let’s plan your next
-                    <span className="block bg-gradient-to-r from-yellow-200 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
-                      unforgettable event
-                    </span>
+                    Contact Tisha LED Walls in Gurugram
                   </h1>
                   <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-400 md:text-lg">
                     Tell us what you’re organising. Our event team will help you find the right LED, sound and stage setup.
@@ -92,6 +166,25 @@ function App() {
                 </div>
               </section>
               <Contact showHeading={false} />
+            </main>
+          }
+        />
+        {seoPages.map((page) => (
+          <Route
+            key={page.slug}
+            path={`/${page.slug}`}
+            element={<SeoLandingPage page={page} />}
+          />
+        ))}
+        <Route
+          path="*"
+          element={
+            <main className="min-h-screen bg-black px-4 pb-20 pt-40 text-center text-white">
+              <h1 className="text-4xl font-bold">Page not found</h1>
+              <p className="mt-4 text-gray-300">The page you requested could not be found.</p>
+              <Link to="/" className="mt-6 inline-block text-yellow-300 underline underline-offset-4">
+                Return to the homepage
+              </Link>
             </main>
           }
         />

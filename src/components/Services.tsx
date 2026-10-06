@@ -1,6 +1,80 @@
-import { Monitor, Heart, Briefcase, Music, PartyPopper, Building2, Check } from 'lucide-react';
+import {
+  ArrowUpRight,
+  AudioLines,
+  Briefcase,
+  Building2,
+  Check,
+  Heart,
+  Monitor,
+  Music,
+  PartyPopper,
+  Sparkles,
+  Tv,
+} from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { getHighQualityImageUrl } from '../data/seoPages';
 
 export default function Services() {
+  const featuredService = {
+    href: '/led-wall-rental-gurgaon',
+    img: getHighQualityImageUrl(
+      'https://res.cloudinary.com/dcfouzaii/image/upload/v1763445163/1_rydru9.jpg',
+      1600
+    ),
+  };
+
+  const serviceLinks = [
+    {
+      href: '/led-screen-rental-gurgaon',
+      label: 'LED Screen on Rent',
+      description: 'Screens for presentations and live event viewing.',
+      icon: Tv,
+      accent: 'text-sky-300 bg-sky-400/10 border-sky-300/15',
+    },
+    {
+      href: '/led-tv-standee-rental-gurgaon',
+      label: 'LED TV & Standee Rental',
+      description: 'Standalone displays for event and presentation use.',
+      icon: Tv,
+      accent: 'text-cyan-300 bg-cyan-400/10 border-cyan-300/15',
+    },
+    {
+      href: '/stage-setup-gurgaon',
+      label: 'Stage Setup',
+      description: 'Stage rentals planned around your venue and event.',
+      icon: Sparkles,
+      accent: 'text-amber-300 bg-amber-400/10 border-amber-300/15',
+    },
+    {
+      href: '/dj-services-gurgaon',
+      label: 'DJ Services',
+      description: 'Music and sound requirements for your celebration.',
+      icon: AudioLines,
+      accent: 'text-fuchsia-300 bg-fuchsia-400/10 border-fuchsia-300/15',
+    },
+    {
+      href: '/live-band-gurgaon',
+      label: 'Live Band',
+      description: 'Live music for weddings and event programmes.',
+      icon: Music,
+      accent: 'text-rose-300 bg-rose-400/10 border-rose-300/15',
+    },
+    {
+      href: '/event-decoration-gurgaon',
+      label: 'Event Decoration',
+      description: 'Discuss the stage, backdrop and event setting.',
+      icon: PartyPopper,
+      accent: 'text-emerald-300 bg-emerald-400/10 border-emerald-300/15',
+    },
+    {
+      href: '/event-services-gurgaon',
+      label: 'All Event Services',
+      description: 'Bring event equipment and services together.',
+      icon: Building2,
+      accent: 'text-violet-300 bg-violet-400/10 border-violet-300/15',
+    },
+  ];
+
   const handleServiceClick = (serviceName: string) => {
     const message = encodeURIComponent(
       `Hi Tisha LED Walls, I want to book ${serviceName.replace(/\s+on\s+rent/i, '')}.`
@@ -45,7 +119,7 @@ export default function Services() {
     {
       // size: 'custom sizes',
       img:'https://res.cloudinary.com/dcfouzaii/image/upload/v1776422241/PLASMA_TV_uregnc.jpg',
-      description: 'LED TV on rent',
+      description: 'LED TV / Standee on rent',
       price: 'Book Now'
     },
     {
@@ -75,20 +149,162 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-black relative overflow-hidden">
+    <section id="services" className="relative overflow-hidden bg-[#080a09] py-20 sm:py-24">
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-yellow-500 rounded-full filter blur-[150px] animate-pulse"></div>
+        <div className="absolute -left-40 top-40 h-96 w-96 rounded-full bg-yellow-500 blur-[150px]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full mb-4">
-            <span className="text-yellow-400 text-sm font-semibold">Our Services</span>
+        <div className="mb-10 flex flex-col gap-5 md:mb-12 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-3xl">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-yellow-400/20 bg-yellow-400/[0.07] px-4 py-2">
+              <span className="h-2 w-2 rounded-full bg-yellow-400 shadow-[0_0_12px_rgba(250,204,21,0.8)]" />
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-yellow-300">Event rentals &amp; production</span>
+            </div>
+            <h2 className="text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl">
+              LED Wall Rental in Gurgaon
+              <span className="mt-1 block bg-gradient-to-r from-yellow-200 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
+                Build the rest around it.
+              </span>
+            </h2>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            LED Wall on Rent in Gurgaon
-            <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-transparent bg-clip-text"> & Event Rentals</span>
-          </h2>
+          <p className="max-w-md text-base leading-7 text-gray-400 md:pb-1">
+            LED wall rental is our speciality. Add the stage, sound or event support your occasion needs.
+          </p>
+        </div>
+
+        <nav aria-label="Event services" className="mb-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+          <Link
+            to={featuredService.href}
+            className="group relative isolate flex min-h-[360px] flex-col justify-between overflow-hidden rounded-3xl border border-yellow-300/30 bg-[#11120f] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.32)] transition duration-300 hover:-translate-y-1 hover:border-yellow-300/60 hover:shadow-[0_30px_90px_rgba(234,179,8,0.13)] sm:col-span-2 sm:p-8 lg:min-h-[400px] lg:col-span-2"
+          >
+            <img
+              src={featuredService.img}
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 z-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+              loading="lazy"
+              decoding="async"
+            />
+            <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+            <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-black/45 via-black/20 to-transparent" />
+
+            <div className="relative z-20 flex items-start justify-between gap-4">
+              <span className="inline-flex items-center gap-2 rounded-full border border-yellow-200/20 bg-black/35 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-yellow-200 backdrop-blur-md">
+                <Monitor className="h-4 w-4" />
+                Our primary service
+              </span>
+              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-black/25 text-white backdrop-blur-md transition group-hover:border-yellow-300 group-hover:bg-yellow-400 group-hover:text-black">
+                <ArrowUpRight className="h-5 w-5" />
+              </span>
+            </div>
+
+            <div className="relative z-20 max-w-xl">
+              <p className="mb-3 text-sm font-medium text-yellow-200">For weddings, corporate events &amp; live shows</p>
+              <h3 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Make the screen
+                <span className="mt-1 block text-yellow-300">the moment.</span>
+              </h3>
+              <p className="mt-4 max-w-lg text-sm leading-6 text-gray-200 sm:text-base">
+                Event-ready displays, professional installation and on-site technical support.
+              </p>
+              <span className="mt-6 inline-flex items-center gap-2 font-semibold text-white">
+                Explore LED wall rentals
+                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </span>
+            </div>
+          </Link>
+
+          <div className="grid gap-4 sm:col-span-2 sm:grid-cols-2 lg:grid-rows-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-5">
+            {serviceLinks
+              .filter((service) =>
+                ['/led-screen-rental-gurgaon', '/led-tv-standee-rental-gurgaon'].includes(service.href)
+              )
+              .map((service) => {
+                const Icon = service.icon;
+                return (
+                  <Link
+                    key={service.href}
+                    to={service.href}
+                    className="group relative flex min-h-[172px] flex-col justify-between overflow-hidden rounded-2xl border border-white/[0.09] bg-gradient-to-br from-white/[0.065] to-white/[0.02] p-5 transition duration-300 hover:-translate-y-1 hover:border-yellow-300/35 hover:bg-white/[0.07] sm:min-h-[190px] sm:p-6 lg:min-h-0"
+                  >
+                    <span className={`flex h-11 w-11 items-center justify-center rounded-xl border ${service.accent}`}>
+                      <Icon className="h-5 w-5" />
+                    </span>
+                    <span className="mt-5 flex items-end justify-between gap-3">
+                      <span>
+                        <span className="block text-lg font-semibold text-white">{service.label}</span>
+                        <span className="mt-1.5 block text-sm leading-5 text-gray-400">{service.description}</span>
+                      </span>
+                      <ArrowUpRight className="mb-0.5 h-4 w-4 shrink-0 text-gray-500 transition group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-yellow-300" />
+                    </span>
+                  </Link>
+                );
+              })}
+            {serviceLinks
+              .filter((service) => service.href === '/stage-setup-gurgaon')
+              .map((service) => {
+                const Icon = service.icon;
+                return (
+                  <Link
+                    key={service.href}
+                    to={service.href}
+                    className="group relative flex min-h-[172px] flex-col justify-between overflow-hidden rounded-2xl border border-white/[0.09] bg-gradient-to-br from-white/[0.065] to-white/[0.02] p-5 transition duration-300 hover:-translate-y-1 hover:border-yellow-300/35 hover:bg-white/[0.07] sm:col-span-2 sm:min-h-[190px] sm:flex-row sm:items-center sm:justify-start sm:gap-6 sm:p-6 lg:min-h-0"
+                  >
+                    <span className={`flex h-11 w-11 items-center justify-center rounded-xl border ${service.accent}`}>
+                      <Icon className="h-5 w-5" />
+                    </span>
+                    <span className="mt-5 flex items-end justify-between gap-3 sm:mt-0 sm:flex-1">
+                      <span>
+                        <span className="block text-lg font-semibold text-white">{service.label}</span>
+                        <span className="mt-1.5 block text-sm leading-5 text-gray-400">{service.description}</span>
+                      </span>
+                      <ArrowUpRight className="mb-0.5 h-4 w-4 shrink-0 text-gray-500 transition group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-yellow-300" />
+                    </span>
+                  </Link>
+                );
+              })}
+          </div>
+
+          <div className="grid items-start gap-4 sm:col-span-2 sm:grid-cols-2 lg:col-span-4 lg:grid-cols-4 lg:gap-5">
+          {serviceLinks
+            .filter((service) =>
+              ![
+                '/led-screen-rental-gurgaon',
+                '/led-tv-standee-rental-gurgaon',
+                '/stage-setup-gurgaon',
+              ].includes(service.href)
+            )
+            .map((service) => {
+            const Icon = service.icon;
+            return (
+              <Link
+                key={service.href}
+                to={service.href}
+                className="group relative flex min-h-[172px] flex-col justify-between overflow-hidden rounded-2xl border border-white/[0.09] bg-gradient-to-br from-white/[0.065] to-white/[0.02] p-5 transition duration-300 hover:-translate-y-1 hover:border-yellow-300/35 hover:bg-white/[0.07] sm:min-h-[190px] sm:p-6"
+              >
+                <span className={`flex h-11 w-11 items-center justify-center rounded-xl border ${service.accent}`}>
+                  <Icon className="h-5 w-5" />
+                </span>
+                <span className="mt-5 flex items-end justify-between gap-3">
+                  <span>
+                    <span className="block text-lg font-semibold text-white">{service.label}</span>
+                    <span className="mt-1.5 block text-sm leading-5 text-gray-400">{service.description}</span>
+                  </span>
+                  <ArrowUpRight className="mb-0.5 h-4 w-4 shrink-0 text-gray-500 transition group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-yellow-300" />
+                </span>
+              </Link>
+            );
+          })}
+          </div>
+        </nav>
+
+        <div className="mb-12 flex flex-col gap-2 border-b border-white/10 pb-5 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-yellow-400">Equipment for your event</p>
+            <h3 className="mt-2 text-2xl font-bold text-white sm:text-3xl">Popular rentals</h3>
+          </div>
+          <p className="max-w-md text-sm leading-6 text-gray-400">Select an item to enquire. We’ll help you check the details for your event.</p>
         </div>
 
         <div className="mb-20">
@@ -105,7 +321,7 @@ export default function Services() {
               >
                 <div className="text-3xl font-bold text-yellow-400 mb-3">
                   <img
-                    src={item.img.replace('/upload/', '/upload/f_auto,q_auto,w_800/')}
+                    src={item.img.replace('/upload/', '/upload/f_auto,q_90,w_1000,c_limit/')}
                     alt={item.description}
                     className="w-full h-28 sm:h-36 md:h-48 object-cover"
                     loading="lazy"
@@ -126,7 +342,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="mb-20">
+        <div id="events-we-serve" className="mb-20 scroll-mt-24">
           <h3 className="text-3xl font-bold text-white text-center mb-12">Events We Serve</h3>
           <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {eventTypes.map((event, index) => {
