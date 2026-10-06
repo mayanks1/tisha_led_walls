@@ -12,6 +12,7 @@ import SeoLandingPage from './components/SeoLandingPage';
 import { useEffect } from 'react';
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
 import { getHighQualityImageUrl, homeSeo, seoPages } from './data/seoPages';
+// import { contactPageSections } from './data/contactPage';
 
 const contactSeo = {
   title: 'Contact Tisha LED Walls in Gurugram | Enquire Today',
@@ -166,6 +167,26 @@ function App() {
                 </div>
               </section>
               <Contact showHeading={false} />
+              {/* <section
+                aria-label="Contact and event enquiry information"
+                className="bg-[#080b0a] px-4 pb-16 text-white sm:px-6 sm:pb-20"
+              >
+                <div className="mx-auto max-w-7xl">
+                  <div className="grid gap-5 md:grid-cols-2">
+                    {contactPageSections.map((section) => (
+                      <article
+                        key={section.heading}
+                        className="rounded-3xl border border-white/10 bg-white/[0.035] p-6 sm:p-8"
+                      >
+                        <h2 className="text-xl font-bold tracking-tight sm:text-2xl">{section.heading}</h2>
+                        <div className="mt-4 space-y-4 text-sm leading-7 text-gray-300 sm:text-base">
+                          {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </div>
+              </section> */}
             </main>
           }
         />

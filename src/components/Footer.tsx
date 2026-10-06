@@ -20,7 +20,7 @@ export default function Footer() {
     { name: 'PA System on Rent', href: '/#service-pa-system-on-rent' },
     { name: 'AV System on Rent', href: '/#service-av-system-on-rent' },
     { name: 'Projector on Rent', href: '/#service-projector-on-rent' },
-    { name: 'LED TV on Rent', href: '/#service-led-tv-on-rent' },
+    { name: 'LED TV & Standee on Rent', href: '/#service-led-tv-on-rent' },
     { name: 'Stage on Rent', href: '/#service-stage-on-rent' }
   ];
 

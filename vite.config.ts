@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 import type { Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import { getHighQualityImageUrl, homeSeo, seoPages } from './src/data/seoPages';
+import { contactPageSections } from './src/data/contactPage';
 
 function contactPage(): Plugin {
   let outputDirectory: string;
@@ -31,15 +32,7 @@ function contactPage(): Plugin {
         h1: 'Contact Tisha LED Walls in Gurugram',
         intro:
           'Tell us about your event date, venue and equipment requirements. Contact Tisha LED Walls to discuss LED wall, LED screen, stage and other event rental enquiries.',
-        sections: [
-          {
-            heading: 'Get in touch about your event',
-            paragraphs: [
-              'Call +91 7703948857, email tishaledwalls@gmail.com or use the event enquiry form to share your date, location and requirements.',
-              'Tisha LED Walls serves Gurugram, Delhi, Noida and across Delhi NCR. Contact the team to confirm availability for your venue and event date.',
-            ],
-          },
-        ],
+        sections: contactPageSections,
       };
 
       type StaticPage = {

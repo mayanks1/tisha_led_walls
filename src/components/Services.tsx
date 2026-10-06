@@ -119,7 +119,8 @@ export default function Services() {
     {
       // size: 'custom sizes',
       img:'https://res.cloudinary.com/dcfouzaii/image/upload/v1776422241/PLASMA_TV_uregnc.jpg',
-      description: 'LED TV / Standee on rent',
+      id: 'service-led-tv-on-rent',
+      description: 'LED TV & Standee on rent',
       price: 'Book Now'
     },
     {
@@ -313,7 +314,7 @@ export default function Services() {
             {ledSizes.map((item, index) => (
               <button
                 key={index}
-                id={getServiceId(item.description)}
+                id={item.id ?? getServiceId(item.description)}
                 type="button"
                 onClick={() => handleServiceClick(item.description)}
                 aria-label={`Book ${item.description}`}
