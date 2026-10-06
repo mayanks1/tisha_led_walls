@@ -97,7 +97,7 @@ export default function SeoLandingPage({ page }: SeoLandingPageProps) {
             src={getHighQualityImageUrl(page.imageUrl)}
             alt={page.imageAlt}
             className="mt-10 aspect-[16/7] w-full rounded-2xl border border-white/10 object-cover"
-            style={{ objectPosition: page.imagePosition ?? 'center 65%' }}
+            style={{ objectPosition: page.imagePosition ?? 'center 75%' }}
             loading="eager"
             decoding="async"
             fetchPriority="high"

@@ -115,6 +115,7 @@ export const seoPages: SeoPage[] = [
     serviceType: 'LED screen rental',
     imageUrl: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763474549/IMG_4815_ypgfxe.jpg',
     imageAlt: 'Live sports broadcast on an LED screen',
+    imagePosition: 'center 50%',
     sections: [
       {
         heading: 'A screen rental for your event format',
@@ -316,8 +317,9 @@ export const seoPages: SeoPage[] = [
     intro:
       'If live music is part of your event in Gurgaon, contact Tisha LED Walls to discuss live band availability and the setup your venue requires.',
     serviceType: 'live band for events',
-    imageUrl: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763472679/IMG_4812_umt7jh.jpg',
+    imageUrl: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1791293169/HPAR_Live__Greenlit_Banquet_Concert_mznaxp.png',
     imageAlt: 'Live concert stage setup',
+    imagePosition: 'center 30%',
     sections: [
       {
         heading: 'Live music for your event programme',

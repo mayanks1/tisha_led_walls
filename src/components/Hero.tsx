@@ -40,7 +40,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-          LED wall and screen rentals for weddings, corporate events, concerts and celebrations, with professional installation and on-site technical support.
+          LED wall and screen rentals for weddings, corporate events, concerts, Political Rally and celebrations, with professional installation and on-site technical support.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
