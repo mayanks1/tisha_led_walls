@@ -1,0 +1,35 @@
+# Tisha LED Walls
+
+> Tisha LED Walls provides LED wall and LED screen rentals for events, with supporting event equipment and services in Gurugram and selected Delhi NCR locations.
+
+## Business
+
+- Website: https://tishaledwalls.pages.dev/
+- Primary service: LED wall rental and LED screen rental for events.
+- Additional enquiries: LED TV and standee rentals, stage setup, sound and PA systems, AV equipment, projector rentals, DJ services, live-band arrangements, and event decoration.
+- Service area: Gurugram (Gurgaon), Delhi, Noida, and across Delhi NCR. Confirm availability for the event venue and date.
+- Phone: +91 7703948857
+- Email: tishaledwalls@gmail.com
+- Address: 928, Jharsa Village, Sector 39, Gurugram, Haryana 122003, India
+
+## Main pages
+
+- [Home](https://tishaledwalls.pages.dev/): Overview of Tisha LED Walls and its event rental services.
+- [LED Wall Rental in Gurgaon](https://tishaledwalls.pages.dev/led-wall-rental-gurgaon): Modular LED wall rentals, event applications, setup support, and quote considerations.
+- [LED Screen Rental in Gurgaon](https://tishaledwalls.pages.dev/led-screen-rental-gurgaon): LED screen rentals for presentations, conferences, and live event viewing.
+- [LED TV and Standee Rental](https://tishaledwalls.pages.dev/led-tv-standee-rental-gurgaon): Enquiries for standalone LED TV and standee rentals.
+- [Stage Setup in Gurgaon](https://tishaledwalls.pages.dev/stage-setup-gurgaon): Stage rental and event setup enquiries.
+- [DJ Services in Gurgaon](https://tishaledwalls.pages.dev/dj-services-gurgaon): Sound System service enquiries for weddings, parties, political rally and corporate events.
+- [Live Band for Events in Gurgaon](https://tishaledwalls.pages.dev/live-band-gurgaon): Live music enquiries and related stage or sound requirements.
+- [Event Decoration in Gurgaon](https://tishaledwalls.pages.dev/event-decoration-gurgaon): Event, stage, and backdrop decoration enquiries.
+- [Event Services in Gurgaon](https://tishaledwalls.pages.dev/event-services-gurgaon): Overview of LED display rentals and supporting event services.
+- [Contact](https://tishaledwalls.pages.dev/contact): Contact details and event enquiry form.
+
+## Enquiries
+
+Share the event date, venue or area, event type, audience size, and equipment requirements when requesting availability or a quote. Rental configuration and cost depend on the event brief, equipment, duration, transportation, venue access, and setup requirements. Confirm service availability directly with the business.
+
+## More information
+
+- [XML sitemap](https://tishaledwalls.pages.dev/sitemap.xml)
+- [Robots.txt](https://tishaledwalls.pages.dev/robots.txt)
