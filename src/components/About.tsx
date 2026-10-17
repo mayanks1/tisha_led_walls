@@ -66,7 +66,7 @@ const eventTypes: EventType[] = [
 const reasons = [
   {
     title: 'Ultra HD 4K Clarity',
-    desc: 'P2.6, P2.9 & P3 high-refresh rate displays that look crisp to guests and flicker-free on cameras.'
+    desc: 'P2.9, P3 & P4 high-refresh rate displays that look crisp to guests and flicker-free on cameras.'
   },
   {
     title: '2-Hour Early Setup',

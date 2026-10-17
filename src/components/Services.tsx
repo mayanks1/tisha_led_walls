@@ -4,7 +4,9 @@ import {
   Briefcase,
   Building2,
   Check,
+  CheckCircle2,
   Heart,
+  MessageCircle,
   Monitor,
   Music,
   PartyPopper,
@@ -87,47 +89,61 @@ export default function Services() {
 
   const ledSizes = [
     {
-      // size: 'LED Screen on rent',
       img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1776421303/Led_screen_on_rent.jpg_adu3dq.jpg',
-      description: 'LED Screen on rent',
-      price: 'Book Now'
+      description: 'LED Screen on Rent',
+      badge: 'P3 / P4 4K Ultra HD',
+      subtitle: 'Modular indoor & outdoor screens with high-refresh video processors.',
+      price: 'Enquire on WhatsApp'
     },
     {
-      // size: '16ft x 10ft',
       img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1776421304/Sound_system_on_rent_zqtd1u.png',
-      description: 'Sound System on rent',
-      price: 'Book Now'
+      description: 'Sound System on Rent',
+      badge: 'Line Array & Heavy Bass',
+      subtitle: 'Concert-grade line array towers, dual subwoofers & live digital mixing.',
+      price: 'Enquire on WhatsApp'
     },
     {
-      // size: '24ft x 12ft',
       img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1776421306/pa_system_on_rent_crlkuo.png',
-      description: 'PA System on rent',
-      price: 'Book Now'
+      description: 'PA System on Rent',
+      badge: 'Wireless Speech Audio',
+      subtitle: 'Conference podium microphones, wireless lapels & crystal-clear PA audio.',
+      price: 'Enquire on WhatsApp'
     },
     {
-      // size: 'custom sizes',
       img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1776421306/av_system_on_rent_m3zqd8.png',
-      description: 'AV System on rent',
-      price: 'Book Now'
+      description: 'AV System on Rent',
+      badge: 'Seamless 4K Switching',
+      subtitle: 'Multi-camera feeds, presentation consoles & zero-latency video switching.',
+      price: 'Enquire on WhatsApp'
     },
     {
-      // size: 'custom sizes',
-      img:'https://res.cloudinary.com/dcfouzaii/image/upload/v1776421303/projector_on_rent_f3w2tk.png',
-      description: 'Projector on rent',
-      price: 'Book Now'
+      img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1776421303/projector_on_rent_f3w2tk.png',
+      description: 'Projector on Rent',
+      badge: 'High-Lumen Laser Display',
+      subtitle: 'High-brightness laser projectors with large motorized dropdown screens.',
+      price: 'Enquire on WhatsApp'
     },
     {
-      // size: 'custom sizes',
-      img:'https://res.cloudinary.com/dcfouzaii/image/upload/v1776422241/PLASMA_TV_uregnc.jpg',
+      img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1776422241/PLASMA_TV_uregnc.jpg',
       id: 'service-led-tv-on-rent',
-      description: 'LED TV & Standee on rent',
-      price: 'Book Now'
+      description: 'LED TV & Standee on Rent',
+      badge: '55"–75" Ultra HD Displays',
+      subtitle: 'Chrome floor standees for entrance branding, lobbies & executive booths.',
+      price: 'Enquire on WhatsApp'
     },
     {
-      // size: 'custom sizes',
-      img:'https://res.cloudinary.com/dcfouzaii/image/upload/v1776422240/stage_on_rent_rl6yc0.jpg',
-      description: 'Stage on rent',
-      price: 'Book Now'
+      img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1776422240/stage_on_rent_rl6yc0.jpg',
+      description: 'Stage Setup on Rent',
+      badge: 'Heavy-Duty Modular Stage',
+      subtitle: 'Carpeted stage risers, aluminum trussing, safety stairs & masking.',
+      price: 'Enquire on WhatsApp'
+    },
+    {
+      img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763472330/IMG_4809_rc8kcm.jpg',
+      description: 'DJ & Sound Setup on Rent',
+      badge: 'Pioneer Console & Party Rig',
+      subtitle: 'Pro DJ console, high-bass club speakers, moving lights & smoke effects.',
+      price: 'Enquire on WhatsApp'
     }
   ];
 
@@ -268,79 +284,144 @@ export default function Services() {
           </div>
 
           <div className="grid items-start gap-4 sm:col-span-2 sm:grid-cols-2 lg:col-span-4 lg:grid-cols-4 lg:gap-5">
-          {serviceLinks
-            .filter((service) =>
-              ![
-                '/led-screen-rental-gurgaon',
-                '/led-tv-standee-rental-gurgaon',
-                '/stage-setup-gurgaon',
-              ].includes(service.href)
-            )
-            .map((service) => {
-            const Icon = service.icon;
-            return (
-              <Link
-                key={service.href}
-                to={service.href}
-                className="group relative flex min-h-[172px] flex-col justify-between overflow-hidden rounded-2xl border border-white/[0.09] bg-gradient-to-br from-white/[0.065] to-white/[0.02] p-5 transition duration-300 hover:-translate-y-1 hover:border-yellow-300/35 hover:bg-white/[0.07] sm:min-h-[190px] sm:p-6"
-              >
-                <span className={`flex h-11 w-11 items-center justify-center rounded-xl border ${service.accent}`}>
-                  <Icon className="h-5 w-5" />
-                </span>
-                <span className="mt-5 flex items-end justify-between gap-3">
-                  <span>
-                    <span className="block text-lg font-semibold text-white">{service.label}</span>
-                    <span className="mt-1.5 block text-sm leading-5 text-gray-400">{service.description}</span>
-                  </span>
-                  <ArrowUpRight className="mb-0.5 h-4 w-4 shrink-0 text-gray-500 transition group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-yellow-300" />
-                </span>
-              </Link>
-            );
-          })}
+            {serviceLinks
+              .filter((service) =>
+                ![
+                  '/led-screen-rental-gurgaon',
+                  '/led-tv-standee-rental-gurgaon',
+                  '/stage-setup-gurgaon',
+                ].includes(service.href)
+              )
+              .map((service) => {
+                const Icon = service.icon;
+                return (
+                  <Link
+                    key={service.href}
+                    to={service.href}
+                    className="group relative flex min-h-[172px] flex-col justify-between overflow-hidden rounded-2xl border border-white/[0.09] bg-gradient-to-br from-white/[0.065] to-white/[0.02] p-5 transition duration-300 hover:-translate-y-1 hover:border-yellow-300/35 hover:bg-white/[0.07] sm:min-h-[190px] sm:p-6"
+                  >
+                    <span className={`flex h-11 w-11 items-center justify-center rounded-xl border ${service.accent}`}>
+                      <Icon className="h-5 w-5" />
+                    </span>
+                    <span className="mt-5 flex items-end justify-between gap-3">
+                      <span>
+                        <span className="block text-lg font-semibold text-white">{service.label}</span>
+                        <span className="mt-1.5 block text-sm leading-5 text-gray-400">{service.description}</span>
+                      </span>
+                      <ArrowUpRight className="mb-0.5 h-4 w-4 shrink-0 text-gray-500 transition group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-yellow-300" />
+                    </span>
+                  </Link>
+                );
+              })}
           </div>
         </nav>
 
-        <div className="mb-12 flex flex-col gap-2 border-b border-white/10 pb-5 sm:flex-row sm:items-end sm:justify-between">
+        {/* Royal Equipment for Your Event Section */}
+        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between border-b border-white/10 pb-5">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-yellow-400">Equipment for your event</p>
-            <h3 className="mt-2 text-2xl font-bold text-white sm:text-3xl">Popular rentals</h3>
+            <div className="inline-flex items-center gap-2 rounded-full border border-yellow-400/20 bg-yellow-400/[0.07] px-3 py-1 mb-2">
+              <Sparkles className="h-3 w-3 text-yellow-400" />
+              <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-yellow-300">
+                Premium Event Gear Inventory
+              </span>
+            </div>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+              Popular Event Gear on{' '}
+              <span className="bg-gradient-to-r from-yellow-200 via-yellow-400 to-amber-500 bg-clip-text text-transparent pb-1 inline-block">
+                Rent in Gurgaon
+              </span>
+            </h3>
           </div>
-          <p className="max-w-md text-sm leading-6 text-gray-400">Select an item to enquire. We’ll help you check the details for your event.</p>
+          <div className="flex flex-wrap items-center gap-3 text-xs">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-emerald-300 font-medium">
+              <CheckCircle2 className="h-3.5 w-3.5" />
+              2-Hour Early Setup
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-yellow-400/20 bg-yellow-400/10 px-3 py-1 text-yellow-300 font-medium">
+              <CheckCircle2 className="h-3.5 w-3.5" />
+              Dedicated On-Site Crew
+            </span>
+          </div>
         </div>
 
-        <div className="mb-20">
-          {/* <h3 className="text-3xl font-bold text-white text-center mb-12">Available Services</h3> */}
-          <div className="grid grid-cols-2 gap-3 md:gap-6 lg:grid-cols-4">
+        <div className="mb-14 sm:mb-16">
+          <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
             {ledSizes.map((item, index) => (
-              <button
+              <div
                 key={index}
                 id={item.id ?? getServiceId(item.description)}
-                type="button"
                 onClick={() => handleServiceClick(item.description)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    handleServiceClick(item.description);
+                  }
+                }}
                 aria-label={`Book ${item.description}`}
-                className="w-full min-w-0 scroll-mt-24 p-3 md:p-6 text-left bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-yellow-500/20 rounded-xl md:rounded-2xl hover:border-yellow-500/50 transition-all duration-300 group hover:scale-105 cursor-pointer"
+                className="group relative flex flex-col justify-between overflow-hidden rounded-2xl md:rounded-3xl border border-yellow-500/20 bg-gradient-to-b from-[#141715] via-[#0d100e] to-black p-3 sm:p-4 shadow-[0_15px_35px_rgba(0,0,0,0.6)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-yellow-400/50 hover:shadow-[0_20px_45px_rgba(250,204,21,0.14)] cursor-pointer"
               >
-                <div className="text-3xl font-bold text-yellow-400 mb-3">
+                {/* Royal Ambient Glow Accent */}
+                <div className="pointer-events-none absolute -top-12 -right-12 h-28 w-28 rounded-full bg-yellow-400/[0.08] blur-2xl transition duration-500 group-hover:bg-yellow-400/[0.22]" />
+
+                {/* Clean Unobstructed Media Graphic Container */}
+                <div className="relative overflow-hidden rounded-xl md:rounded-2xl border border-white/10 aspect-[16/11] mb-3 bg-black/50">
                   <img
-                    src={item.img.replace('/upload/', '/upload/f_auto,q_90,w_1000,c_limit/')}
+                    src={item.img.replace('/upload/', '/upload/f_auto,q_auto,w_800,c_limit/')}
                     alt={item.description}
-                    className="w-full h-28 sm:h-36 md:h-48 object-cover"
+                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                     loading="lazy"
                     decoding="async"
                   />
                 </div>
-                <p className="text-sm md:text-base text-gray-300 mb-4">{item.description}</p>
-                <div className="pt-4 border-t border-gray-700">
-                  <span className="text-yellow-500 font-semibold transition-all duration-200 group-hover:text-yellow-400">
-                    {item.price}
-                  </span>
+
+                {/* Card Content with Unobscured Badge */}
+                <div className="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div className="mb-2">
+                      <span className="inline-flex items-center gap-1 rounded-md border border-yellow-400/25 bg-yellow-400/[0.08] px-2 py-0.5 text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-yellow-300">
+                        <Sparkles className="h-2.5 w-2.5 text-yellow-400" />
+                        {item.badge}
+                      </span>
+                    </div>
+
+                    <h4 className="text-sm sm:text-base md:text-lg font-bold text-white transition duration-300 group-hover:text-yellow-200">
+                      {item.description}
+                    </h4>
+                    <p className="mt-1 text-xs text-gray-400 leading-relaxed line-clamp-2 hidden sm:block">
+                      {item.subtitle}
+                    </p>
+                  </div>
+
+                  {/* Royal Action CTA Bar */}
+                  <div className="mt-3 pt-2.5 sm:mt-4 sm:pt-3 border-t border-white/10 flex items-center justify-between">
+                    <span className="text-[11px] sm:text-xs font-semibold text-yellow-400 group-hover:text-yellow-300 transition flex items-center gap-1">
+                      <MessageCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-emerald-400" />
+                      Instant Quote
+                    </span>
+                    <span className="flex h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 text-black shadow-[0_0_12px_rgba(250,204,21,0.3)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(250,204,21,0.55)]">
+                      <ArrowUpRight className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+                    </span>
+                  </div>
                 </div>
-              </button>
+              </div>
             ))}
           </div>
-          <p className="text-center text-gray-400 mt-6 text-sm">
-            *Prices may vary based on duration, location, and additional requirements. Contact us for a detailed quote.
-          </p>
+
+          <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-3 rounded-2xl border border-white/5 bg-white/[0.02] px-4 py-3 text-xs text-gray-400">
+            <span className="flex items-center gap-2 text-center sm:text-left">
+              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+              Need custom trussing or multi-screen synchronized video? We customize to venue blueprints.
+            </span>
+            <a
+              href="https://wa.me/917703948857?text=Hi%20Tisha%20LED%20Walls%2C%20I%20need%20a%20custom%20setup%20quote."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-yellow-400 hover:text-yellow-300 underline underline-offset-4 shrink-0"
+            >
+              Consult Event Engineer →
+            </a>
+          </div>
         </div>
 
         <div id="events-we-serve" className="mb-12 sm:mb-14 scroll-mt-24">
