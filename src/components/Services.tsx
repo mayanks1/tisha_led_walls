@@ -175,15 +175,15 @@ export default function Services() {
       glow: 'rgba(244,63,94,0.35)',
       borderColor: 'border-pink-500/40',
       activeGradient: 'from-pink-500/20 via-rose-500/10 to-transparent',
-      tag: 'Royal Stage Backdrops',
-      tagline: 'Immersive Phera & Sangeet Visuals Tailored for Royal NCR Venues',
-      description: 'Ultra-high-definition P3 & P4 LED walls designed for grand bridal entries, live sangeet choreography, and varmala backdrops with zero camera flicker.',
+      tag: 'Wedding Stage & Sangeet LED Wall',
+      tagline: 'P3 & P4 Wedding LED Wall on Rent in Gurgaon & Sohna Road',
+      description: 'High-refresh (3840Hz) flicker-free stage backdrops for varmala entries, live sangeet choreography, and pre-wedding reels. Calibrated for professional 4K wedding videography with zero camera scanlines or moiré bars.',
       image: 'https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_1000/v1763360996/IMG_4793_gxxuqc.jpg',
-      location: 'Grand Banquets & Farmhouses, Gurugram',
-      screenSpec: 'P3 / P4 Ultra HD · Camera Flicker-Free',
-      audioSpec: 'JBL Line-Array Sound & Live Sangeet Microphones',
-      setupTime: 'Setup Completed 3 Hours Before Baarat',
-      badge: 'Most Popular for NCR Weddings'
+      location: 'Sohna Road Farmhouses & Grand Banquets, Gurugram',
+      screenSpec: 'P3 / P4 Ultra HD · 3840Hz Zero-Scanline IC',
+      audioSpec: 'JBL Dual Line-Array Sound & Shure Wireless Mics',
+      setupTime: 'Handed Over 3 Hours Before Baarat with Live Tech',
+      badge: 'Gurgaon Wedding Industry Benchmark'
     },
     {
       id: 'corporate',
@@ -194,15 +194,15 @@ export default function Services() {
       glow: 'rgba(59,130,246,0.35)',
       borderColor: 'border-blue-500/40',
       activeGradient: 'from-blue-500/20 via-indigo-500/10 to-transparent',
-      tag: 'Executive Keynotes & AV',
-      tagline: 'Dual Presentation Screens, Zero-Latency Video Switching & Crystal Audio',
-      description: 'Flawless 4K multi-screen visual projection, podium microphones, wireless lapels, and dedicated engineers present to switch presenter laptop feeds seamlessly.',
+      tag: 'Corporate Event AV & Presentation Screens',
+      tagline: 'Corporate P3 & P4 LED Screen & Dual Presentation Walls on Rent',
+      description: 'Zero-latency video switching for keynote decks, live hybrid conferences, and AGM summits across Cyber City, Golf Course Road, and Udyog Vihar. Instant HDMI/Type-C presenter switching with zero freeze.',
       image: 'https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_1000/v1763473380/IMG_4648_ic3pjf.jpg',
-      location: 'Cyber City, Golf Course Rd & Aerocity',
-      screenSpec: 'Dual 4K Seamless Video Presentation Walls',
-      audioSpec: 'Wireless Podium, Lapel Mics & Conference PA',
-      setupTime: 'Tested 4 Hours Prior with Redundant Backup',
-      badge: 'Cyber City Enterprise Favorite'
+      location: 'DLF Cyber City, Golf Course Road & Aerocity',
+      screenSpec: 'Dual P3 / P4 Seamless Video Walls & NovaStar VX1000',
+      audioSpec: 'Podium Gooseneck, Shure Wireless Lapels & Digital Mixer',
+      setupTime: 'Rehearsal-Ready 4 Hours Early with On-Site Engineer',
+      badge: 'Cyber Hub & Aerocity Corporate Choice'
     },
     {
       id: 'concerts',
@@ -213,15 +213,15 @@ export default function Services() {
       glow: 'rgba(168,85,247,0.35)',
       borderColor: 'border-purple-500/40',
       activeGradient: 'from-purple-500/20 via-violet-500/10 to-transparent',
-      tag: 'Live Bands & Stage Trussing',
-      tagline: 'High-Brightness Screens, Concert Stage Lighting & Live Band Line Arrays',
-      description: 'Massive high-brightness stage displays engineered for live musical performances, paired with live audio mixing, concert line-array sound towers, and synchronized stage beams.',
+      tag: 'Outdoor Concert & Live Music Stage',
+      tagline: 'Outdoor P3 & P4 LED Wall & Heavy-Duty Stage Truss Rental in NCR Arenas',
+      description: 'High-brightness 5,500+ nit daylight-visible outdoor LED screens built on heavy-duty aluminum box trussing. Engineered for college fests, live band concerts, and Punjabi music nights across Leisure Valley and NCR open grounds.',
       image: 'https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_1000/v1763361199/IMG_4794_ipv4ds.jpg',
-      location: 'Leisure Valley & Open-Air Arenas, NCR',
-      screenSpec: 'Daylight 6500-Nit High-Refresh Outdoor Displays',
-      audioSpec: 'Dual Line-Array Sound Towers & Subwoofers',
-      setupTime: 'Full Stage Trussing & Sound Check Handled',
-      badge: 'Live Shows & Music Festivals'
+      location: 'Leisure Valley, Expocentre & Open Arenas, NCR',
+      screenSpec: 'P3 / P4 Outdoor IP65 Waterproof · 5,500 Nit High-Bright',
+      audioSpec: 'JBL VRX Line-Array Towers, Dual 18" Subs & Stage Monitors',
+      setupTime: 'Engineered Truss Rigging & Sound Check 5 Hours Prior',
+      badge: 'Festivals, Live Bands & Open Arenas'
     },
     {
       id: 'parties',
@@ -232,15 +232,15 @@ export default function Services() {
       glow: 'rgba(250,204,21,0.35)',
       borderColor: 'border-yellow-500/40',
       activeGradient: 'from-amber-500/20 via-yellow-500/10 to-transparent',
-      tag: 'VIP Galas & DJ Nights',
-      tagline: 'Custom Stage Wraps, Dynamic Visuals & Party Atmosphere Lighting',
-      description: 'Custom-configured modular LED backdrops wrapped around DJ booths, accompanied by atmospheric moving heads, club sound, and interactive visuals for high-energy celebrations.',
+      tag: 'Cocktail Parties & Farmhouse DJ Setup',
+      tagline: 'DJ LED Backdrop & Club Lighting Setup for Farmhouse Galas',
+      description: 'Custom curved and modular LED screen backdrops wrapped behind DJ booths, paired with high-bass club sound and beam moving heads. Tailored for milestone birthdays, cocktail bashes, and anniversary parties in DLF Phase 1-5 and Chattarpur/Sohna Road farmhouses.',
       image: 'https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_1000/v1763445163/1_rydru9.jpg',
-      location: 'Private Farmhouses, Villas & Clubs',
-      screenSpec: 'Curved Modular LED Sizing & DJ Booth Wrap',
-      audioSpec: 'High-Wattage Party Bass & Moving Head Lights',
-      setupTime: 'Fast Discreet Setup with Dedicated Operator',
-      badge: 'VIP Birthday & Cocktail Galas'
+      location: 'DLF Phase 1-5, Chattarpur & Sohna Rd Farmhouses',
+      screenSpec: 'P3 & P4 Curved LED DJ Backdrop · Sound-Synced Visuals',
+      audioSpec: 'High-Bass Club Sound Rig, Moving Heads & Smoke Blasters',
+      setupTime: 'Discreet Fast Setup with Dedicated Console Operator',
+      badge: 'Boutique Farmhouses & Private Galas'
     },
     {
       id: 'conferences',
@@ -251,15 +251,15 @@ export default function Services() {
       glow: 'rgba(16,185,129,0.35)',
       borderColor: 'border-emerald-500/40',
       activeGradient: 'from-emerald-500/20 via-teal-500/10 to-transparent',
-      tag: 'Auditoriums & Seminars',
-      tagline: 'Ultra-Sharp Slide Readability, Multi-Room Sync & Speaker Displays',
-      description: 'Engineered for dense data, slide presentations, and panel discussions. Delivers ultra-sharp pixel pitch ensuring fine text and spreadsheets are readable from the very back row.',
+      tag: 'Auditorium Seminars & Annual Meets',
+      tagline: 'High-Resolution Conference P3 LED Screen on Rent for Auditoriums',
+      description: 'Fine-pitch LED screens calibrated for financial spreadsheets, medical charts, and speaker decks. Every attendee in the last row of hotel ballrooms and convention centers reads numbers and fine text with 1080p/4K sharpness.',
       image: 'https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_1000/v1763474549/IMG_4815_ypgfxe.jpg',
-      location: 'Auditoriums & Convention Halls, Gurugram',
-      screenSpec: 'Ultra-Clear Text & Slide Readability 4K Display',
-      audioSpec: 'Multi-Channel Audio Mixing & Q&A Roving Mics',
-      setupTime: 'Morning Rehearsal & Technician Present Throughout',
-      badge: 'Trusted by Event Planners'
+      location: 'Hotel Ballrooms & Convention Auditoriums, Gurugram',
+      screenSpec: 'P3 / P4 High-Clarity Display · True 16:9 Slide Ratio',
+      audioSpec: 'Roving Audience Q&A Mics, Stage Monitors & Line Out',
+      setupTime: 'Morning Dry Run Completed with Backup Switcher Live',
+      badge: '5-Star Ballrooms & Convention Centers'
     },
     {
       id: 'launches',
@@ -270,15 +270,15 @@ export default function Services() {
       glow: 'rgba(6,182,212,0.35)',
       borderColor: 'border-cyan-500/40',
       activeGradient: 'from-cyan-500/20 via-blue-500/10 to-transparent',
-      tag: 'High-Impact Brand Unveilings',
-      tagline: 'Dramatic Reveal Countdowns, Keynote Video Feeds & High-Impact Visuals',
-      description: 'Create theatrical product reveals with synchronized countdown graphics, dramatic stage lighting drops, and seamless 4K video feeds that captivate press and VIP attendees.',
+      tag: 'Brand Unveiling & Expo Stage Rig',
+      tagline: 'Flagship P3 & P4 Product Launch LED Screen & Stage Production in Gurgaon',
+      description: 'Large-format curved and flat video backdrops for automobile unveilings, luxury real estate launches, and tech expos. Synchronized reveal countdown graphics, cue-to-cue stage lighting drops, and multi-camera live video relays.',
       image: 'https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_90,w_1600/v1763473380/IMG_5370_eyb8qp.jpg',
-      location: 'Tech Parks, Malls & Automotive Hubs',
-      screenSpec: 'Flagship 4K Seamless Stage Backdrop Wall',
-      audioSpec: 'Cinematic Sound Impact & Video Sync Audio',
-      setupTime: 'Technical Cue Run-Throughs & Backup Switcher',
-      badge: 'High-Impact Media Launches'
+      location: 'Tech Hubs, Luxury Malls & Automotive Corridors',
+      screenSpec: 'P3 / P4 Curved & Flat Stage Wall · Ultra-Wide Aspect',
+      audioSpec: 'Concert-Grade PA, Boom Bass Drops & Redundant Video Feed',
+      setupTime: 'Full Show Cue Rehearsal Handled with Director Console',
+      badge: 'Automotive Unveilings & Tech Launches'
     }
   ];
 
@@ -556,16 +556,16 @@ export default function Services() {
           <div className="text-center mb-5 sm:mb-8">
             <div className="inline-flex items-center gap-1.5 rounded-full border border-yellow-400/25 bg-yellow-400/[0.08] px-3 py-1 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.18em] text-yellow-300 backdrop-blur-md mb-2 sm:mb-3">
               <Sparkles className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-yellow-400 animate-pulse" />
-              Tailored Visual &amp; Audio Experiences
+              Event LED Wall &amp; AV Rentals in Gurgaon
             </div>
             <h3 className="text-2xl font-extrabold text-white sm:text-4xl md:text-5xl tracking-tight">
-              Events We{' '}
+              Turnkey LED Displays for{' '}
               <span className="bg-gradient-to-r from-yellow-200 via-yellow-400 to-amber-500 bg-clip-text text-transparent inline-block pb-1">
-                Bring to Life
+                Every Occasion
               </span>
             </h3>
-            <p className="mt-1.5 text-xs sm:text-base text-gray-400 max-w-2xl mx-auto hidden sm:block">
-              Select an occasion below to preview recommended screen sizes, audio configurations, and live stage setups in Gurgaon &amp; NCR.
+            <p className="mt-1.5 text-xs sm:text-base text-gray-300 max-w-2xl mx-auto hidden sm:block">
+              Choose your event type to view tested screen dimensions, audio configurations, and on-site engineering across Gurugram and Delhi NCR.
             </p>
           </div>
 
@@ -579,9 +579,9 @@ export default function Services() {
               return (
                 <div
                   key={event.id}
-                  className={`rounded-2xl border transition-all duration-500 overflow-hidden ${
+                  className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
                     isExpanded
-                      ? 'border-yellow-400 bg-gradient-to-b from-[#181d19] via-[#0f1210] to-black shadow-[0_0_25px_rgba(250,204,21,0.25)] animate-pulse-glow'
+                      ? 'border-yellow-400/90 bg-[#141713] ring-1 ring-yellow-400/60 shadow-[0_0_20px_rgba(250,204,21,0.22)]'
                       : 'border-white/10 bg-white/[0.03] hover:border-white/20'
                   }`}
                 >
@@ -597,24 +597,19 @@ export default function Services() {
                         }, 50);
                       }
                     }}
-                    className="w-full flex items-center justify-between p-3.5 sm:p-4 text-left transition"
+                    className="w-full flex items-center justify-between p-3.5 sm:p-4 text-left transition active:scale-[0.99] duration-150"
                     aria-expanded={isExpanded}
                   >
                     <div className="flex items-center gap-3 min-w-0">
-                      <div className="relative">
-                        {isExpanded && (
-                          <div className={`absolute -inset-1 rounded-xl bg-gradient-to-r ${event.color} opacity-70 blur-sm animate-pulse`} />
-                        )}
-                        <div
-                          className={`relative w-11 h-11 shrink-0 rounded-xl bg-gradient-to-br ${event.color} flex items-center justify-center shadow-md transition-all duration-300 ${
-                            isExpanded ? 'scale-105 shadow-[0_0_14px_rgba(250,204,21,0.4)] animate-float-subtle' : ''
-                          }`}
-                        >
-                          <Icon className="w-5 h-5 text-white" />
-                        </div>
+                      <div
+                        className={`w-11 h-11 shrink-0 rounded-xl bg-gradient-to-br ${event.color} flex items-center justify-center shadow-md transition-all duration-200 ${
+                          isExpanded ? 'scale-105 shadow-[0_0_12px_rgba(250,204,21,0.4)]' : ''
+                        }`}
+                      >
+                        <Icon className="w-5 h-5 text-white" />
                       </div>
                       <div className="min-w-0">
-                        <h4 className={`text-sm sm:text-base font-bold transition-all duration-300 ${isExpanded ? 'text-yellow-300 drop-shadow-[0_0_8px_rgba(250,204,21,0.4)]' : 'text-white'}`}>
+                        <h4 className={`text-sm sm:text-base font-bold transition-colors duration-150 ${isExpanded ? 'text-yellow-300' : 'text-white'}`}>
                           {event.name}
                         </h4>
                         <p className="text-[11px] text-gray-400 truncate">
@@ -625,26 +620,26 @@ export default function Services() {
 
                     <div className="flex items-center gap-2 shrink-0 ml-2">
                       <span
-                        className={`flex h-8 w-8 items-center justify-center rounded-full border transition-all duration-300 ${
+                        className={`flex h-8 w-8 items-center justify-center rounded-full border transition-all duration-200 ${
                           isExpanded
-                            ? 'border-yellow-400 bg-yellow-400 text-black rotate-180 shadow-[0_0_12px_rgba(250,204,21,0.6)]'
+                            ? 'border-yellow-400 bg-yellow-400 text-black rotate-180 shadow-[0_0_10px_rgba(250,204,21,0.5)]'
                             : 'border-white/10 bg-white/5 text-gray-300'
                         }`}
                       >
-                        <ChevronDown className="h-4 w-4 transition-transform duration-300" />
+                        <ChevronDown className="h-4 w-4" />
                       </span>
                     </div>
                   </button>
 
                   {/* Expanded Accordion Body directly inline */}
                   {isExpanded && (
-                    <div className="px-3.5 pb-4 sm:px-5 sm:pb-5 pt-1 border-t border-white/10 space-y-4 animate-card-entry">
+                    <div className="px-3.5 pb-4 sm:px-5 sm:pb-5 pt-1 border-t border-white/10 space-y-4 animate-fast-in">
                       {/* Media Graphic with Badges */}
                       <div className="group relative overflow-hidden rounded-xl border border-white/15 aspect-[16/10] bg-black/60 shadow-lg mt-1">
                         <img
                           src={event.image}
                           alt={event.name}
-                          className="h-full w-full object-cover animate-image-reveal"
+                          className="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
                           loading="lazy"
                           decoding="async"
                         />
@@ -652,10 +647,7 @@ export default function Services() {
 
                         <div className="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between gap-2">
                           <span className="inline-flex items-center gap-1.5 rounded-full border border-yellow-400/40 bg-black/85 px-2.5 py-0.5 text-[11px] font-bold text-yellow-300 backdrop-blur-md shadow-md">
-                            <span className="relative flex h-2 w-2">
-                              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
-                              <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-400"></span>
-                            </span>
+                            <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_6px_#34d399]" />
                             {event.badge}
                           </span>
                           <span className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-black/60 px-2 py-0.5 text-[10px] font-medium text-gray-300 backdrop-blur-md">
@@ -710,15 +702,8 @@ export default function Services() {
                             <AudioLines className="h-3.5 w-3.5" />
                           </div>
                           <div className="min-w-0 flex-1">
-                            <div className="flex items-center justify-between">
-                              <div className="text-[10px] font-bold uppercase tracking-wider text-yellow-300">
-                                Sound &amp; Audio Visuals
-                              </div>
-                              <div className="flex items-end gap-0.5 h-2.5">
-                                <span className="w-0.5 bg-yellow-400 rounded-full animate-[pulse_0.8s_ease-in-out_infinite] h-1.5"></span>
-                                <span className="w-0.5 bg-yellow-400 rounded-full animate-[pulse_1.2s_ease-in-out_infinite_0.2s] h-2.5"></span>
-                                <span className="w-0.5 bg-yellow-400 rounded-full animate-[pulse_0.9s_ease-in-out_infinite_0.4s] h-1"></span>
-                              </div>
+                            <div className="text-[10px] font-bold uppercase tracking-wider text-yellow-300">
+                              Sound &amp; Audio Visuals
                             </div>
                             <div className="text-xs font-semibold text-white">
                               {event.audioSpec}
@@ -745,23 +730,20 @@ export default function Services() {
                       <div className="flex flex-col sm:flex-row items-center gap-2 pt-1">
                         <a
                           href={`https://wa.me/917703948857?text=${encodeURIComponent(
-                            `Hi Tisha LED Walls, I am planning a "${event.name}" in Gurgaon/NCR and would like an instant quote and date availability.`
+                            `Hi Tisha LED Walls, I need an LED wall rental quote for ${event.name} in Gurgaon (${event.screenSpec}). Please share package rates and availability.`
                           )}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="relative overflow-hidden w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 px-4 py-2.5 text-xs font-bold text-black shadow-[0_0_20px_rgba(250,204,21,0.35)] transition-all duration-300 hover:scale-[1.02]"
+                          className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 px-4 py-2.5 text-xs font-bold text-black shadow-[0_0_15px_rgba(250,204,21,0.3)] transition active:scale-95"
                         >
-                          <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-xl">
-                            <div className="w-1/2 h-full bg-gradient-to-r from-transparent via-white/50 to-transparent animate-shine-sweep" />
-                          </div>
-                          <MessageCircle className="h-4 w-4 relative z-10" />
-                          <span className="relative z-10">Book for {event.shortName} on WhatsApp</span>
-                          <ArrowRight className="h-3.5 w-3.5 relative z-10" />
+                          <MessageCircle className="h-4 w-4" />
+                          <span>Get {event.shortName} LED Wall Quote</span>
+                          <ArrowRight className="h-3.5 w-3.5" />
                         </a>
 
                         <a
                           href="tel:+917703948857"
-                          className="w-full inline-flex items-center justify-center gap-1.5 rounded-xl border border-white/20 bg-white/5 px-4 py-2.5 text-xs font-semibold text-white transition hover:border-yellow-400 hover:text-yellow-300"
+                          className="w-full inline-flex items-center justify-center gap-1.5 rounded-xl border border-white/20 bg-white/5 px-4 py-2.5 text-xs font-semibold text-white transition hover:border-yellow-400 hover:text-yellow-300 active:scale-95"
                         >
                           <Phone className="h-3.5 w-3.5 text-yellow-400" />
                           <span>Call +91 7703948857</span>
@@ -791,36 +773,29 @@ export default function Services() {
                       setIsEventAutoPlaying(false);
                       setActiveEventIndex(index);
                     }}
-                    className={`group relative flex flex-col items-center justify-center p-4 rounded-2xl border text-center transition-all duration-500 ${isActive
-                      ? 'border-yellow-400 bg-gradient-to-b from-white/[0.12] via-yellow-400/[0.08] to-black shadow-[0_0_30px_rgba(250,204,21,0.35)] -translate-y-1.5 animate-pulse-glow'
+                    className={`group relative flex flex-col items-center justify-center p-4 rounded-2xl border text-center transition-all duration-150 active:scale-95 ${isActive
+                      ? 'border-yellow-400/90 bg-[#151914] ring-1 ring-yellow-400/70 shadow-[0_0_22px_rgba(250,204,21,0.28)] -translate-y-1'
                       : 'border-white/10 bg-white/[0.025] hover:border-yellow-400/40 hover:bg-white/[0.05] hover:-translate-y-0.5'
                       }`}
                     aria-pressed={isActive}
                   >
-                    {/* Active Indicator Top Light Bar with Traveling Shimmer Beam */}
+                    {/* Active Indicator Top Light Bar */}
                     {isActive && (
-                      <div className="absolute -top-px left-1/2 -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full shadow-[0_0_12px_rgba(250,204,21,0.9)] overflow-hidden">
-                        <div className="w-full h-full bg-gradient-to-r from-transparent via-white to-transparent animate-shine-sweep opacity-90" />
-                      </div>
+                      <span className="absolute -top-px left-1/2 -translate-x-1/2 w-14 h-1 bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-300 rounded-full shadow-[0_0_10px_rgba(250,204,21,0.9)]" />
                     )}
 
-                    {/* Icon with Glowing Gradient Frame and Floating Animation */}
-                    <div className="relative mb-2">
-                      {isActive && (
-                        <div className={`absolute -inset-1.5 rounded-2xl bg-gradient-to-r ${event.color} opacity-60 blur-md animate-pulse`} />
-                      )}
-                      <div
-                        className={`relative w-12 h-12 bg-gradient-to-br ${event.color} rounded-2xl flex items-center justify-center shadow-md transition-transform duration-300 ${
-                          isActive ? 'scale-110 shadow-[0_0_20px_rgba(250,204,21,0.5)] animate-float-subtle' : 'group-hover:scale-105'
-                        }`}
-                      >
-                        <Icon className="w-6 h-6 text-white" />
-                      </div>
+                    {/* Icon with Glowing Gradient Frame */}
+                    <div
+                      className={`w-12 h-12 bg-gradient-to-br ${event.color} rounded-2xl flex items-center justify-center mb-2 shadow-md transition-transform duration-150 ${
+                        isActive ? 'scale-110 shadow-[0_0_16px_rgba(250,204,21,0.4)]' : 'group-hover:scale-105'
+                      }`}
+                    >
+                      <Icon className="w-6 h-6 text-white" />
                     </div>
 
                     <h4
-                      className={`text-sm font-bold transition-all duration-300 ${
-                        isActive ? 'text-yellow-300 drop-shadow-[0_0_10px_rgba(250,204,21,0.5)] scale-105' : 'text-gray-200 group-hover:text-white'
+                      className={`text-sm font-bold transition-colors duration-150 ${
+                        isActive ? 'text-yellow-300' : 'text-gray-200 group-hover:text-white'
                       }`}
                     >
                       {event.name}
@@ -840,24 +815,24 @@ export default function Services() {
               const EventIcon = currentEvent.icon;
               return (
                 <div
-                  className="relative overflow-hidden rounded-3xl border border-yellow-500/30 bg-gradient-to-b from-[#141715] via-[#0d100e] to-black p-8 lg:p-10 shadow-[0_20px_60px_rgba(0,0,0,0.7)] backdrop-blur-2xl transition-all duration-500"
+                  className="relative overflow-hidden rounded-3xl border border-yellow-500/30 bg-gradient-to-b from-[#141715] via-[#0d100e] to-black p-8 lg:p-10 shadow-[0_20px_60px_rgba(0,0,0,0.7)] backdrop-blur-2xl transition-all duration-300"
                   onMouseEnter={() => setIsEventAutoPlaying(false)}
                 >
-                  {/* Ambient Radial Spotlight with Aurora Animation */}
+                  {/* Ambient Radial Spotlight */}
                   <div
-                    className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full blur-[140px] opacity-40 transition-colors duration-700 animate-aurora"
+                    className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full blur-[140px] opacity-40 transition-colors duration-500"
                     style={{ backgroundColor: currentEvent.glow }}
                   />
 
-                  {/* Smooth Animated Entry Wrapper on Selected Product Change */}
-                  <div key={currentEvent.id} className="animate-card-entry grid grid-cols-12 gap-8 items-center relative z-10">
+                  {/* Fast Snappy Entry Wrapper on Selected Product Change */}
+                  <div key={currentEvent.id} className="animate-fast-in grid grid-cols-12 gap-8 items-center relative z-10">
                     {/* Left Column: Cinematic Visual Stage Display */}
                     <div className="col-span-6">
                       <div className="group relative overflow-hidden rounded-2xl border border-white/15 aspect-[16/9] bg-black/60 shadow-2xl">
                         <img
                           src={currentEvent.image}
                           alt={currentEvent.name}
-                          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 animate-image-reveal"
+                          className="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
                           loading="lazy"
                           decoding="async"
                         />
@@ -865,11 +840,8 @@ export default function Services() {
 
                         {/* Top Badges with Live Beacon */}
                         <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
-                          <span className="inline-flex items-center gap-1.5 rounded-full border border-yellow-400/40 bg-black/80 px-3 py-1 text-xs font-bold text-yellow-300 backdrop-blur-md shadow-[0_0_12px_rgba(250,204,21,0.3)]">
-                            <span className="relative flex h-2 w-2">
-                              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
-                              <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-400"></span>
-                            </span>
+                          <span className="inline-flex items-center gap-1.5 rounded-full border border-yellow-400/40 bg-black/85 px-3 py-1 text-xs font-bold text-yellow-300 backdrop-blur-md shadow-md">
+                            <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]" />
                             {currentEvent.badge}
                           </span>
                           <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-black/60 px-2.5 py-1 text-[11px] font-medium text-gray-300 backdrop-blur-md">
@@ -906,9 +878,9 @@ export default function Services() {
                         </p>
                       </div>
 
-                      {/* 3 Interactive Spec Rows with Visual Equalizer */}
+                      {/* 3 Interactive Spec Rows */}
                       <div className="space-y-2.5 pt-1">
-                        <div className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-3 transition duration-300 hover:border-yellow-400/40 hover:bg-white/[0.06] hover:scale-[1.01]">
+                        <div className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-3 transition duration-150 hover:border-yellow-400/40 hover:bg-white/[0.06]">
                           <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-yellow-400/10 text-yellow-400 border border-yellow-400/20 mt-0.5">
                             <Tv className="h-4 w-4" />
                           </div>
@@ -922,22 +894,13 @@ export default function Services() {
                           </div>
                         </div>
 
-                        <div className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-3 transition duration-300 hover:border-yellow-400/40 hover:bg-white/[0.06] hover:scale-[1.01]">
+                        <div className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-3 transition duration-150 hover:border-yellow-400/40 hover:bg-white/[0.06]">
                           <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-yellow-400/10 text-yellow-400 border border-yellow-400/20 mt-0.5">
                             <AudioLines className="h-4 w-4" />
                           </div>
                           <div className="min-w-0 flex-1">
-                            <div className="flex items-center justify-between">
-                              <div className="text-[11px] font-bold uppercase tracking-wider text-yellow-300">
-                                Sound &amp; Audio Visuals
-                              </div>
-                              {/* Mini Equalizer Animated Audio Visualizer */}
-                              <div className="flex items-end gap-0.5 h-3">
-                                <span className="w-0.5 bg-yellow-400/80 rounded-full animate-[pulse_0.8s_ease-in-out_infinite] h-2"></span>
-                                <span className="w-0.5 bg-yellow-400 rounded-full animate-[pulse_1.2s_ease-in-out_infinite_0.2s] h-3"></span>
-                                <span className="w-0.5 bg-yellow-400/70 rounded-full animate-[pulse_0.9s_ease-in-out_infinite_0.4s] h-1.5"></span>
-                                <span className="w-0.5 bg-yellow-400 rounded-full animate-[pulse_1.1s_ease-in-out_infinite_0.1s] h-2.5"></span>
-                              </div>
+                            <div className="text-[11px] font-bold uppercase tracking-wider text-yellow-300">
+                              Sound &amp; Audio Visuals
                             </div>
                             <div className="text-sm font-semibold text-white">
                               {currentEvent.audioSpec}
@@ -945,7 +908,7 @@ export default function Services() {
                           </div>
                         </div>
 
-                        <div className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-3 transition duration-300 hover:border-yellow-400/40 hover:bg-white/[0.06] hover:scale-[1.01]">
+                        <div className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-3 transition duration-150 hover:border-yellow-400/40 hover:bg-white/[0.06]">
                           <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-emerald-400/10 text-emerald-400 border border-emerald-400/20 mt-0.5">
                             <Clock className="h-4 w-4" />
                           </div>
@@ -960,27 +923,24 @@ export default function Services() {
                         </div>
                       </div>
 
-                      {/* Direct WhatsApp & Call Action Bar with Shimmer Beam */}
+                      {/* Direct WhatsApp & Call Action Bar */}
                       <div className="flex items-center gap-3 pt-2">
                         <a
                           href={`https://wa.me/917703948857?text=${encodeURIComponent(
-                            `Hi Tisha LED Walls, I am planning a "${currentEvent.name}" in Gurgaon/NCR and would like an instant quote and date availability.`
+                            `Hi Tisha LED Walls, I need an LED wall rental quote for ${currentEvent.name} in Gurgaon (${currentEvent.screenSpec}). Please share package rates and availability.`
                           )}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 px-6 py-3 text-sm font-bold text-black shadow-[0_0_25px_rgba(250,204,21,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(250,204,21,0.7)] group"
+                          className="inline-flex items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 px-6 py-3 text-sm font-bold text-black shadow-[0_0_20px_rgba(250,204,21,0.35)] transition-all duration-150 hover:brightness-110 active:scale-95"
                         >
-                          <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-full">
-                            <div className="w-1/2 h-full bg-gradient-to-r from-transparent via-white/50 to-transparent animate-shine-sweep" />
-                          </div>
-                          <MessageCircle className="h-4 w-4 relative z-10" />
-                          <span className="relative z-10">Book for {currentEvent.shortName} on WhatsApp</span>
-                          <ArrowRight className="h-3.5 w-3.5 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
+                          <MessageCircle className="h-4 w-4" />
+                          <span>Get {currentEvent.shortName} LED Wall Quote</span>
+                          <ArrowRight className="h-3.5 w-3.5" />
                         </a>
 
                         <a
                           href="tel:+917703948857"
-                          className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:border-yellow-400 hover:text-yellow-300"
+                          className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:border-yellow-400 hover:text-yellow-300 active:scale-95 duration-150"
                         >
                           <Phone className="h-3.5 w-3.5 text-yellow-400" />
                           <span>Call +91 7703948857</span>
