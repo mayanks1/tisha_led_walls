@@ -47,7 +47,7 @@ export default function Services() {
     {
       href: '/led-screen-rental-gurgaon',
       label: 'LED Screen on Rent in Gurgaon',
-      description: 'Ultra-clear P3 & P4 displays for corporate conferences & live streaming.',
+      description: 'Ultra-clear P2, P3 & P4 displays for corporate conferences & live streaming.',
       icon: Tv,
       accent: 'text-sky-300 bg-sky-400/10 border-sky-300/15',
     },
@@ -109,7 +109,7 @@ export default function Services() {
     {
       img: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1776421303/Led_screen_on_rent.jpg_adu3dq.jpg',
       description: 'LED Screen on Rent',
-      badge: 'P3 / P4 4K Ultra HD',
+      badge: 'P2 / P3 / P4 4K Ultra HD',
       subtitle: 'Modular indoor & outdoor screens with high-refresh video processors.',
       price: 'Enquire on WhatsApp'
     },
@@ -176,11 +176,11 @@ export default function Services() {
       borderColor: 'border-pink-500/40',
       activeGradient: 'from-pink-500/20 via-rose-500/10 to-transparent',
       tag: 'Wedding Stage & Sangeet LED Wall',
-      tagline: 'P3 & P4 Wedding LED Wall on Rent in Gurgaon & Sohna Road',
+      tagline: 'P2 & P3 Wedding LED Wall on Rent in Gurgaon & Sohna Road',
       description: 'High-refresh (3840Hz) flicker-free stage backdrops for varmala entries, live sangeet choreography, and pre-wedding reels. Calibrated for professional 4K wedding videography with zero camera scanlines or moiré bars.',
       image: 'https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_1000/v1763360996/IMG_4793_gxxuqc.jpg',
       location: 'Sohna Road Farmhouses & Grand Banquets, Gurugram',
-      screenSpec: 'P3 / P4 Ultra HD · 3840Hz Zero-Scanline IC',
+      screenSpec: 'P2 / P3 Ultra HD · 3840Hz Zero-Scanline IC',
       audioSpec: 'JBL Dual Line-Array Sound & Shure Wireless Mics',
       setupTime: 'Handed Over 3 Hours Before Baarat with Live Tech',
       badge: 'Gurgaon Wedding Industry Benchmark'
@@ -195,11 +195,11 @@ export default function Services() {
       borderColor: 'border-blue-500/40',
       activeGradient: 'from-blue-500/20 via-indigo-500/10 to-transparent',
       tag: 'Corporate Event AV & Presentation Screens',
-      tagline: 'Corporate P3 & P4 LED Screen & Dual Presentation Walls on Rent',
+      tagline: 'Corporate P2 & P3 LED Screen & Dual Presentation Walls on Rent',
       description: 'Zero-latency video switching for keynote decks, live hybrid conferences, and AGM summits across Cyber City, Golf Course Road, and Udyog Vihar. Instant HDMI/Type-C presenter switching with zero freeze.',
       image: 'https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_1000/v1763473380/IMG_4648_ic3pjf.jpg',
       location: 'DLF Cyber City, Golf Course Road & Aerocity',
-      screenSpec: 'Dual P3 / P4 Seamless Video Walls & NovaStar VX1000',
+      screenSpec: 'Dual P2 / P3 Seamless Video Walls & NovaStar VX1000',
       audioSpec: 'Podium Gooseneck, Shure Wireless Lapels & Digital Mixer',
       setupTime: 'Rehearsal-Ready 4 Hours Early with On-Site Engineer',
       badge: 'Cyber Hub & Aerocity Corporate Choice'
@@ -252,11 +252,11 @@ export default function Services() {
       borderColor: 'border-emerald-500/40',
       activeGradient: 'from-emerald-500/20 via-teal-500/10 to-transparent',
       tag: 'Auditorium Seminars & Annual Meets',
-      tagline: 'High-Resolution Conference P3 LED Screen on Rent for Auditoriums',
+      tagline: 'High-Resolution Conference P2 & P3 LED Screen on Rent for Auditoriums',
       description: 'Fine-pitch LED screens calibrated for financial spreadsheets, medical charts, and speaker decks. Every attendee in the last row of hotel ballrooms and convention centers reads numbers and fine text with 1080p/4K sharpness.',
       image: 'https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_1000/v1763474549/IMG_4815_ypgfxe.jpg',
       location: 'Hotel Ballrooms & Convention Auditoriums, Gurugram',
-      screenSpec: 'P3 / P4 High-Clarity Display · True 16:9 Slide Ratio',
+      screenSpec: 'P2 / P3 High-Clarity Display · True 16:9 Slide Ratio',
       audioSpec: 'Roving Audience Q&A Mics, Stage Monitors & Line Out',
       setupTime: 'Morning Dry Run Completed with Backup Switcher Live',
       badge: '5-Star Ballrooms & Convention Centers'
@@ -271,11 +271,11 @@ export default function Services() {
       borderColor: 'border-cyan-500/40',
       activeGradient: 'from-cyan-500/20 via-blue-500/10 to-transparent',
       tag: 'Brand Unveiling & Expo Stage Rig',
-      tagline: 'Flagship P3 & P4 Product Launch LED Screen & Stage Production in Gurgaon',
+      tagline: 'Flagship P2, P3 & P4 Product Launch LED Screen & Stage Production in Gurgaon',
       description: 'Large-format curved and flat video backdrops for automobile unveilings, luxury real estate launches, and tech expos. Synchronized reveal countdown graphics, cue-to-cue stage lighting drops, and multi-camera live video relays.',
       image: 'https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_90,w_1600/v1763473380/IMG_5370_eyb8qp.jpg',
       location: 'Tech Hubs, Luxury Malls & Automotive Corridors',
-      screenSpec: 'P3 / P4 Curved & Flat Stage Wall · Ultra-Wide Aspect',
+      screenSpec: 'P2, P3 & P4 Curved & Flat Stage Wall · Ultra-Wide Aspect',
       audioSpec: 'Concert-Grade PA, Boom Bass Drops & Redundant Video Feed',
       setupTime: 'Full Show Cue Rehearsal Handled with Director Console',
       badge: 'Automotive Unveilings & Tech Launches'
@@ -363,7 +363,7 @@ export default function Services() {
                 <span className="mt-1 block text-yellow-300">in Gurgaon &amp; Delhi NCR</span>
               </h3>
               <p className="mt-4 max-w-lg text-sm leading-6 text-gray-200 sm:text-base">
-                High-definition P3 &amp; P4 event displays with zero-flicker 3840Hz refresh rates, on-site live switching, and doorstep setup.
+                High-definition P2, P3 &amp; P4 event displays with zero-flicker 3840Hz refresh rates, on-site live switching, and doorstep setup.
               </p>
               <span className="mt-6 inline-flex items-center gap-2 font-semibold text-white">
                 Explore LED Wall on Rent in Gurgaon

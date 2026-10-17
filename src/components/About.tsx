@@ -29,8 +29,8 @@ const eventTypes: EventType[] = [
     id: 'wedding',
     label: 'Weddings & Sangeet',
     title: 'Royal Stage & Phera Backdrops',
-    description: 'Immersive P3 LED walls tailored for grand wedding entries, live sangeet visuals, and varmala backdrops with crystal clarity.',
-    specs: 'P3 / P4 Outdoor LED · High Refresh Rate · Line-Array Audio',
+    description: 'Immersive P2 & P3 LED walls tailored for grand wedding entries, live sangeet visuals, and varmala backdrops with crystal clarity.',
+    specs: 'P2 / P3 / P4 LED Displays · High Refresh Rate · Line-Array Audio',
     image: 'https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_900/v1763360996/IMG_4793_gxxuqc.jpg',
     badge: 'Most Popular for NCR Weddings'
   },
@@ -39,7 +39,7 @@ const eventTypes: EventType[] = [
     label: 'Corporate Summits',
     title: 'Executive Conferences & Product Launches',
     description: 'Dual seamless presentation screens, podium AV integration, wireless lapel mics, and zero-latency video switching for leadership meets.',
-    specs: 'Seamless 4K Display · Multi-Screen AV · Zero Glitch Backup',
+    specs: 'P2 / P3 Seamless 4K Display · Multi-Screen AV · Zero Glitch Backup',
     image: 'https://res.cloudinary.com/dcfouzaii/image/upload/f_auto,q_auto,w_900/v1763361199/IMG_4794_ipv4ds.jpg',
     badge: 'Trusted by Cyber City Enterprises'
   },
@@ -66,7 +66,7 @@ const eventTypes: EventType[] = [
 const reasons = [
   {
     title: 'Ultra HD 4K Clarity',
-    desc: 'P2.9, P3 & P4 high-refresh rate displays that look crisp to guests and flicker-free on cameras.'
+    desc: 'P2, P3 & P4 high-refresh rate displays that look crisp to guests and flicker-free on cameras.'
   },
   {
     title: '2-Hour Early Setup',

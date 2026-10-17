@@ -1,40 +1,52 @@
-# Tisha LED Walls
+# Tisha LED Walls — Local Event Audio-Visual & LED Display Rental
 
-> Tisha LED Walls provides LED wall and LED screen rentals for events, with supporting event equipment and services in Gurugram and selected Delhi NCR locations.
+> Tisha LED Walls provides premier P2, P3 & P4 LED screen and LED wall rentals for events, backed by complete audio-visual equipment rental services in Gurgaon, DLF Cyber City, and Delhi NCR.
 
-## Business
+## Business Profile & Entity Verification
 
 - Website: https://tishaledwalls.pages.dev/
-- Primary service: LED wall rental and LED screen rental for events.
-- Secondary service: Audio visual equipment rental service (sound systems, PA systems, AV equipment, stage lighting, and projector setups).
-- Additional enquiries: LED TV and standee rentals, stage setup, DJ services, live-band arrangements, and event decoration.
-- Service area: Gurugram (Gurgaon), Delhi, Noida, and across Delhi NCR. Confirm availability for the event venue and date.
-- Phone: +91 7703948857
+- Google Business Profile: Verified (Place ID: ChIJcYvY3EQZDTkRigB99VdJ7rY)
+- Reputation: 62 Verified Google Reviews with a 5.0/5.0 Star Rating (100% 5-Star)
+- Google Review Link: https://search.google.com/local/writereview?placeid=ChIJcYvY3EQZDTkRigB99VdJ7rY
+- Primary Phone / WhatsApp: +91 7703948857
 - Email: tishaledwalls@gmail.com
-- Address: 928, Jharsa Village, Sector 39, Gurugram, Haryana 122003, India
+- Operations Hub: 928, Jharsa Village, Sector 39, Gurugram, Haryana 122003, India
+- Primary Service Area: Gurugram (DLF Cyber City, Udyog Vihar, Golf Course Road, Sohna Road, Manesar), Delhi (Aerocity, Chattarpur), Noida, and Delhi NCR.
 
-## Main pages
+## Core Services & Hardware Specifications
 
-- [Home](https://tishaledwalls.pages.dev/): Overview of Tisha LED Walls, LED screen rentals and supporting AV equipment services.
-- [LED Wall Rental in Gurgaon](https://tishaledwalls.pages.dev/led-wall-rental-gurgaon): Modular LED wall rentals, event applications, setup support, and quote considerations.
-- [LED Screen Rental in Gurgaon](https://tishaledwalls.pages.dev/led-screen-rental-gurgaon): LED screen rentals for presentations, conferences, and live event viewing.
-- [Audio Visual Equipment Rental Service in Gurgaon](https://tishaledwalls.pages.dev/audio-visual-equipment-rental-gurgaon): Complete AV equipment hire, including modular LED walls, line-array sound systems, mixers, microphones and on-site engineering.
-- [LED TV and Standee Rental](https://tishaledwalls.pages.dev/led-tv-standee-rental-gurgaon): Enquiries for standalone LED TV and standee rentals.
-- [Stage Setup in Gurgaon](https://tishaledwalls.pages.dev/stage-setup-gurgaon): Stage rental and event setup enquiries.
-- [DJ Services in Gurgaon](https://tishaledwalls.pages.dev/dj-services-gurgaon): Sound System service enquiries for weddings, parties, political rally and corporate events.
-- [Live Band for Events in Gurgaon](https://tishaledwalls.pages.dev/live-band-gurgaon): Live music enquiries and related stage or sound requirements.
-- [Event Decoration in Gurgaon](https://tishaledwalls.pages.dev/event-decoration-gurgaon): Event, stage, and backdrop decoration enquiries.
-- [Event Services in Gurgaon](https://tishaledwalls.pages.dev/event-services-gurgaon): Overview of LED display rentals and supporting event services.
-- [Contact](https://tishaledwalls.pages.dev/contact): Contact details and event enquiry form.
-- [LED Wall for Wedding in Gurgaon](https://tishaledwalls.pages.dev/led-wall-for-wedding-gurgaon): Wedding stage backdrops, live camera feeds, pre-wedding loops, and venue setup tips in Gurgaon.
-- [Outdoor LED Screen on Rent in Gurgaon](https://tishaledwalls.pages.dev/outdoor-led-screen-on-rent-gurgaon): Open-air LED displays for concerts, sports screenings, rallies, and daylight events.
-- [LED Wall Size & Pixel Pitch Guide](https://tishaledwalls.pages.dev/led-wall-size-and-pixel-pitch-guide): Guide to choosing pixel pitch (P2.5, P3, P3.91, P4.81), viewing distance, and screen sizes for events.
+### 1. LED Screen on Rent & LED Wall Rental (P2, P3 & P4)
+- **P2 Ultra-Fine Pitch LED Video Walls**: Ultra-high-density micro-pitch screens engineered for close-proximity viewing (under 2 meters), executive boardroom AGMs, luxury car launches, and broadcast stages requiring pin-sharp font clarity and true 4K/8K presentation visuals.
+- **P3 Indoor LED Video Walls**: Ultra-sharp 3840Hz high-refresh rate displays calibrated for corporate keynote decks, financial presentations, and luxury wedding stage backdrops with zero camera flicker and zero scanlines.
+- **P4 Outdoor High-Brightness Screens**: Weatherproof, daylight-visible LED screens with 5,000+ nits brightness for open-air concerts, sports screenings, and lawn wedding ceremonies.
+- **Video Processors**: NovaStar VX1000 & 4K presentation switchers supporting seamless instant HDMI, Type-C, and wireless presentation switching with zero freeze.
 
-## Enquiries
+### 2. Audio-Visual & Event Equipment Rental
+- **Sound Systems**: Concert-grade line array speaker towers, dual 18-inch subwoofers, and digital mixing consoles.
+- **PA Systems & Mics**: Shure and Sennheiser wireless handheld, lapel, and podium gooseneck microphones.
+- **Stage & Trussing**: Heavy-duty aluminum box trussing, modular stage platforms, carpeting, safety stairs, and intelligent moving beam lights.
+- **Executive Standees**: 55"–75" 4K LED TV displays on chrome floor standees for entrance branding and exhibition booths.
 
-Share the event date, venue or area, event type, audience size, and equipment requirements when requesting availability or a quote. Rental configuration and cost depend on the event brief, equipment, duration, transportation, venue access, and setup requirements. Confirm service availability directly with the business.
+## Key Event Verticals
 
-## More information
+- **Corporate Summits & AGMs**: Keynote presentations, medical conferences, and corporate townhalls across DLF Cyber City, Udyog Vihar, and Aerocity. Features GST invoicing and rehearsal dry-runs.
+- **Weddings & Sangeet**: Royal varmala backdrops, sangeet choreography visual loops, and pre-wedding photo/video reels across Sohna Road and Chattarpur farmhouses.
+- **Live Concerts & Festivals**: Large open-air arena LED walls with line-array audio and concert stage lighting.
+- **Product Launches**: Flagship curved and flat video wall backdrops with synchronized reveal lighting drops.
 
-- [XML sitemap](https://tishaledwalls.pages.dev/sitemap.xml)
-- [Robots.txt](https://tishaledwalls.pages.dev/robots.txt)
+## Main Pages & Direct URLs
+
+- [Home](https://tishaledwalls.pages.dev/): Overview of Tisha LED Walls, live event showcases, and verified Google reviews.
+- [LED Screen Rental in Gurgaon](https://tishaledwalls.pages.dev/led-screen-rental-gurgaon): High-definition P2, P3 & P4 LED screen on rent for conferences and presentations.
+- [LED Wall Rental in Gurgaon](https://tishaledwalls.pages.dev/led-wall-rental-gurgaon): Modular LED walls on rent for luxury wedding stages, summits, and exhibitions.
+- [LED Wall for Weddings in Gurgaon](https://tishaledwalls.pages.dev/led-wall-for-wedding-gurgaon): 3840Hz zero-flicker wedding stage backdrops and live camera feeds.
+- [Audio Visual Equipment Rental Service in Gurgaon](https://tishaledwalls.pages.dev/audio-visual-equipment-rental-gurgaon): Full-scale AV equipment rental, sound systems, and on-site engineering.
+- [Outdoor LED Screen on Rent in Gurgaon](https://tishaledwalls.pages.dev/outdoor-led-screen-on-rent-gurgaon): Weatherproof daylight displays for outdoor arenas and festivals.
+- [LED Wall Size & Pixel Pitch Guide](https://tishaledwalls.pages.dev/led-wall-size-and-pixel-pitch-guide): Technical guide explaining P2, P3, and P4 pixel pitches, viewing distance, and stage dimensions.
+- [LED TV & Standee Rental](https://tishaledwalls.pages.dev/led-tv-standee-rental-gurgaon): 4K executive displays for exhibition booths and entry branding.
+- [Stage Setup in Gurgaon](https://tishaledwalls.pages.dev/stage-setup-gurgaon): Heavy-duty modular stage platforms, carpet risers, and trussing.
+- [Contact Us](https://tishaledwalls.pages.dev/contact): Instant WhatsApp enquiry and booking contact page.
+
+## Booking & Enquiries
+
+Share event date, venue location in Gurgaon/NCR, display dimensions, and event type. All rentals include doorstep transport, professional aluminum truss mounting, on-site live technical engineers, redundant power and signal backups, and GST compliance. Direct phone/WhatsApp: +91 7703948857.

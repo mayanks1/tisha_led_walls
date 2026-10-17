@@ -34,7 +34,7 @@ export const homeSeo = {
     {
       question: 'What pixel pitch LED walls do you provide in Gurgaon & Delhi NCR?',
       answer:
-        'We provide high-definition P3 indoor LED video walls for corporate summits, conferences, and luxury wedding stages, as well as high-brightness P4 outdoor LED screens (5000+ nits) for concerts, sports screenings, and lawn celebrations. Both feature 3840Hz high-refresh rates for flicker-free camera recording and zero latency.',
+        'We provide ultra-fine P2 and high-definition P3 indoor LED video walls for corporate summits, conferences, and luxury wedding stages, as well as high-brightness P4 outdoor LED screens (5000+ nits) for concerts, sports screenings, and lawn celebrations. Both feature 3840Hz high-refresh rates for flicker-free camera recording and zero latency.',
     },
     {
       question: 'Do you provide setup, on-site technical support, and backup equipment?',
@@ -589,7 +589,7 @@ export const seoPages: SeoPage[] = [
     slug: 'led-wall-size-and-pixel-pitch-guide',
     title: 'LED Wall Size & Pixel Pitch Guide for Events | Tisha LED Walls',
     description:
-      'How to choose LED wall size and pixel pitch (P2.5, P3, P3.91, P4.81) for an event. Viewing distance rules, aspect ratios and what to tell your rental provider.',
+      'How to choose LED wall size and pixel pitch (P2, P3, P4) for an event. Viewing distance rules, aspect ratios and what to tell your rental provider.',
     h1: 'How to Choose LED Wall Size and Pixel Pitch',
     intro:
       'Picking the right LED wall comes down to three things: how far the audience sits, how big the stage area is and what content you will show. This guide explains each in plain terms before you request a quote.',
@@ -600,13 +600,13 @@ export const seoPages: SeoPage[] = [
       {
         heading: 'What pixel pitch means',
         paragraphs: [
-          'Pixel pitch is the distance in millimetres between the centres of two pixels, shown as P2.5, P3, P3.91, P4.81 and so on. A smaller number means a sharper picture and a higher price per square foot.',
+          'Pixel pitch is the distance in millimetres between the centres of two pixels, shown as P2, P3, P4 and so on. A smaller number means a sharper picture for closer audience viewing.',
         ],
       },
       {
         heading: 'A simple viewing distance rule',
         paragraphs: [
-          'As a rough guide, the nearest viewers should be about 1 to 2 metres away for every 1 mm of pixel pitch. For example, P3 suits viewers from around 3 to 6 metres, while P4.81 suits larger rooms and outdoor use. Treat this as a starting point and confirm with the team.',
+          'As a rough guide, the nearest viewers should be about 1 to 2 metres away for every 1 mm of pixel pitch. For example, ultra-fine P2 suits close boardroom and VIP stage viewing from 1.5 to 3 metres, P3 suits conference and wedding viewers from 3 to 6 metres, while P4 suits outdoor arenas and larger festival stages.',
         ],
       },
       {
@@ -626,7 +626,7 @@ export const seoPages: SeoPage[] = [
       {
         question: 'Which pixel pitch is best for a wedding stage?',
         answer:
-          'Indoor wedding stages commonly use a finer pitch such as P2.5 to P3.91 because guests sit relatively close. The right choice depends on your venue and budget.',
+          'Indoor wedding stages and corporate summits commonly use a fine pitch such as P2 or P3 because guests and cameras are relatively close. The right choice depends on your venue dimensions and seating plan.',
       },
       {
         question: 'Is a smaller pixel pitch always better?',

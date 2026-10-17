@@ -1,4 +1,17 @@
 User-agent: *
 Allow: /
 
+# Allow AI Search Engines for Local Search Citations & Overviews
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://tishaledwalls.pages.dev/sitemap.xml

@@ -2,58 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tishaledwalls.pages.dev/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://tishaledwalls.pages.dev/contact</loc>
-    <priority>0.8</priority>
+    <loc>https://tishaledwalls.pages.dev/led-screen-rental-gurgaon</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://tishaledwalls.pages.dev/led-wall-rental-gurgaon</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tishaledwalls.pages.dev/led-wall-for-wedding-gurgaon</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://tishaledwalls.pages.dev/audio-visual-equipment-rental-gurgaon</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tishaledwalls.pages.dev/led-wall-for-wedding-gurgaon</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://tishaledwalls.pages.dev/outdoor-led-screen-on-rent-gurgaon</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://tishaledwalls.pages.dev/contact</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tishaledwalls.pages.dev/led-wall-size-and-pixel-pitch-guide</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tishaledwalls.pages.dev/led-screen-rental-gurgaon</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://tishaledwalls.pages.dev/led-tv-standee-rental-gurgaon</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://tishaledwalls.pages.dev/stage-setup-gurgaon</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tishaledwalls.pages.dev/dj-services-gurgaon</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tishaledwalls.pages.dev/live-band-gurgaon</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tishaledwalls.pages.dev/event-decoration-gurgaon</loc>
-    <priority>0.6</priority>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://tishaledwalls.pages.dev/event-services-gurgaon</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://tishaledwalls.pages.dev/dj-services-gurgaon</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://tishaledwalls.pages.dev/live-band-gurgaon</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://tishaledwalls.pages.dev/event-decoration-gurgaon</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
   </url>
 </urlset>

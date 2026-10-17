@@ -44,7 +44,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed">
-          Rent high-clarity LED screens in Gurgaon for luxury weddings, corporate summits and live concerts, backed by complete audio-visual equipment and on-site engineering support.
+          Rent high-clarity P2, P3 &amp; P4 LED screens in Gurgaon for luxury weddings, corporate summits and live concerts, backed by complete audio-visual equipment and on-site engineering support.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -75,10 +75,10 @@ export default function Hero() {
           >
             <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white shadow-sm p-0.5">
               <svg className="h-3.5 w-3.5" viewBox="0 0 24 24">
-                <path fill="#4285F4" d="M23.52 12.27c0-.78-.07-1.53-.19-2.27H12v4.3h6.48c-.28 1.43-1.12 2.64-2.39 3.44v2.85h3.87c2.27-2.09 3.56-5.18 3.56-8.32z" />
-                <path fill="#34A853" d="M12 24c3.24 0 5.96-1.07 7.95-2.91l-3.87-2.85c-1.07.72-2.45 1.14-4.08 1.14-3.14 0-5.8-2.12-6.75-4.98H1.26v3.06C3.22 21.3 7.29 24 12 24z" />
-                <path fill="#FBBC05" d="M5.25 14.4c-.24-.72-.38-1.49-.38-2.28s.14-1.56.38-2.28V6.78H1.26C.45 8.38 0 10.14 0 12s.45 3.62 1.26 5.22l3.99-2.82z" />
-                <path fill="#EA4335" d="M12 4.7c1.76 0 3.34.6 4.58 1.78l3.42-3.42C17.95 1.21 15.23 0 12 0 7.29 0 3.22 2.7 1.26 6.78l3.99 2.83C6.2 6.82 8.86 4.7 12 4.7z" />
+                <path fill="#4285F4" d="M23.52 12.27c0-.78-.07-1.53-.19-2.27H12v4.3h6.48c-.28 1.43-1.12 2.64-2.39 3.44v2.85h3.87c2.27-2.09 3.56-5.18 3.56-8.32z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.96-1.07 7.95-2.91l-3.87-2.85c-1.07.72-2.45 1.14-4.08 1.14-3.14 0-5.8-2.12-6.75-4.98H1.26v3.06C3.22 21.3 7.29 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.25 14.4c-.24-.72-.38-1.49-.38-2.28s.14-1.56.38-2.28V6.78H1.26C.45 8.38 0 10.14 0 12s.45 3.62 1.26 5.22l3.99-2.82z"/>
+                <path fill="#EA4335" d="M12 4.7c1.76 0 3.34.6 4.58 1.78l3.42-3.42C17.95 1.21 15.23 0 12 0 7.29 0 3.22 2.7 1.26 6.78l3.99 2.83C6.2 6.82 8.86 4.7 12 4.7z"/>
               </svg>
             </div>
             <div className="flex text-yellow-400 text-xs">
@@ -118,7 +118,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-2.5 text-xs leading-relaxed text-gray-300">
-              P3 fine-pitch screens calibrated for crisp spreadsheet text &amp; keynote decks. Seamless 4K switchers &amp; GST compliance.
+              P2 &amp; P3 fine-pitch screens calibrated for crisp spreadsheet text &amp; keynote decks. Seamless 4K switchers &amp; GST compliance.
             </p>
 
             <div className="mt-3 flex items-center justify-between pt-2.5 border-t border-white/10 text-xs">
@@ -158,7 +158,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-2.5 text-xs leading-relaxed text-gray-300">
-              3840Hz zero-camera flicker P3 stage walls for royal varmala entries &amp; sangeet reels. Line-array sound &amp; DJ sync.
+              3840Hz zero-camera flicker P2 &amp; P3 stage walls for royal varmala entries &amp; sangeet reels. Line-array sound &amp; DJ sync.
             </p>
 
             <div className="mt-3 flex items-center justify-between pt-2.5 border-t border-white/10 text-xs">
