@@ -32,29 +32,29 @@ export const homeSeo = {
   h1: 'LED Screen & LED Wall Rental in Gurgaon',
   faqs: [
     {
-      question: 'What types of LED walls do you offer for events in Gurugram?',
+      question: 'What pixel pitch LED walls do you provide in Gurgaon & Delhi NCR?',
       answer:
-        'Indoor and outdoor display requirements can be discussed with the team. Share your venue and event details to identify a suitable setup.',
+        'We provide high-definition P3 indoor LED video walls for corporate summits, conferences, and luxury wedding stages, as well as high-brightness P4 outdoor LED screens (5000+ nits) for concerts, sports screenings, and lawn celebrations. Both feature 3840Hz high-refresh rates for flicker-free camera recording and zero latency.',
     },
     {
-      question: 'Do you provide setup and technical support for LED wall rentals?',
+      question: 'Do you provide setup, on-site technical support, and backup equipment?',
       answer:
-        'Yes, our full-service offering includes delivery, professional installation, on-site technical assistance during the event, and complete dismantling.',
+        'Yes, our rental package includes doorstep transport across Gurugram, DLF Cyber City, and Delhi NCR, professional aluminum truss mounting, on-site live switching technicians, and redundant power and video signal backups to guarantee zero downtime during live presentations or wedding ceremonies.',
     },
     {
-      question: 'How far in advance should I book an LED wall for my event in Gurugram?',
+      question: 'Which locations in Gurgaon and Delhi NCR do you deliver to?',
       answer:
-        'We advise booking as early as possible, especially during peak seasons or for large events, though we maintain flexibility to accommodate urgent requests when possible.',
+        'We actively serve all major business hubs including DLF Cyber City, Udyog Vihar, Golf Course Road, and Manesar, as well as luxury banquet and farmhouse corridors including Sohna Road, Chattarpur, and Kapashera, plus Delhi and Noida.',
     },
     {
-      question: 'What are the power requirements for your LED wall rentals?',
+      question: 'Can you integrate line-array sound and AV switchers with the LED wall?',
       answer:
-        'Power needs vary by screen size. Specific power requirements will be discussed during our initial consultation based on your chosen LED wall and event venue capabilities.',
+        'Absolutely. We provide complete end-to-end audio visual setups including JBL/RCF line-array sound systems, Shure wireless microphones, digital presentation switchers, and stage lighting to ensure a cohesive, professional event experience.',
     },
     {
-      question: 'Can you integrate sound systems with your LED wall setups?',
+      question: 'How do I get an instant quote and book an LED wall for my event?',
       answer:
-        'Absolutely. We provide comprehensive AV solutions, including high-quality sound system setups, to ensure a cohesive and professional event experience.',
+        'Connect with our Gurugram operations team directly via WhatsApp or call at +91 7703948857. Share your event date, venue location, and expected stage size to receive an instant transparent quote with GST invoicing.',
     },
   ],
 };

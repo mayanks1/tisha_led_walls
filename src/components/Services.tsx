@@ -46,8 +46,8 @@ export default function Services() {
   const serviceLinks = [
     {
       href: '/led-screen-rental-gurgaon',
-      label: 'LED Screen on Rent',
-      description: 'Screens for presentations and live event viewing.',
+      label: 'LED Screen on Rent in Gurgaon',
+      description: 'Ultra-clear P3 & P4 displays for corporate conferences & live streaming.',
       icon: Tv,
       accent: 'text-sky-300 bg-sky-400/10 border-sky-300/15',
     },
@@ -282,6 +282,20 @@ export default function Services() {
     }
   ];
 
+  useEffect(() => {
+    const handleSelectService = (e: Event) => {
+      const customEvent = e as CustomEvent<string | number>;
+      if (typeof customEvent.detail === 'number' && customEvent.detail >= 0 && customEvent.detail < eventsData.length) {
+        setActiveEventIndex(customEvent.detail);
+      } else if (typeof customEvent.detail === 'string') {
+        const found = eventsData.findIndex((item) => item.id === customEvent.detail);
+        if (found !== -1) setActiveEventIndex(found);
+      }
+    };
+    window.addEventListener('select-service', handleSelectService);
+    return () => window.removeEventListener('select-service', handleSelectService);
+  }, [eventsData.length]);
+
   const rentalIncludes = [
     'Professional installation and setup',
     'High-resolution 4K display quality',
@@ -305,14 +319,14 @@ export default function Services() {
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-yellow-300">Event rentals &amp; production</span>
             </div>
             <h2 className="text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl">
-              LED Wall Rental in Gurgaon
+              LED Wall on Rent in Gurgaon
               <span className="mt-1 block bg-gradient-to-r from-yellow-200 via-yellow-400 to-amber-500 bg-clip-text text-transparent pb-1">
-                Build the rest around it.
+                Bigger Screens, Brighter Moments.
               </span>
             </h2>
           </div>
           <p className="max-w-md text-base leading-7 text-gray-400 md:pb-1">
-            LED wall rental is our speciality. Add the stage, sound or event support your occasion needs.
+            Top-rated LED screen on rent and LED wall rental in Gurgaon &amp; Delhi NCR. Backed by complete audio-visual engineering, sound systems, and stage trussing.
           </p>
         </div>
 
@@ -323,7 +337,7 @@ export default function Services() {
           >
             <img
               src={featuredService.img}
-              alt=""
+              alt="LED wall on rent in Gurgaon"
               aria-hidden="true"
               className="absolute inset-0 z-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
               loading="lazy"
@@ -335,7 +349,7 @@ export default function Services() {
             <div className="relative z-20 flex items-start justify-between gap-4">
               <span className="inline-flex items-center gap-2 rounded-full border border-yellow-200/20 bg-black/35 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-yellow-200 backdrop-blur-md">
                 <Monitor className="h-4 w-4" />
-                Our primary service
+                Featured Service
               </span>
               <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-black/25 text-white backdrop-blur-md transition group-hover:border-yellow-300 group-hover:bg-yellow-400 group-hover:text-black">
                 <ArrowUpRight className="h-5 w-5" />
@@ -343,16 +357,16 @@ export default function Services() {
             </div>
 
             <div className="relative z-20 max-w-xl">
-              <p className="mb-3 text-sm font-medium text-yellow-200">For weddings, corporate events &amp; live shows</p>
+              <p className="mb-3 text-sm font-medium text-yellow-200">For luxury weddings, corporate summits &amp; live concerts</p>
               <h3 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Make the screen
-                <span className="mt-1 block text-yellow-300">the moment.</span>
+                LED Wall on Rent
+                <span className="mt-1 block text-yellow-300">in Gurgaon &amp; Delhi NCR</span>
               </h3>
               <p className="mt-4 max-w-lg text-sm leading-6 text-gray-200 sm:text-base">
-                Event-ready displays, professional installation and on-site technical support.
+                High-definition P3 &amp; P4 event displays with zero-flicker 3840Hz refresh rates, on-site live switching, and doorstep setup.
               </p>
               <span className="mt-6 inline-flex items-center gap-2 font-semibold text-white">
-                Explore LED wall rentals
+                Explore LED Wall on Rent in Gurgaon
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </span>
             </div>
@@ -579,11 +593,10 @@ export default function Services() {
               return (
                 <div
                   key={event.id}
-                  className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
-                    isExpanded
+                  className={`rounded-2xl border transition-all duration-200 overflow-hidden ${isExpanded
                       ? 'border-yellow-400/90 bg-[#141713] ring-1 ring-yellow-400/60 shadow-[0_0_20px_rgba(250,204,21,0.22)]'
                       : 'border-white/10 bg-white/[0.03] hover:border-white/20'
-                  }`}
+                    }`}
                 >
                   {/* Accordion Header Row */}
                   <button
@@ -602,9 +615,8 @@ export default function Services() {
                   >
                     <div className="flex items-center gap-3 min-w-0">
                       <div
-                        className={`w-11 h-11 shrink-0 rounded-xl bg-gradient-to-br ${event.color} flex items-center justify-center shadow-md transition-all duration-200 ${
-                          isExpanded ? 'scale-105 shadow-[0_0_12px_rgba(250,204,21,0.4)]' : ''
-                        }`}
+                        className={`w-11 h-11 shrink-0 rounded-xl bg-gradient-to-br ${event.color} flex items-center justify-center shadow-md transition-all duration-200 ${isExpanded ? 'scale-105 shadow-[0_0_12px_rgba(250,204,21,0.4)]' : ''
+                          }`}
                       >
                         <Icon className="w-5 h-5 text-white" />
                       </div>
@@ -620,11 +632,10 @@ export default function Services() {
 
                     <div className="flex items-center gap-2 shrink-0 ml-2">
                       <span
-                        className={`flex h-8 w-8 items-center justify-center rounded-full border transition-all duration-200 ${
-                          isExpanded
+                        className={`flex h-8 w-8 items-center justify-center rounded-full border transition-all duration-200 ${isExpanded
                             ? 'border-yellow-400 bg-yellow-400 text-black rotate-180 shadow-[0_0_10px_rgba(250,204,21,0.5)]'
                             : 'border-white/10 bg-white/5 text-gray-300'
-                        }`}
+                          }`}
                       >
                         <ChevronDown className="h-4 w-4" />
                       </span>
@@ -786,17 +797,15 @@ export default function Services() {
 
                     {/* Icon with Glowing Gradient Frame */}
                     <div
-                      className={`w-12 h-12 bg-gradient-to-br ${event.color} rounded-2xl flex items-center justify-center mb-2 shadow-md transition-transform duration-150 ${
-                        isActive ? 'scale-110 shadow-[0_0_16px_rgba(250,204,21,0.4)]' : 'group-hover:scale-105'
-                      }`}
+                      className={`w-12 h-12 bg-gradient-to-br ${event.color} rounded-2xl flex items-center justify-center mb-2 shadow-md transition-transform duration-150 ${isActive ? 'scale-110 shadow-[0_0_16px_rgba(250,204,21,0.4)]' : 'group-hover:scale-105'
+                        }`}
                     >
                       <Icon className="w-6 h-6 text-white" />
                     </div>
 
                     <h4
-                      className={`text-sm font-bold transition-colors duration-150 ${
-                        isActive ? 'text-yellow-300' : 'text-gray-200 group-hover:text-white'
-                      }`}
+                      className={`text-sm font-bold transition-colors duration-150 ${isActive ? 'text-yellow-300' : 'text-gray-200 group-hover:text-white'
+                        }`}
                     >
                       {event.name}
                     </h4>

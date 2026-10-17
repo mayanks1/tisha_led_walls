@@ -26,8 +26,8 @@ export default function Footer() {
   };
 
   const services = [
-    { name: 'LED Screen on Rent', href: '/led-screen-rental-gurgaon' },
-    { name: 'LED Wall Rental in Gurgaon', href: '/led-wall-rental-gurgaon' },
+    { name: 'LED Screen on Rent in Gurgaon', href: '/led-screen-rental-gurgaon' },
+    { name: 'LED Wall on Rent in Gurgaon', href: '/led-wall-rental-gurgaon' },
     { name: 'Audio Visual Equipment Rental', href: '/audio-visual-equipment-rental-gurgaon' },
     { name: 'Outdoor LED Screen on Rent', href: '/outdoor-led-screen-on-rent-gurgaon' },
     { name: 'LED Wall for Weddings', href: '/led-wall-for-wedding-gurgaon' },
