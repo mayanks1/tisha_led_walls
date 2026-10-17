@@ -26,10 +26,37 @@ export function getHighQualityImageUrl(imageUrl: string, width = 1800) {
 }
 
 export const homeSeo = {
-  title: 'LED Wall & LED Screen on Rent in Gurgaon | Tisha LED Walls',
+  title: 'LED Screen & LED Wall on Rent in Gurgaon | Tisha LED Walls',
   description:
-    'Rent LED walls and LED screens in Gurgaon and Gurugram for weddings, corporate events and live shows, with installation and on-site technical support. Enquire today.',
-  h1: 'LED Wall & LED Screen Rental in Gurgaon',
+    'Rent LED screens and LED walls in Gurgaon and Gurugram for weddings, corporate events and live shows, backed by complete audio visual equipment rental services with on-site technical support. Enquire today.',
+  h1: 'LED Screen & LED Wall Rental in Gurgaon',
+  faqs: [
+    {
+      question: 'What types of LED walls do you offer for events in Gurugram?',
+      answer:
+        'Indoor and outdoor display requirements can be discussed with the team. Share your venue and event details to identify a suitable setup.',
+    },
+    {
+      question: 'Do you provide setup and technical support for LED wall rentals?',
+      answer:
+        'Yes, our full-service offering includes delivery, professional installation, on-site technical assistance during the event, and complete dismantling.',
+    },
+    {
+      question: 'How far in advance should I book an LED wall for my event in Gurugram?',
+      answer:
+        'We advise booking as early as possible, especially during peak seasons or for large events, though we maintain flexibility to accommodate urgent requests when possible.',
+    },
+    {
+      question: 'What are the power requirements for your LED wall rentals?',
+      answer:
+        'Power needs vary by screen size. Specific power requirements will be discussed during our initial consultation based on your chosen LED wall and event venue capabilities.',
+    },
+    {
+      question: 'Can you integrate sound systems with your LED wall setups?',
+      answer:
+        'Absolutely. We provide comprehensive AV solutions, including high-quality sound system setups, to ensure a cohesive and professional event experience.',
+    },
+  ],
 };
 
 export const seoPages: SeoPage[] = [
@@ -50,6 +77,12 @@ export const seoPages: SeoPage[] = [
         paragraphs: [
           'Indoor and outdoor venues have different viewing and setup requirements. The venue, audience distance, available space and event content help determine the screen configuration to discuss for your booking.',
           'LED walls can support wedding stages and receptions, corporate presentations, conferences, concerts and product launches. A modular display can be planned around the stage and sightlines rather than choosing a size without venue details.',
+        ],
+      },
+      {
+        heading: 'Events we supply LED screens for',
+        paragraphs: [
+          'Tisha LED Walls hires out LED screens for weddings, corporate events, exhibitions, medical conferences and outdoor campaigns across Gurgaon and Delhi NCR.',
         ],
       },
       {
@@ -268,7 +301,7 @@ export const seoPages: SeoPage[] = [
       'Planning music for a wedding, party or corporate event in Gurgaon? Contact Tisha LED Walls to discuss DJ services and the equipment your event needs.',
     serviceType: 'event DJ services',
     imageUrl: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763472330/IMG_4809_rc8kcm.jpg',
-    imageAlt: 'LED wall at a corporate event',
+    imageAlt: 'DJ services and event sound setup in Gurgaon by Tisha LED Walls',
     sections: [
       {
         heading: 'Plan the music around your event',
@@ -368,9 +401,8 @@ export const seoPages: SeoPage[] = [
     intro:
       'Tell Tisha LED Walls about the look and layout you have in mind for your Gurgaon event. Decoration requirements can be discussed alongside stage and LED display planning.',
     serviceType: 'event decoration',
-    imageUrl: 'https://ovocqgccvlthoqbzhvlm.supabase.co/storage/v1/object/public/gallery-media/corporate/1789308204133-0.JPG',
-    //'https://res.cloudinary.com/dcfouzaii/image/upload/v1763361199/IMG_4794_ipv4ds.jpg'
-    imageAlt: 'Corporate event backdrop',
+    imageUrl: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763361199/IMG_4794_ipv4ds.jpg',
+    imageAlt: 'Event decoration and stage backdrop setup in Gurgaon by Tisha LED Walls',
     sections: [
       {
         heading: 'Decoration for the event setting',
@@ -456,6 +488,210 @@ export const seoPages: SeoPage[] = [
         question: 'How do I request a quote for multiple services?',
         answer:
           'Send one enquiry with the event date, location, programme and the services or equipment you need. The team can review the combined requirements.',
+      },
+    ],
+  },
+  {
+    slug: 'led-wall-for-wedding-gurgaon',
+    title: 'LED Wall for Wedding in Gurgaon | Tisha LED Walls',
+    description:
+      'Plan an LED wall for your wedding in Gurgaon: stage backdrop, live camera feed, pre-wedding video loops and venue setup tips. Enquire with your date and venue.',
+    h1: 'LED Wall for Weddings in Gurgaon',
+    intro:
+      'An LED wall lets every guest see the stage, the pheras and the couple, whether the venue is a banquet hall, hotel ballroom or farmhouse lawn. Tell Tisha LED Walls your date, venue and guest count to plan the right display.',
+    serviceType: 'Wedding LED wall rental',
+    imageUrl: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763360996/IMG_4793_gxxuqc.jpg',
+    imageAlt: 'Wedding stage LED wall backdrop setup in Gurgaon by Tisha LED Walls',
+    sections: [
+      {
+        heading: 'Where an LED wall is used at weddings',
+        paragraphs: [
+          'Common uses are the main stage backdrop for the sangeet and reception, a live camera feed of the varmala and pheras for guests seated far from the mandap, pre-wedding films and photo slideshows, and entry or welcome visuals with the couple names.',
+        ],
+      },
+      {
+        heading: 'Planning content so it looks sharp',
+        paragraphs: [
+          'Prepare videos in the screen aspect ratio (16:9 is the most common) and share them a few days early so they can be tested on the actual wall. Use large, high-contrast text and keep slideshow images high resolution.',
+        ],
+      },
+      {
+        heading: 'Venue checklist before booking',
+        paragraphs: [
+          'Confirm the stage dimensions, ceiling height, vehicle access for loading, power availability with a backup option, and the earliest time the team can enter for setup. Sharing these upfront avoids delays on the wedding day.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How early should the LED wall be set up for a wedding?',
+        answer:
+          'Setup is usually done several hours before guests arrive so content can be tested. Share your venue access timings and the team will plan around them.',
+      },
+      {
+        question: 'Can the LED wall show a live feed of the ceremony?',
+        answer:
+          'A live camera feed can be shown on the wall. Mention it when you enquire so the setup and operator requirements can be planned.',
+      },
+      {
+        question: 'Do I need to arrange power at the venue?',
+        answer:
+          'Power requirements depend on the screen size. Share the venue details and the team will confirm what is needed, including a backup option.',
+      },
+    ],
+  },
+  {
+    slug: 'outdoor-led-screen-on-rent-gurgaon',
+    title: 'Outdoor LED Screen on Rent in Gurgaon | Tisha LED Walls',
+    description:
+      'Outdoor LED screen rental in Gurgaon for concerts, rallies, sports screenings and open-air events. Learn what matters: brightness, weather and power backup.',
+    h1: 'Outdoor LED Screen on Rent in Gurgaon',
+    intro:
+      'Open-air events need displays built for daylight, wind and uneven ground. Tisha LED Walls can discuss an outdoor LED screen for concerts, rallies, sports screenings and public events in Gurugram and Delhi NCR.',
+    serviceType: 'Outdoor LED screen rental',
+    imageUrl: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763474549/IMG_4815_ypgfxe.jpg',
+    imageAlt: 'Live sports broadcast on an LED screen',
+    imagePosition: 'center 50%',
+    sections: [
+      {
+        heading: 'What makes an outdoor LED screen different',
+        paragraphs: [
+          'Outdoor panels are much brighter than indoor ones so the picture stays visible in daylight, and they are built to handle dust and light rain. Outdoor screens also use a larger pixel pitch because the audience is further away.',
+        ],
+      },
+      {
+        heading: 'Plan for weather, wind and power',
+        paragraphs: [
+          'Wind loading on tall walls, rain cover for equipment and controllers, firm ground for the structure, and a generator or backup supply are the main things to settle before the event date.',
+        ],
+      },
+      {
+        heading: 'Events that suit outdoor screens',
+        paragraphs: [
+          'Concerts and festivals, political and community rallies, cricket and football screenings, exhibitions, product activations and large wedding lawns commonly use outdoor LED screens.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can an LED screen be used in the rain?',
+        answer:
+          'Outdoor LED displays are designed for dust and light rain, but heavy rain and strong wind need a plan. Discuss the season and venue when you enquire.',
+      },
+      {
+        question: 'What details do you need for an outdoor quote?',
+        answer:
+          'Share the event date, location, approximate audience size, how far the farthest viewers will be, and whether power and a generator are available.',
+      },
+    ],
+  },
+  {
+    slug: 'led-wall-size-and-pixel-pitch-guide',
+    title: 'LED Wall Size & Pixel Pitch Guide for Events | Tisha LED Walls',
+    description:
+      'How to choose LED wall size and pixel pitch (P2.5, P3, P3.91, P4.81) for an event. Viewing distance rules, aspect ratios and what to tell your rental provider.',
+    h1: 'How to Choose LED Wall Size and Pixel Pitch',
+    intro:
+      'Picking the right LED wall comes down to three things: how far the audience sits, how big the stage area is and what content you will show. This guide explains each in plain terms before you request a quote.',
+    serviceType: 'LED wall rental guide',
+    imageUrl: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763445163/1_rydru9.jpg',
+    imageAlt: 'LED wall lighting up an event stage',
+    sections: [
+      {
+        heading: 'What pixel pitch means',
+        paragraphs: [
+          'Pixel pitch is the distance in millimetres between the centres of two pixels, shown as P2.5, P3, P3.91, P4.81 and so on. A smaller number means a sharper picture and a higher price per square foot.',
+        ],
+      },
+      {
+        heading: 'A simple viewing distance rule',
+        paragraphs: [
+          'As a rough guide, the nearest viewers should be about 1 to 2 metres away for every 1 mm of pixel pitch. For example, P3 suits viewers from around 3 to 6 metres, while P4.81 suits larger rooms and outdoor use. Treat this as a starting point and confirm with the team.',
+        ],
+      },
+      {
+        heading: 'Choosing the size and shape',
+        paragraphs: [
+          'Most event content is made in 16:9, so a 16:9 wall avoids black bars. Measure the stage width and height available, leave room for lighting and decor, and tell us the ceiling height for indoor venues.',
+        ],
+      },
+      {
+        heading: 'What to share when you ask for a quote',
+        paragraphs: [
+          'Event type, date, venue, indoor or outdoor, the distance to the nearest and farthest viewers, available stage size and whether you need a live camera feed. With these the team can recommend a configuration.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Which pixel pitch is best for a wedding stage?',
+        answer:
+          'Indoor wedding stages commonly use a finer pitch such as P2.5 to P3.91 because guests sit relatively close. The right choice depends on your venue and budget.',
+      },
+      {
+        question: 'Is a smaller pixel pitch always better?',
+        answer:
+          'Not always. A finer pitch costs more and gives little visible benefit when the audience is far away. Match the pitch to the viewing distance.',
+      },
+    ],
+  },
+  {
+    slug: 'audio-visual-equipment-rental-gurgaon',
+    title: 'Audio Visual Equipment Rental Service in Gurgaon | Tisha LED Walls',
+    description:
+      'Audio visual equipment rental service in Gurgaon: modular LED walls, screens, line-array sound, wireless mics, stage lighting and technical support for events.',
+    h1: 'Audio Visual Equipment Rental Service in Gurgaon',
+    intro:
+      'Looking for an audio visual equipment rental service in Gurgaon? Centred around high-definition LED displays and walls, Tisha LED Walls provides complete audio-visual production — including concert sound, PA systems, stage setups and on-site technical operators across Gurugram and Delhi NCR.',
+    serviceType: 'Audio visual equipment rental service',
+    imageUrl: 'https://res.cloudinary.com/dcfouzaii/image/upload/v1763445163/1_rydru9.jpg',
+    imageAlt: 'Audio visual equipment rental service and LED wall stage setup in Gurgaon',
+    sections: [
+      {
+        heading: 'LED displays integrated with professional sound',
+        paragraphs: [
+          'High-impact visual displays work best when matched with crisp, balanced audio. As a dedicated LED wall specialist and audio visual equipment rental service, Tisha LED Walls coordinates both elements together. You get modular indoor or outdoor LED walls, stage backdrops, line-array speakers, digital mixers and wireless microphones from a single dependable team.',
+        ],
+      },
+      {
+        heading: 'AV solutions for conferences, corporate events & weddings',
+        paragraphs: [
+          'Corporate summits require seamless presentation switching, lag-free video feeds and clear speech reinforcement. Weddings and live shows demand vibrant stage backdrops, live camera relay and dynamic sound. We tailor the AV equipment configuration to your venue layout, ceiling height and audience size.',
+        ],
+      },
+      {
+        heading: 'On-site technical operators & setup',
+        paragraphs: [
+          'Every audio visual rental includes timely transport, truss mounting, cabling, sound balancing and display calibration. Our experienced technical crew remains on-site throughout your rehearsals and event to manage live switching and audio levels.',
+        ],
+      },
+      {
+        heading: 'Request an audio visual rental quote',
+        paragraphs: [
+          'Share your event date, venue location, hall or lawn dimensions and equipment brief. The team will propose an integrated LED screen and audio visual package suited to your event schedule.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What does your audio visual equipment rental service include?',
+        answer:
+          'Our service covers modular LED walls, LED screens, standee TVs, sound systems, PA systems, digital mixers, wireless microphones, stage lighting and video processors.',
+      },
+      {
+        question: 'Can you provide sound systems along with LED screens?',
+        answer:
+          'Yes. We specialise in combining LED display walls with coordinated audio, PA and stage equipment so you have a single point of contact for all event tech.',
+      },
+      {
+        question: 'Do you provide on-site technical operators during the event?',
+        answer:
+          'Yes. Full delivery, setup, live sound and display operation during the event, and complete dismantling are included in our rental service.',
+      },
+      {
+        question: 'Which areas do you serve for audio visual rentals?',
+        answer:
+          'We provide audio visual equipment rentals across Gurugram (Gurgaon), Delhi, Noida, Greater Noida and the wider Delhi NCR region.',
       },
     ],
   },

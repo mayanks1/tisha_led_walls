@@ -12,6 +12,7 @@ import SeoLandingPage from './components/SeoLandingPage';
 import { useEffect } from 'react';
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
 import { getHighQualityImageUrl, homeSeo, seoPages } from './data/seoPages';
+import { SITE_URL } from './data/site';
 // import { contactPageSections } from './data/contactPage';
 
 const contactSeo = {
@@ -35,7 +36,7 @@ function App() {
 
   useEffect(() => {
     const page = isHomePage ? homeSeo : isContactPage ? contactSeo : currentSeoPage ?? notFoundSeo;
-    const pageUrl = `https://tishaledwalls.pages.dev${normalizedPath === '/' ? '/' : normalizedPath}`;
+    const pageUrl = `${SITE_URL}${normalizedPath === '/' ? '/' : normalizedPath}`;
     const imageUrl =
       getHighQualityImageUrl(
         currentSeoPage?.imageUrl ??
@@ -65,22 +66,47 @@ function App() {
       ? [
           {
             '@context': 'https://schema.org',
-            '@type': 'Service',
-            name: currentSeoPage.serviceType,
+            '@type': currentSeoPage.slug === 'led-wall-size-and-pixel-pitch-guide' ? 'Article' : 'Service',
+            name: currentSeoPage.serviceType || currentSeoPage.h1,
+            headline: currentSeoPage.h1,
             description: currentSeoPage.description,
             image: getHighQualityImageUrl(currentSeoPage.imageUrl, 1200),
             url: pageUrl,
-            provider: { '@id': 'https://tishaledwalls.pages.dev/#business' },
-            areaServed: ['Gurugram', 'Delhi', 'Noida', 'Delhi NCR'],
+            ...(currentSeoPage.slug === 'led-wall-size-and-pixel-pitch-guide'
+              ? {
+                  author: { '@id': `${SITE_URL}/#business` },
+                  publisher: { '@id': `${SITE_URL}/#business` },
+                  mainEntityOfPage: pageUrl,
+                }
+              : {
+                  provider: { '@id': `${SITE_URL}/#business` },
+                  areaServed: ['Gurugram', 'Delhi', 'Noida', 'Delhi NCR'],
+                }),
           },
           {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://tishaledwalls.pages.dev/' },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
               { '@type': 'ListItem', position: 2, name: currentSeoPage.h1, item: pageUrl },
             ],
           },
+          ...(currentSeoPage.faqs && currentSeoPage.faqs.length > 0
+            ? [
+                {
+                  '@context': 'https://schema.org',
+                  '@type': 'FAQPage',
+                  mainEntity: currentSeoPage.faqs.map((faq) => ({
+                    '@type': 'Question',
+                    name: faq.question,
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: faq.answer,
+                    },
+                  })),
+                },
+              ]
+            : []),
         ]
       : isHomePage || isContactPage
         ? [
@@ -90,14 +116,28 @@ function App() {
               name: page.title,
               description: page.description,
               url: pageUrl,
-              isPartOf: { '@id': 'https://tishaledwalls.pages.dev/#website' },
+              isPartOf: { '@id': `${SITE_URL}/#website` },
             },
+            ...(isHomePage && 'faqs' in homeSeo && homeSeo.faqs
+              ? [{
+                  '@context': 'https://schema.org',
+                  '@type': 'FAQPage',
+                  mainEntity: homeSeo.faqs.map((faq) => ({
+                    '@type': 'Question',
+                    name: faq.question,
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: faq.answer,
+                    },
+                  })),
+                }]
+              : []),
             ...(isContactPage
               ? [{
                   '@context': 'https://schema.org',
                   '@type': 'BreadcrumbList',
                   itemListElement: [
-                    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://tishaledwalls.pages.dev/' },
+                    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
                     { '@type': 'ListItem', position: 2, name: 'Contact', item: pageUrl },
                   ],
                 }]

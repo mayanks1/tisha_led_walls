@@ -6,7 +6,8 @@
 
 - Website: https://tishaledwalls.pages.dev/
 - Primary service: LED wall rental and LED screen rental for events.
-- Additional enquiries: LED TV and standee rentals, stage setup, sound and PA systems, AV equipment, projector rentals, DJ services, live-band arrangements, and event decoration.
+- Secondary service: Audio visual equipment rental service (sound systems, PA systems, AV equipment, stage lighting, and projector setups).
+- Additional enquiries: LED TV and standee rentals, stage setup, DJ services, live-band arrangements, and event decoration.
 - Service area: Gurugram (Gurgaon), Delhi, Noida, and across Delhi NCR. Confirm availability for the event venue and date.
 - Phone: +91 7703948857
 - Email: tishaledwalls@gmail.com
@@ -14,9 +15,10 @@
 
 ## Main pages
 
-- [Home](https://tishaledwalls.pages.dev/): Overview of Tisha LED Walls and its event rental services.
+- [Home](https://tishaledwalls.pages.dev/): Overview of Tisha LED Walls, LED screen rentals and supporting AV equipment services.
 - [LED Wall Rental in Gurgaon](https://tishaledwalls.pages.dev/led-wall-rental-gurgaon): Modular LED wall rentals, event applications, setup support, and quote considerations.
 - [LED Screen Rental in Gurgaon](https://tishaledwalls.pages.dev/led-screen-rental-gurgaon): LED screen rentals for presentations, conferences, and live event viewing.
+- [Audio Visual Equipment Rental Service in Gurgaon](https://tishaledwalls.pages.dev/audio-visual-equipment-rental-gurgaon): Complete AV equipment hire, including modular LED walls, line-array sound systems, mixers, microphones and on-site engineering.
 - [LED TV and Standee Rental](https://tishaledwalls.pages.dev/led-tv-standee-rental-gurgaon): Enquiries for standalone LED TV and standee rentals.
 - [Stage Setup in Gurgaon](https://tishaledwalls.pages.dev/stage-setup-gurgaon): Stage rental and event setup enquiries.
 - [DJ Services in Gurgaon](https://tishaledwalls.pages.dev/dj-services-gurgaon): Sound System service enquiries for weddings, parties, political rally and corporate events.
@@ -24,6 +26,9 @@
 - [Event Decoration in Gurgaon](https://tishaledwalls.pages.dev/event-decoration-gurgaon): Event, stage, and backdrop decoration enquiries.
 - [Event Services in Gurgaon](https://tishaledwalls.pages.dev/event-services-gurgaon): Overview of LED display rentals and supporting event services.
 - [Contact](https://tishaledwalls.pages.dev/contact): Contact details and event enquiry form.
+- [LED Wall for Wedding in Gurgaon](https://tishaledwalls.pages.dev/led-wall-for-wedding-gurgaon): Wedding stage backdrops, live camera feeds, pre-wedding loops, and venue setup tips in Gurgaon.
+- [Outdoor LED Screen on Rent in Gurgaon](https://tishaledwalls.pages.dev/outdoor-led-screen-on-rent-gurgaon): Open-air LED displays for concerts, sports screenings, rallies, and daylight events.
+- [LED Wall Size & Pixel Pitch Guide](https://tishaledwalls.pages.dev/led-wall-size-and-pixel-pitch-guide): Guide to choosing pixel pitch (P2.5, P3, P3.91, P4.81), viewing distance, and screen sizes for events.
 
 ## Enquiries
 

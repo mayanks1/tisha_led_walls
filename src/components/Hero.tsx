@@ -2,10 +2,6 @@ import { MessageCircle, Sparkles } from 'lucide-react';
 import { getHighQualityImageUrl } from '../data/seoPages';
 
 export default function Hero() {
-  const handleWhatsAppClick = () => {
-    window.open('https://wa.me/917703948857?text=Hi%20Tisha%20LED%20Walls%2C%20I%20want%20to%20book%20an%20LED%20wall.', '_blank');
-  };
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
@@ -25,33 +21,35 @@ export default function Hero() {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-600 rounded-full filter blur-[150px] animate-pulse delay-1000"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-14 sm:pb-16 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full mb-8 backdrop-blur-sm">
           <Sparkles className="w-4 h-4 text-yellow-400" />
-          <span className="text-yellow-400 text-sm font-medium">Premium LED Solutions</span>
+          <span className="text-yellow-400 text-sm font-medium">LED Screens &amp; Audio Visual Rental Service</span>
         </div>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-white">LED Wall &amp; LED Screen Rental</span>
+          <span className="text-white">LED Screen &amp; LED Wall Rental</span>
           {' '}
-          <span className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-transparent bg-clip-text animate-shimmer">
+          <span className="inline-block bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-transparent bg-clip-text animate-shimmer pb-1">
             in Gurgaon
           </span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-          LED wall and screen rentals for weddings, corporate events, concerts, Political Rally and celebrations, with professional installation and on-site technical support.
+        <p className="text-xl md:text-2xl text-gray-300 mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed">
+          Rent LED screens and LED walls in Gurgaon for weddings, corporate events and live shows, backed by complete audio visual equipment rental services with on-site technical support.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button
-            onClick={handleWhatsAppClick}
+          <a
+            href="https://wa.me/917703948857?text=Hi%20Tisha%20LED%20Walls%2C%20I%20want%20to%20book%20an%20LED%20wall."
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold text-lg rounded-full hover:shadow-[0_0_40px_rgba(234,179,8,0.6)] transition-all duration-300 hover:scale-105 flex items-center gap-3"
           >
             <MessageCircle className="w-6 h-6" />
             Book Now on WhatsApp
             <span className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity"></span>
-          </button>
+          </a>
 
           <a
             href="#gallery"
@@ -60,6 +58,10 @@ export default function Hero() {
             View Our Work
           </a>
         </div>
+
+        <p className="mt-8 text-sm md:text-base text-gray-300">
+          <span className="text-yellow-400">★★★★★</span> 5.0 rating from 62 Google reviews
+        </p>
 
         <div className="mt-12 md:mt-20 grid grid-cols-3 gap-2 md:gap-8 max-w-4xl mx-auto">
           <div className="min-w-0 p-2 md:p-6 bg-white/5 backdrop-blur-sm border border-yellow-500/20 rounded-lg md:rounded-2xl hover:border-yellow-500/50 transition-all duration-300">

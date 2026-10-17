@@ -150,21 +150,21 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="relative overflow-hidden bg-[#080a09] py-20 sm:py-24">
+    <section id="services" className="relative overflow-hidden bg-[#080a09] pt-10 pb-12 sm:pt-12 sm:pb-16">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute -left-40 top-40 h-96 w-96 rounded-full bg-yellow-500 blur-[150px]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="mb-10 flex flex-col gap-5 md:mb-12 md:flex-row md:items-end md:justify-between">
+        <div className="mb-8 flex flex-col gap-5 md:mb-10 md:flex-row md:items-end md:justify-between">
           <div className="max-w-3xl">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-yellow-400/20 bg-yellow-400/[0.07] px-4 py-2">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-yellow-400/20 bg-yellow-400/[0.07] px-4 py-2">
               <span className="h-2 w-2 rounded-full bg-yellow-400 shadow-[0_0_12px_rgba(250,204,21,0.8)]" />
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-yellow-300">Event rentals &amp; production</span>
             </div>
             <h2 className="text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl">
               LED Wall Rental in Gurgaon
-              <span className="mt-1 block bg-gradient-to-r from-yellow-200 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
+              <span className="mt-1 block bg-gradient-to-r from-yellow-200 via-yellow-400 to-amber-500 bg-clip-text text-transparent pb-1">
                 Build the rest around it.
               </span>
             </h2>
@@ -174,7 +174,7 @@ export default function Services() {
           </p>
         </div>
 
-        <nav aria-label="Event services" className="mb-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+        <nav aria-label="Event services" className="mb-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
           <Link
             to={featuredService.href}
             className="group relative isolate flex min-h-[360px] flex-col justify-between overflow-hidden rounded-3xl border border-yellow-300/30 bg-[#11120f] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.32)] transition duration-300 hover:-translate-y-1 hover:border-yellow-300/60 hover:shadow-[0_30px_90px_rgba(234,179,8,0.13)] sm:col-span-2 sm:p-8 lg:min-h-[400px] lg:col-span-2"
@@ -343,8 +343,8 @@ export default function Services() {
           </p>
         </div>
 
-        <div id="events-we-serve" className="mb-20 scroll-mt-24">
-          <h3 className="text-3xl font-bold text-white text-center mb-12">Events We Serve</h3>
+        <div id="events-we-serve" className="mb-12 sm:mb-14 scroll-mt-24">
+          <h3 className="text-3xl font-bold text-white text-center mb-8">Events We Serve</h3>
           <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {eventTypes.map((event, index) => {
               const Icon = event.icon;

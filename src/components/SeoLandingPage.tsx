@@ -9,6 +9,9 @@ function relatedLinks(slug: string) {
   if (slug === 'event-services-gurgaon') {
     return [
       'led-wall-rental-gurgaon',
+      'audio-visual-equipment-rental-gurgaon',
+      'led-wall-for-wedding-gurgaon',
+      'outdoor-led-screen-on-rent-gurgaon',
       'led-screen-rental-gurgaon',
       'led-tv-standee-rental-gurgaon',
       'stage-setup-gurgaon',
@@ -20,10 +23,53 @@ function relatedLinks(slug: string) {
 
   if (slug === 'led-wall-rental-gurgaon') {
     return [
+      'audio-visual-equipment-rental-gurgaon',
+      'led-wall-for-wedding-gurgaon',
+      'outdoor-led-screen-on-rent-gurgaon',
+      'led-wall-size-and-pixel-pitch-guide',
       'led-screen-rental-gurgaon',
       'stage-setup-gurgaon',
-      'event-services-gurgaon',
       '#events-we-serve',
+    ];
+  }
+
+  if (slug === 'audio-visual-equipment-rental-gurgaon') {
+    return [
+      'led-wall-rental-gurgaon',
+      'led-screen-rental-gurgaon',
+      'stage-setup-gurgaon',
+      'dj-services-gurgaon',
+      'led-wall-size-and-pixel-pitch-guide',
+    ];
+  }
+
+  if (slug === 'led-wall-for-wedding-gurgaon') {
+    return [
+      'led-wall-rental-gurgaon',
+      'audio-visual-equipment-rental-gurgaon',
+      'led-wall-size-and-pixel-pitch-guide',
+      'stage-setup-gurgaon',
+      'event-decoration-gurgaon',
+    ];
+  }
+
+  if (slug === 'outdoor-led-screen-on-rent-gurgaon') {
+    return [
+      'led-wall-rental-gurgaon',
+      'audio-visual-equipment-rental-gurgaon',
+      'led-wall-size-and-pixel-pitch-guide',
+      'stage-setup-gurgaon',
+      'dj-services-gurgaon',
+    ];
+  }
+
+  if (slug === 'led-wall-size-and-pixel-pitch-guide') {
+    return [
+      'led-wall-rental-gurgaon',
+      'audio-visual-equipment-rental-gurgaon',
+      'led-wall-for-wedding-gurgaon',
+      'outdoor-led-screen-on-rent-gurgaon',
+      'led-screen-rental-gurgaon',
     ];
   }
 
@@ -35,11 +81,12 @@ function relatedLinks(slug: string) {
     ];
   }
 
-  return ['led-wall-rental-gurgaon', 'event-services-gurgaon'];
+  return ['led-wall-rental-gurgaon', 'audio-visual-equipment-rental-gurgaon', 'event-services-gurgaon'];
 }
 
 const linkLabels: Record<string, string> = {
   'led-wall-rental-gurgaon': 'LED wall rental in Gurgaon',
+  'audio-visual-equipment-rental-gurgaon': 'Audio visual equipment rental service',
   'led-screen-rental-gurgaon': 'LED screen on rent in Gurgaon',
   'led-tv-standee-rental-gurgaon': 'LED TV & Standee on rent in Gurgaon',
   'stage-setup-gurgaon': 'Stage setup in Gurgaon',
@@ -47,6 +94,9 @@ const linkLabels: Record<string, string> = {
   'live-band-gurgaon': 'Live band for events in Gurgaon',
   'event-decoration-gurgaon': 'Event decoration in Gurgaon',
   'event-services-gurgaon': 'Explore event services',
+  'led-wall-for-wedding-gurgaon': 'LED wall for wedding in Gurgaon',
+  'outdoor-led-screen-on-rent-gurgaon': 'Outdoor LED screen on rent',
+  'led-wall-size-and-pixel-pitch-guide': 'LED wall size & pixel pitch guide',
   '#events-we-serve': 'Wedding, corporate and concert LED wall use cases',
 };
 
@@ -158,7 +208,7 @@ export default function SeoLandingPage({ page }: SeoLandingPageProps) {
                   to={slug.startsWith('#') ? `/${slug}` : pageBySlug(slug)}
                   className="block rounded-xl border border-white/10 px-4 py-3 font-medium text-yellow-200 transition hover:border-yellow-400/40 hover:bg-yellow-400/[0.06]"
                 >
-                  {linkLabels[slug]}
+                  {linkLabels[slug] ?? slug}
                 </Link>
               </li>
             ))}

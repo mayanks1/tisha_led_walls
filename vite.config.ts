@@ -1,3 +1,4 @@
+import { SITE_URL } from './src/data/site';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
@@ -63,8 +64,20 @@ function contactPage(): Plugin {
               '@type': 'WebPage',
               name: homeSeo.title,
               description: homeSeo.description,
-              url: 'https://tishaledwalls.pages.dev/',
-              isPartOf: { '@id': 'https://tishaledwalls.pages.dev/#website' },
+              url: `${SITE_URL}/`,
+              isPartOf: { '@id': `${SITE_URL}/#website` },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: homeSeo.faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.question,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: faq.answer,
+                },
+              })),
             },
           ],
         },
@@ -77,41 +90,70 @@ function contactPage(): Plugin {
       const serializeJsonLd = (value: unknown) => JSON.stringify(value).replace(/</g, '\\u003c');
 
       const createPageSchema = (page: (typeof pages)[number]) => {
-        const pageUrl = `https://tishaledwalls.pages.dev/${page.slug}`;
+        const pageUrl = `${SITE_URL}/${page.slug}`;
         if ('structuredData' in page) {
           return page.structuredData;
         }
 
         const pageSchema = page.slug === 'contact'
           ? {
-              '@context': 'https://schema.org',
-              '@type': 'ContactPage',
-              name: page.title,
-              description: page.description,
-              url: pageUrl,
-              isPartOf: { '@id': 'https://tishaledwalls.pages.dev/#website' },
-            }
+            '@context': 'https://schema.org',
+            '@type': 'ContactPage',
+            name: page.title,
+            description: page.description,
+            url: pageUrl,
+            isPartOf: { '@id': `${SITE_URL}/#website` },
+          }
+          : page.slug === 'led-wall-size-and-pixel-pitch-guide'
+          ? {
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: page.h1,
+            name: page.title,
+            description: page.description,
+            ...('imageUrl' in page && page.imageUrl
+              ? { image: getHighQualityImageUrl(page.imageUrl, 1200) }
+              : {}),
+            url: pageUrl,
+            author: { '@id': `${SITE_URL}/#business` },
+            publisher: { '@id': `${SITE_URL}/#business` },
+            mainEntityOfPage: pageUrl,
+          }
           : {
-              '@context': 'https://schema.org',
-              '@type': 'Service',
-              name: page.serviceType ?? page.h1,
-              description: page.description,
-              ...('imageUrl' in page && page.imageUrl
-                ? { image: getHighQualityImageUrl(page.imageUrl, 1200) }
-                : {}),
-              url: pageUrl,
-              provider: { '@id': 'https://tishaledwalls.pages.dev/#business' },
-              areaServed: ['Gurugram', 'Delhi', 'Noida', 'Delhi NCR'],
-            };
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: page.serviceType ?? page.h1,
+            description: page.description,
+            ...('imageUrl' in page && page.imageUrl
+              ? { image: getHighQualityImageUrl(page.imageUrl, 1200) }
+              : {}),
+            url: pageUrl,
+            provider: { '@id': `${SITE_URL}/#business` },
+            areaServed: ['Gurugram', 'Delhi', 'Noida', 'Delhi NCR'],
+          };
         const breadcrumbSchema = {
           '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://tishaledwalls.pages.dev/' },
+            { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
             { '@type': 'ListItem', position: 2, name: page.h1, item: pageUrl },
           ],
         };
-        return [pageSchema, breadcrumbSchema];
+        const faqSchema = 'faqs' in page && page.faqs && page.faqs.length > 0
+          ? [{
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: page.faqs.map((faq) => ({
+              '@type': 'Question',
+              name: faq.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: faq.answer,
+              },
+            })),
+          }]
+          : [];
+        return [pageSchema, breadcrumbSchema, ...faqSchema];
       };
 
       const createFallback = (page: (typeof pages)[number]) => {
@@ -122,8 +164,8 @@ function contactPage(): Plugin {
         ).join('');
         const faqSection = 'faqs' in page && page.faqs
           ? `<section class="seo-card"><h2>Frequently Asked Questions</h2>${page.faqs
-              .map((faq) => `<p><strong>${escapeHtml(faq.question)}</strong><br>${escapeHtml(faq.answer)}</p>`)
-              .join('')}</section>`
+            .map((faq) => `<p><strong>${escapeHtml(faq.question)}</strong><br>${escapeHtml(faq.answer)}</p>`)
+            .join('')}</section>`
           : '';
         const image = 'imageUrl' in page && page.imageUrl && page.imageAlt
           ? `<img src="${escapeHtml(getHighQualityImageUrl(page.imageUrl))}" alt="${escapeHtml(page.imageAlt)}" loading="eager" decoding="async" style="display:block;width:100%;height:auto;max-height:560px;object-fit:cover;object-position:${escapeHtml(page.imagePosition ?? 'center')};margin:24px 0;border-radius:16px" />`
@@ -137,19 +179,19 @@ function contactPage(): Plugin {
       };
 
       const renderPage = (page: (typeof pages)[number]) => {
-        const pageUrl = `https://tishaledwalls.pages.dev/${page.slug}`;
+        const pageUrl = `${SITE_URL}/${page.slug}`;
         const title = escapeHtml(page.title);
         const description = escapeHtml(page.description);
         const imageUrl = 'imageUrl' in page && page.imageUrl
           ? getHighQualityImageUrl(page.imageUrl, 1200)
           : getHighQualityImageUrl(
-              'https://res.cloudinary.com/dcfouzaii/image/upload/v1763445163/1_rydru9.jpg',
-              1200
-            );
+            'https://res.cloudinary.com/dcfouzaii/image/upload/v1763445163/1_rydru9.jpg',
+            1200
+          );
         const imageAlt = 'imageAlt' in page && page.imageAlt
           ? escapeHtml(page.imageAlt)
           : 'LED wall lighting up an event stage';
-        const canonical = page.slug ? pageUrl : 'https://tishaledwalls.pages.dev/';
+        const canonical = page.slug ? pageUrl : `${SITE_URL}/`;
         const metadataPatterns = [
           /<title>[\s\S]*?<\/title>/,
           /<meta name="description"\s+content="[^"]*"\s*\/>/,
@@ -248,6 +290,14 @@ function contactPage(): Plugin {
         throw new Error(`Unable to write the homepage to ${indexPath}.`, { cause: error });
       }
 
+      const today = new Date().toISOString().slice(0, 10);
+      const priority = (slug: string) => (slug === '' ? '1.0' : slug === 'led-wall-rental-gurgaon' ? '0.9' : '0.7');
+      const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages
+        .map((p) => `  <url>\n    <loc>${SITE_URL}/${p.slug}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>${priority(p.slug)}</priority>\n  </url>`)
+        .join('\n')}\n</urlset>\n`;
+      writeFileSync(resolve(outputDirectory, 'sitemap.xml'), sitemap);
+      writeFileSync(resolve(outputDirectory, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+
       const notFoundHtml = source
         .replace(/<title>[\s\S]*?<\/title>/, '<title>Page Not Found | Tisha LED Walls</title>')
         .replace(
@@ -266,7 +316,7 @@ function contactPage(): Plugin {
         )
         .replace(
           /<meta property="og:url" content="[^"]*"\s*\/>/,
-          '<meta property="og:url" content="https://tishaledwalls.pages.dev/404.html" />'
+          `<meta property="og:url" content="${SITE_URL}/404.html" />`
         )
         .replace(
           /<meta name="twitter:title" content="[^"]*"\s*\/>/,
@@ -278,7 +328,7 @@ function contactPage(): Plugin {
         )
         .replace(
           /<meta name="twitter:url" content="[^"]*"\s*\/>/,
-          '<meta name="twitter:url" content="https://tishaledwalls.pages.dev/404.html" />'
+          `<meta name="twitter:url" content="${SITE_URL}/404.html" />`
         )
         .replace(
           /<meta property="og:image"\s+content="[^"]*"\s*\/>/,

@@ -52,18 +52,23 @@ export default function Contact({ showHeading = true }: ContactProps) {
   };
 
   return (
-    <section id="contact" className="relative isolate overflow-hidden bg-[#080b0a] py-14 text-white sm:py-20">
+    <section
+      id="contact"
+      className={`relative isolate overflow-hidden bg-[#080b0a] text-white ${
+        showHeading ? 'pt-10 pb-12 sm:pt-12 sm:pb-16' : 'pt-2 pb-12 sm:pt-4 sm:pb-16'
+      }`}
+    >
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_20%_50%,rgba(234,179,8,0.08),transparent_35%),radial-gradient(ellipse_at_80%_80%,rgba(22,163,74,0.07),transparent_35%)]" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {showHeading && (
-          <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
+          <div className="mx-auto mb-8 max-w-3xl text-center sm:mb-10">
             <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-yellow-400/20 bg-yellow-400/[0.07] px-4 py-2 text-sm font-semibold text-yellow-300">
               <Sparkles className="h-4 w-4" />
               Let’s make it memorable
             </span>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl leading-tight">
               Your event deserves a
-              <span className="block bg-gradient-to-r from-yellow-200 to-amber-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-yellow-200 to-amber-500 bg-clip-text text-transparent pb-1.5 sm:pb-2 pt-0.5">
                 brighter kind of wow.
               </span>
             </h2>
@@ -132,7 +137,7 @@ export default function Contact({ showHeading = true }: ContactProps) {
                 </span>
                 <div>
                   <p className="text-sm font-semibold text-emerald-100">Available around the clock</p>
-                  <p className="mt-0.5 text-xs text-emerald-100/60">Typically responds within 2 hours</p>
+                  <p className="mt-0.5 text-xs text-emerald-100/60">Typically responds within 10 minutes</p>
                 </div>
                 <Clock className="ml-auto h-4 w-4 text-emerald-200/60" />
               </div>
